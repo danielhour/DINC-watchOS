@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C0F2C1F31CC04C6A0070AA8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2C1F21CC04C6A0070AA8D /* AppDelegate.swift */; };
+		C0F2C1F51CC04C6A0070AA8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2C1F41CC04C6A0070AA8D /* ViewController.swift */; };
+		C0F2C1F81CC04C6A0070AA8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F2C1F61CC04C6A0070AA8D /* Main.storyboard */; };
+		C0F2C1FA1CC04C6A0070AA8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0F2C1F91CC04C6A0070AA8D /* Assets.xcassets */; };
+		C0F2C1FD1CC04C6A0070AA8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F2C1FB1CC04C6A0070AA8D /* LaunchScreen.storyboard */; };
+		C0F2C2081CC04C6B0070AA8D /* DINCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2C2071CC04C6B0070AA8D /* DINCTests.swift */; };
+		C0F2C2131CC04C6B0070AA8D /* DINCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2C2121CC04C6B0070AA8D /* DINCUITests.swift */; };
+		C0F2C2181CC04C6B0070AA8D /* DINC WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C0F2C2171CC04C6B0070AA8D /* DINC WatchKit App.app */; };
+		C0F2C21E1CC04C6B0070AA8D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F2C21C1CC04C6B0070AA8D /* Interface.storyboard */; };
+		C0F2C2201CC04C6B0070AA8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0F2C21F1CC04C6B0070AA8D /* Assets.xcassets */; };
+		C0F2C2271CC04C6B0070AA8D /* DINC WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C0F2C2261CC04C6B0070AA8D /* DINC WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C0F2C22E1CC04C6B0070AA8D /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2C22D1CC04C6B0070AA8D /* InterfaceController.swift */; };
+		C0F2C2301CC04C6B0070AA8D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2C22F1CC04C6B0070AA8D /* ExtensionDelegate.swift */; };
+		C0F2C2321CC04C6B0070AA8D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2C2311CC04C6B0070AA8D /* NotificationController.swift */; };
+		C0F2C2341CC04C6B0070AA8D /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2C2331CC04C6B0070AA8D /* GlanceController.swift */; };
+		C0F2C2361CC04C6B0070AA8D /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2C2351CC04C6B0070AA8D /* ComplicationController.swift */; };
+		C0F2C2381CC04C6B0070AA8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0F2C2371CC04C6B0070AA8D /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0F2C2041CC04C6B0070AA8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0F2C1E71CC04C6A0070AA8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0F2C1EE1CC04C6A0070AA8D;
+			remoteInfo = DINC;
+		};
+		C0F2C20F1CC04C6B0070AA8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0F2C1E71CC04C6A0070AA8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0F2C1EE1CC04C6A0070AA8D;
+			remoteInfo = DINC;
+		};
+		C0F2C2191CC04C6B0070AA8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0F2C1E71CC04C6A0070AA8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0F2C2161CC04C6B0070AA8D;
+			remoteInfo = "DINC WatchKit App";
+		};
+		C0F2C2281CC04C6B0070AA8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0F2C1E71CC04C6A0070AA8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0F2C2251CC04C6B0070AA8D;
+			remoteInfo = "DINC WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C0F2C23F1CC04C6B0070AA8D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C0F2C2271CC04C6B0070AA8D /* DINC WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F2C2431CC04C6B0070AA8D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C0F2C2181CC04C6B0070AA8D /* DINC WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C0F2C1EF1CC04C6A0070AA8D /* DINC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DINC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0F2C1F21CC04C6A0070AA8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C0F2C1F41CC04C6A0070AA8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C0F2C1F71CC04C6A0070AA8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C0F2C1F91CC04C6A0070AA8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0F2C1FC1CC04C6A0070AA8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C0F2C1FE1CC04C6A0070AA8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0F2C2031CC04C6B0070AA8D /* DINCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DINCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0F2C2071CC04C6B0070AA8D /* DINCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DINCTests.swift; sourceTree = "<group>"; };
+		C0F2C2091CC04C6B0070AA8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0F2C20E1CC04C6B0070AA8D /* DINCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DINCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0F2C2121CC04C6B0070AA8D /* DINCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DINCUITests.swift; sourceTree = "<group>"; };
+		C0F2C2141CC04C6B0070AA8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0F2C2171CC04C6B0070AA8D /* DINC WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DINC WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0F2C21D1CC04C6B0070AA8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		C0F2C21F1CC04C6B0070AA8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0F2C2211CC04C6B0070AA8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0F2C2261CC04C6B0070AA8D /* DINC WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DINC WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0F2C22C1CC04C6B0070AA8D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		C0F2C22D1CC04C6B0070AA8D /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		C0F2C22F1CC04C6B0070AA8D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		C0F2C2311CC04C6B0070AA8D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		C0F2C2331CC04C6B0070AA8D /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		C0F2C2351CC04C6B0070AA8D /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		C0F2C2371CC04C6B0070AA8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0F2C2391CC04C6B0070AA8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0F2C1EC1CC04C6A0070AA8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F2C2001CC04C6B0070AA8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F2C20B1CC04C6B0070AA8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F2C2231CC04C6B0070AA8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C0F2C1E61CC04C6A0070AA8D = {
+			isa = PBXGroup;
+			children = (
+				C0F2C1F11CC04C6A0070AA8D /* DINC */,
+				C0F2C2061CC04C6B0070AA8D /* DINCTests */,
+				C0F2C2111CC04C6B0070AA8D /* DINCUITests */,
+				C0F2C21B1CC04C6B0070AA8D /* DINC WatchKit App */,
+				C0F2C22A1CC04C6B0070AA8D /* DINC WatchKit Extension */,
+				C0F2C1F01CC04C6A0070AA8D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C0F2C1F01CC04C6A0070AA8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0F2C1EF1CC04C6A0070AA8D /* DINC.app */,
+				C0F2C2031CC04C6B0070AA8D /* DINCTests.xctest */,
+				C0F2C20E1CC04C6B0070AA8D /* DINCUITests.xctest */,
+				C0F2C2171CC04C6B0070AA8D /* DINC WatchKit App.app */,
+				C0F2C2261CC04C6B0070AA8D /* DINC WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0F2C1F11CC04C6A0070AA8D /* DINC */ = {
+			isa = PBXGroup;
+			children = (
+				C0F2C1F21CC04C6A0070AA8D /* AppDelegate.swift */,
+				C0F2C1F41CC04C6A0070AA8D /* ViewController.swift */,
+				C0F2C1F61CC04C6A0070AA8D /* Main.storyboard */,
+				C0F2C1F91CC04C6A0070AA8D /* Assets.xcassets */,
+				C0F2C1FB1CC04C6A0070AA8D /* LaunchScreen.storyboard */,
+				C0F2C1FE1CC04C6A0070AA8D /* Info.plist */,
+			);
+			path = DINC;
+			sourceTree = "<group>";
+		};
+		C0F2C2061CC04C6B0070AA8D /* DINCTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0F2C2071CC04C6B0070AA8D /* DINCTests.swift */,
+				C0F2C2091CC04C6B0070AA8D /* Info.plist */,
+			);
+			path = DINCTests;
+			sourceTree = "<group>";
+		};
+		C0F2C2111CC04C6B0070AA8D /* DINCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C0F2C2121CC04C6B0070AA8D /* DINCUITests.swift */,
+				C0F2C2141CC04C6B0070AA8D /* Info.plist */,
+			);
+			path = DINCUITests;
+			sourceTree = "<group>";
+		};
+		C0F2C21B1CC04C6B0070AA8D /* DINC WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				C0F2C21C1CC04C6B0070AA8D /* Interface.storyboard */,
+				C0F2C21F1CC04C6B0070AA8D /* Assets.xcassets */,
+				C0F2C2211CC04C6B0070AA8D /* Info.plist */,
+			);
+			path = "DINC WatchKit App";
+			sourceTree = "<group>";
+		};
+		C0F2C22A1CC04C6B0070AA8D /* DINC WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C0F2C22D1CC04C6B0070AA8D /* InterfaceController.swift */,
+				C0F2C22F1CC04C6B0070AA8D /* ExtensionDelegate.swift */,
+				C0F2C2311CC04C6B0070AA8D /* NotificationController.swift */,
+				C0F2C2331CC04C6B0070AA8D /* GlanceController.swift */,
+				C0F2C2351CC04C6B0070AA8D /* ComplicationController.swift */,
+				C0F2C2371CC04C6B0070AA8D /* Assets.xcassets */,
+				C0F2C2391CC04C6B0070AA8D /* Info.plist */,
+				C0F2C22B1CC04C6B0070AA8D /* Supporting Files */,
+			);
+			path = "DINC WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		C0F2C22B1CC04C6B0070AA8D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0F2C22C1CC04C6B0070AA8D /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0F2C1EE1CC04C6A0070AA8D /* DINC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0F2C2441CC04C6B0070AA8D /* Build configuration list for PBXNativeTarget "DINC" */;
+			buildPhases = (
+				C0F2C1EB1CC04C6A0070AA8D /* Sources */,
+				C0F2C1EC1CC04C6A0070AA8D /* Frameworks */,
+				C0F2C1ED1CC04C6A0070AA8D /* Resources */,
+				C0F2C2431CC04C6B0070AA8D /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0F2C21A1CC04C6B0070AA8D /* PBXTargetDependency */,
+			);
+			name = DINC;
+			productName = DINC;
+			productReference = C0F2C1EF1CC04C6A0070AA8D /* DINC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C0F2C2021CC04C6B0070AA8D /* DINCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0F2C2471CC04C6B0070AA8D /* Build configuration list for PBXNativeTarget "DINCTests" */;
+			buildPhases = (
+				C0F2C1FF1CC04C6B0070AA8D /* Sources */,
+				C0F2C2001CC04C6B0070AA8D /* Frameworks */,
+				C0F2C2011CC04C6B0070AA8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0F2C2051CC04C6B0070AA8D /* PBXTargetDependency */,
+			);
+			name = DINCTests;
+			productName = DINCTests;
+			productReference = C0F2C2031CC04C6B0070AA8D /* DINCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C0F2C20D1CC04C6B0070AA8D /* DINCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0F2C24A1CC04C6B0070AA8D /* Build configuration list for PBXNativeTarget "DINCUITests" */;
+			buildPhases = (
+				C0F2C20A1CC04C6B0070AA8D /* Sources */,
+				C0F2C20B1CC04C6B0070AA8D /* Frameworks */,
+				C0F2C20C1CC04C6B0070AA8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0F2C2101CC04C6B0070AA8D /* PBXTargetDependency */,
+			);
+			name = DINCUITests;
+			productName = DINCUITests;
+			productReference = C0F2C20E1CC04C6B0070AA8D /* DINCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C0F2C2161CC04C6B0070AA8D /* DINC WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0F2C2401CC04C6B0070AA8D /* Build configuration list for PBXNativeTarget "DINC WatchKit App" */;
+			buildPhases = (
+				C0F2C2151CC04C6B0070AA8D /* Resources */,
+				C0F2C23F1CC04C6B0070AA8D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0F2C2291CC04C6B0070AA8D /* PBXTargetDependency */,
+			);
+			name = "DINC WatchKit App";
+			productName = "DINC WatchKit App";
+			productReference = C0F2C2171CC04C6B0070AA8D /* DINC WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C0F2C2251CC04C6B0070AA8D /* DINC WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0F2C23C1CC04C6B0070AA8D /* Build configuration list for PBXNativeTarget "DINC WatchKit Extension" */;
+			buildPhases = (
+				C0F2C2221CC04C6B0070AA8D /* Sources */,
+				C0F2C2231CC04C6B0070AA8D /* Frameworks */,
+				C0F2C2241CC04C6B0070AA8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DINC WatchKit Extension";
+			productName = "DINC WatchKit Extension";
+			productReference = C0F2C2261CC04C6B0070AA8D /* DINC WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0F2C1E71CC04C6A0070AA8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = DHour;
+				TargetAttributes = {
+					C0F2C1EE1CC04C6A0070AA8D = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					C0F2C2021CC04C6B0070AA8D = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = C0F2C1EE1CC04C6A0070AA8D;
+					};
+					C0F2C20D1CC04C6B0070AA8D = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = C0F2C1EE1CC04C6A0070AA8D;
+					};
+					C0F2C2161CC04C6B0070AA8D = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					C0F2C2251CC04C6B0070AA8D = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = C0F2C1EA1CC04C6A0070AA8D /* Build configuration list for PBXProject "DINC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0F2C1E61CC04C6A0070AA8D;
+			productRefGroup = C0F2C1F01CC04C6A0070AA8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0F2C1EE1CC04C6A0070AA8D /* DINC */,
+				C0F2C2021CC04C6B0070AA8D /* DINCTests */,
+				C0F2C20D1CC04C6B0070AA8D /* DINCUITests */,
+				C0F2C2161CC04C6B0070AA8D /* DINC WatchKit App */,
+				C0F2C2251CC04C6B0070AA8D /* DINC WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0F2C1ED1CC04C6A0070AA8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F2C1FD1CC04C6A0070AA8D /* LaunchScreen.storyboard in Resources */,
+				C0F2C1FA1CC04C6A0070AA8D /* Assets.xcassets in Resources */,
+				C0F2C1F81CC04C6A0070AA8D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F2C2011CC04C6B0070AA8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F2C20C1CC04C6B0070AA8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F2C2151CC04C6B0070AA8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F2C2201CC04C6B0070AA8D /* Assets.xcassets in Resources */,
+				C0F2C21E1CC04C6B0070AA8D /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F2C2241CC04C6B0070AA8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F2C2381CC04C6B0070AA8D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0F2C1EB1CC04C6A0070AA8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F2C1F51CC04C6A0070AA8D /* ViewController.swift in Sources */,
+				C0F2C1F31CC04C6A0070AA8D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F2C1FF1CC04C6B0070AA8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F2C2081CC04C6B0070AA8D /* DINCTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F2C20A1CC04C6B0070AA8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F2C2131CC04C6B0070AA8D /* DINCUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F2C2221CC04C6B0070AA8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F2C2321CC04C6B0070AA8D /* NotificationController.swift in Sources */,
+				C0F2C2301CC04C6B0070AA8D /* ExtensionDelegate.swift in Sources */,
+				C0F2C2361CC04C6B0070AA8D /* ComplicationController.swift in Sources */,
+				C0F2C22E1CC04C6B0070AA8D /* InterfaceController.swift in Sources */,
+				C0F2C2341CC04C6B0070AA8D /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0F2C2051CC04C6B0070AA8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0F2C1EE1CC04C6A0070AA8D /* DINC */;
+			targetProxy = C0F2C2041CC04C6B0070AA8D /* PBXContainerItemProxy */;
+		};
+		C0F2C2101CC04C6B0070AA8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0F2C1EE1CC04C6A0070AA8D /* DINC */;
+			targetProxy = C0F2C20F1CC04C6B0070AA8D /* PBXContainerItemProxy */;
+		};
+		C0F2C21A1CC04C6B0070AA8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0F2C2161CC04C6B0070AA8D /* DINC WatchKit App */;
+			targetProxy = C0F2C2191CC04C6B0070AA8D /* PBXContainerItemProxy */;
+		};
+		C0F2C2291CC04C6B0070AA8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0F2C2251CC04C6B0070AA8D /* DINC WatchKit Extension */;
+			targetProxy = C0F2C2281CC04C6B0070AA8D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C0F2C1F61CC04C6A0070AA8D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0F2C1F71CC04C6A0070AA8D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C0F2C1FB1CC04C6A0070AA8D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0F2C1FC1CC04C6A0070AA8D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C0F2C21C1CC04C6B0070AA8D /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0F2C21D1CC04C6B0070AA8D /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0F2C23A1CC04C6B0070AA8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C0F2C23B1CC04C6B0070AA8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0F2C23D1CC04C6B0070AA8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "DINC WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DHour.DINC.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		C0F2C23E1CC04C6B0070AA8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "DINC WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DHour.DINC.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		C0F2C2411CC04C6B0070AA8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = DINC_WatchKit_Extension;
+				INFOPLIST_FILE = "DINC WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DHour.DINC.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		C0F2C2421CC04C6B0070AA8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = DINC_WatchKit_Extension;
+				INFOPLIST_FILE = "DINC WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DHour.DINC.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		C0F2C2451CC04C6B0070AA8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DINC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DHour.DINC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C0F2C2461CC04C6B0070AA8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DINC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DHour.DINC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C0F2C2481CC04C6B0070AA8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DINCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DHour.DINCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DINC.app/DINC";
+			};
+			name = Debug;
+		};
+		C0F2C2491CC04C6B0070AA8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DINCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DHour.DINCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DINC.app/DINC";
+			};
+			name = Release;
+		};
+		C0F2C24B1CC04C6B0070AA8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DINCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DHour.DINCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DINC;
+			};
+			name = Debug;
+		};
+		C0F2C24C1CC04C6B0070AA8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DINCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DHour.DINCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DINC;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0F2C1EA1CC04C6A0070AA8D /* Build configuration list for PBXProject "DINC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0F2C23A1CC04C6B0070AA8D /* Debug */,
+				C0F2C23B1CC04C6B0070AA8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0F2C23C1CC04C6B0070AA8D /* Build configuration list for PBXNativeTarget "DINC WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0F2C23D1CC04C6B0070AA8D /* Debug */,
+				C0F2C23E1CC04C6B0070AA8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C0F2C2401CC04C6B0070AA8D /* Build configuration list for PBXNativeTarget "DINC WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0F2C2411CC04C6B0070AA8D /* Debug */,
+				C0F2C2421CC04C6B0070AA8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C0F2C2441CC04C6B0070AA8D /* Build configuration list for PBXNativeTarget "DINC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0F2C2451CC04C6B0070AA8D /* Debug */,
+				C0F2C2461CC04C6B0070AA8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C0F2C2471CC04C6B0070AA8D /* Build configuration list for PBXNativeTarget "DINCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0F2C2481CC04C6B0070AA8D /* Debug */,
+				C0F2C2491CC04C6B0070AA8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C0F2C24A1CC04C6B0070AA8D /* Build configuration list for PBXNativeTarget "DINCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0F2C24B1CC04C6B0070AA8D /* Debug */,
+				C0F2C24C1CC04C6B0070AA8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0F2C1E71CC04C6A0070AA8D /* Project object */;
+}
