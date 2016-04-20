@@ -13,12 +13,12 @@ import Foundation
 
 
 enum EfficiencyRatings: String {
-    case Max = "SCROOGE"
-    case High = "HIGH"
-    case Normal = "NORMAL"
-    case Bad = "BAD"
-    case Poor = "POOR"
-    case Awful = "MANZIEL"
+    case Max = "SCROOGE MCDUCK" //0.0...0.4
+    case High = "HIGH" //0.4...0.8
+    case Normal = "NORMAL" //0.8...1.0
+    case Bad = "NOT GREAT" //1.0...1.3
+    case Poor = "POOR" //1.3...1.6
+    case Awful = "JOHNNY FOOTBALL" //1.6 +
 }
 
 
@@ -94,9 +94,9 @@ class EfficiencyController: WKInterfaceController {
             self.configureEfficiencyRatingLabel(.High, color: colors.lightGreen)
         case 0.8...1.0:
             self.configureEfficiencyRatingLabel(.Normal, color: colors.burntYellow)
-        case 1.0...1.2:
+        case 1.0...1.3:
             self.configureEfficiencyRatingLabel(.Bad, color: colors.orange)
-        case 1.2...1.6:
+        case 1.3...1.6:
             self.configureEfficiencyRatingLabel(.Poor, color: colors.darkOrange)
         case 1.6...Double.infinity:
             self.configureEfficiencyRatingLabel(.Awful, color: colors.red)
