@@ -1,12 +1,17 @@
 ## **WHAT IS DINC?**
-DINC is an Apple Watch app that helps you track/control your Disposable Income usage.
+DINC is an Apple Watch app that helps you track/control your Disposable Income (D.INC) usage.
+<br><br>
+
+
+## **OVERVIEW**
+Here’s a blog post on why I created this app and why I'm "releasing" it on GitHub instead of submitting it to the App Store: [Medium](https://medium.com/@dhour/a-new-strategy-for-how-i-publish-my-apps-8e9de05c7bf1)
 <br><br>
 
 
 ## **FEATURES**
 
-*1990's Calculator Layout*
-<br>How a user enters in transaction costs
+*Quick Transaction Entry*
+<br>Using that timeless 90's watch calculator layout... quickly enter in your most recent disposable income purchase.
 <br>
 <img src="https://github.com/danielhour/DINC/raw/dev/Screenshots/PriceController.gif" width="350">
 
@@ -21,19 +26,12 @@ DINC is an Apple Watch app that helps you track/control your Disposable Income u
 <img src="https://github.com/danielhour/DINC/raw/dev/Screenshots/efficiency.png" width="175">
 
 *Complication & Glance Support*
-<br>Out-of-sight leads to out-of-mind - which is why the DINC app is best utilized with a Complication on the watch face or an easy to find Glance.
+<br>Out-of-sight leads to out-of-mind which is why the DINC app is best utilized with a watch face complication or an easy to access glance.
 <br>
-<img src="https://github.com/danielhour/DINC/raw/dev/Screenshots/complication.png" width="175">  <img src="https://github.com/danielhour/DINC/raw/dev/Screenshots/glance.png" width="175">
+<img src="https://github.com/danielhour/DINC/raw/dev/Screenshots/complication.png" width="175">    <img src="https://github.com/danielhour/DINC/raw/dev/Screenshots/glance.png" width="175">
 
 
 [YOU CAN FIND THE FULL STORYBOARD LAYOUT HERE](https://github.com/danielhour/DINC/blob/dev/Screenshots/DINC%20storyboard.png)
-<br><br>
-
-
-## **OVERVIEW**
-Here’s a blog post on why I created it: [Medium](http://www.templink.com)
-
-Here’s the same blog post on why I am posting it on GitHub and NOT submitting it to the App Store: [Medium](http://www.templink.com)
 <br><br>
 
 
@@ -54,7 +52,7 @@ Created with [Jazzy](https://github.com/realm/jazzy). For best viewing, download
 ## **FAQ**
 
 **Why is the iPhone app just a white screen?**
-- Because everything runs on the Watch. LITERALLY everything. I wanted a true stand-alone watch app. If you want to see your transactions on your iPhone… well, I suggest downloading your credit card’s app and looking it up there. I have no interest in reinventing the wheel.
+- Because everything is running on the Apple Watch. LITERALLY everything. I wanted a true stand-alone watch app. If you want to see your transactions on your iPhone… well, I suggest downloading your credit card’s app and looking it up there. I have no interest in reinventing the wheel.
 
 **Why are you doing manual entries for purchases?**
 - My original idea was to use the Plaid API but transactions are not fetched/updated immediately. In fact, they’re updated quite infrequently (in sandbox at least) so it would not give the watch wearer an accurate account of their daily budget. When there is an API that fetches transactions in true real-time, I'll definitely integrate it!
@@ -65,5 +63,3 @@ Created with [Jazzy](https://github.com/realm/jazzy). For best viewing, download
 
 
 
-
-End
