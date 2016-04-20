@@ -1,29 +1,129 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="G4a-QS-gCH">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
-        <scene sceneID="aou-V4-d1y">
+        <!--Projections-->
+        <scene sceneID="OUE-bt-O1F">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
-            </objects>
-            <point key="canvasLocation" x="235" y="347"/>
-        </scene>
-        <!--Glance Interface Controller-->
-        <scene sceneID="BOz-TT-tkC">
-            <objects>
-                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModuleProvider="target">
+                <controller title="Projections" id="bVY-X0-F8b" customClass="ProjectionController" customModule="DINC_WatchKit_Extension">
                     <items>
-                        <group alignment="left" id="t8f-Gd-c4y"/>
-                        <group alignment="left" id="uCw-4Q-Ouw"/>
+                        <label alignment="left" text="Over/Under:" textAlignment="left" id="J2S-fR-5GA">
+                            <color key="textColor" red="0.0" green="0.81971758604049683" blue="0.30362150073051453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" weight="medium" pointSize="14"/>
+                        </label>
+                        <group width="1" alignment="left" id="g0L-ay-hro" userLabel="O/U Number">
+                            <items>
+                                <label alignment="left" text="$---.--" textAlignment="left" id="1Ps-Ae-SHE">
+                                    <color key="textColor" red="0.0" green="0.81971758604049683" blue="0.30362150073051453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="25"/>
+                                </label>
+                            </items>
+                        </group>
+                        <separator width="1" alignment="left" alpha="0.69999999999999996" id="Lhg-ye-bT8">
+                            <color key="color" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </separator>
+                        <group width="1" height="30" alignment="left" id="RVg-zt-v9t" userLabel="Picker">
+                            <items>
+                                <picker width="0.34999999999999998" height="1" alignment="left" focusStyle="stack" id="cgc-ZA-RSS">
+                                    <connections>
+                                        <action selector="dailyBudgetPickerAction:" destination="bVY-X0-F8b" id="nXU-of-QXc"/>
+                                    </connections>
+                                </picker>
+                                <label height="1" alignment="left" text="/ Day:" textAlignment="left" numberOfLines="0" id="hvG-HE-spD"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="ORb-7L-XhX" userLabel="Projected Titles">
+                            <items>
+                                <label width="0.5" alignment="left" text="-- Days Left" textAlignment="left" numberOfLines="0" id="eHo-Af-ZuP">
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
+                                <label width="0.5" alignment="right" text="Already Spent" textAlignment="right" numberOfLines="0" id="qrj-Ae-oej">
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="qYD-A2-tje" userLabel="Projected Numbers">
+                            <items>
+                                <label alignment="left" text="$---" textAlignment="left" id="hJb-vZ-8dK">
+                                    <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                </label>
+                                <label width="0.10000000000000001" alignment="center" text="+" textAlignment="right" id="5SD-za-ggl"/>
+                                <label width="0.5" alignment="right" text="$--.--" textAlignment="right" id="u0p-Zz-rVK"/>
+                            </items>
+                        </group>
                     </items>
-                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
-                </glanceController>
+                    <connections>
+                        <outlet property="dailyBudgetPicker" destination="cgc-ZA-RSS" id="tI8-Si-Fpj"/>
+                        <outlet property="daysLeftInMonthLabel" destination="eHo-Af-ZuP" id="pwc-HE-Rm2"/>
+                        <outlet property="moneySpentLabel" destination="u0p-Zz-rVK" id="9PG-oE-fsT"/>
+                        <outlet property="overUnderAmountLabel" destination="1Ps-Ae-SHE" id="mZD-PZ-gbT"/>
+                        <outlet property="overUnderTitleLabel" destination="J2S-fR-5GA" id="aN3-Af-YmX"/>
+                        <outlet property="projectedMoneySpentLabel" destination="hJb-vZ-8dK" id="T5n-9h-izq"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="235" y="672"/>
+            <point key="canvasLocation" x="685" y="348"/>
+        </scene>
+        <!--Stats-->
+        <scene sceneID="GUf-0Y-XcO">
+            <objects>
+                <controller title="Stats" id="3jH-fA-K0o" customClass="EfficiencyController" customModule="DINC_WatchKit_Extension">
+                    <items>
+                        <separator width="1" alignment="left" alpha="0.69999999999999996" id="YaA-Qg-eR5">
+                            <color key="color" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </separator>
+                        <label alignment="left" text="Spend Rate:" textAlignment="left" id="9qU-5i-DYm">
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" type="system" weight="medium" pointSize="14"/>
+                        </label>
+                        <group width="1" alignment="left" id="LC2-cM-3AH">
+                            <items>
+                                <label alignment="left" text="$--.--" textAlignment="left" numberOfLines="0" id="oZ9-y0-e48">
+                                    <fontDescription key="font" type="system" pointSize="25"/>
+                                </label>
+                                <label alignment="left" text="/ Day" textAlignment="left" numberOfLines="0" id="jMj-CZ-8Zr">
+                                    <fontDescription key="font" type="system" pointSize="25"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="i5u-Qd-Rnw">
+                            <items>
+                                <label alignment="left" text="--X" textAlignment="left" id="h0T-Qd-evP">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" pointSize="13"/>
+                                </label>
+                                <label alignment="left" text="of daily budget" textAlignment="left" numberOfLines="0" id="MqM-LN-m0c">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" pointSize="13"/>
+                                </label>
+                            </items>
+                        </group>
+                        <separator width="1" alignment="left" alpha="0.69999999999999996" id="ksF-2L-Sg8">
+                            <color key="color" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </separator>
+                        <label alignment="left" text="Efficiency Rating:" textAlignment="left" id="PPB-qA-QES">
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" type="system" weight="medium" pointSize="14"/>
+                        </label>
+                        <label alignment="left" text="-----" textAlignment="left" numberOfLines="0" id="cTX-Sy-sjb">
+                            <color key="textColor" red="0.0" green="0.81971758604049683" blue="0.30362150073051453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" weight="medium" pointSize="25"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="averageDailySpendLabel" destination="oZ9-y0-e48" id="lsp-S6-e7z"/>
+                        <outlet property="efficiencyLabel" destination="cTX-Sy-sjb" id="tS5-Kb-3jr"/>
+                        <outlet property="multiplierLabel" destination="h0T-Qd-evP" id="FrC-Tx-lSk"/>
+                        <segue destination="bVY-X0-F8b" kind="relationship" relationship="nextPage" id="YIY-od-qq5"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="461" y="348"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -39,14 +139,339 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="235" y="1001"/>
+            <point key="canvasLocation" x="235" y="1106"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="KIl-fV-djm">
             <objects>
-                <controller id="gdX-wl-uQE" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="DINC_WatchKit_App" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="553" y="1001"/>
+            <point key="canvasLocation" x="461" y="1106"/>
+        </scene>
+        <!--DINC-->
+        <scene sceneID="gAm-qg-4Wf">
+            <objects>
+                <controller title="DINC" hidesWhenLoading="NO" id="G4a-QS-gCH" customClass="PriceController" customModule="DINC_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="0.12" alignment="left" id="uJB-mK-DcW">
+                            <items>
+                                <label width="0.5" height="1" alignment="left" text="$-.--" textAlignment="left" id="ure-17-Hhh">
+                                    <color key="textColor" red="0.0" green="0.819717586" blue="0.30362150069999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="16"/>
+                                </label>
+                                <label width="0.5" height="1" alignment="right" text="$0.00" textAlignment="right" id="fNf-x6-c5k">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" pointSize="16"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" height="0.22" alignment="left" id="7GJ-Mp-6dh">
+                            <items>
+                                <button width="0.33000000000000002" height="1" alignment="left" title="1" id="aog-5j-MDc">
+                                    <fontDescription key="font" type="system" pointSize="22"/>
+                                    <connections>
+                                        <action selector="oneTapped" destination="G4a-QS-gCH" id="Xwp-My-wjq"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" height="1" alignment="left" title="2" id="j1l-N0-BXv">
+                                    <fontDescription key="font" type="system" pointSize="22"/>
+                                    <connections>
+                                        <action selector="twoTapped" destination="G4a-QS-gCH" id="yPE-Jo-7ZL"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" height="1" alignment="left" title="3" id="yLv-Fk-wbI">
+                                    <fontDescription key="font" type="system" pointSize="22"/>
+                                    <connections>
+                                        <action selector="threeTapped" destination="G4a-QS-gCH" id="frR-iJ-Izf"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.22" alignment="left" id="gPw-N3-eAz">
+                            <items>
+                                <button width="0.33000000000000002" height="1" alignment="left" title="4" id="H9F-tX-dTB">
+                                    <fontDescription key="font" type="system" pointSize="22"/>
+                                    <connections>
+                                        <action selector="fourTapped" destination="G4a-QS-gCH" id="B7L-FJ-pPv"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" height="1" alignment="left" title="5" id="KSE-F7-3CR">
+                                    <fontDescription key="font" type="system" pointSize="22"/>
+                                    <connections>
+                                        <action selector="fiveTapped" destination="G4a-QS-gCH" id="KK4-PB-paL"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" height="1" alignment="left" title="6" id="zqC-0P-Izc">
+                                    <fontDescription key="font" type="system" pointSize="22"/>
+                                    <connections>
+                                        <action selector="sixTapped" destination="G4a-QS-gCH" id="sk6-PS-hEj"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.22" alignment="left" id="IeK-RY-CMe">
+                            <items>
+                                <button width="0.33000000000000002" height="1" alignment="left" title="7" id="DRW-b8-S87">
+                                    <fontDescription key="font" type="system" pointSize="22"/>
+                                    <connections>
+                                        <action selector="sevenTapped" destination="G4a-QS-gCH" id="Ygn-am-CeH"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" height="1" alignment="left" title="8" id="UCH-eC-eae">
+                                    <fontDescription key="font" type="system" pointSize="22"/>
+                                    <connections>
+                                        <action selector="eightTapped" destination="G4a-QS-gCH" id="9yq-H1-fAK"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" height="1" alignment="left" title="9" id="fpI-ZF-x5Q">
+                                    <fontDescription key="font" type="system" pointSize="22"/>
+                                    <connections>
+                                        <action selector="nineTapped" destination="G4a-QS-gCH" id="hQz-9b-YlG"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.22" alignment="left" id="xDo-ef-ZFx">
+                            <items>
+                                <button width="0.33000000000000002" height="1" alignment="left" title="DEL" id="C94-oy-ScV">
+                                    <fontDescription key="font" type="system" pointSize="18"/>
+                                    <connections>
+                                        <action selector="backSpaceTapped" destination="G4a-QS-gCH" id="JQY-Ev-T9C"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" height="1" alignment="left" title="0" id="PXt-R9-aAS">
+                                    <fontDescription key="font" type="system" pointSize="22"/>
+                                    <connections>
+                                        <action selector="zeroTapped" destination="G4a-QS-gCH" id="af6-Pd-WdZ"/>
+                                    </connections>
+                                </button>
+                                <button alignment="left" id="ZAt-Cj-Ox5">
+                                    <group key="contentGroup" width="1" height="1" alignment="left" backgroundImage="Checkmark" contentMode="scaleAspectFit" id="0ip-wF-qhS">
+                                        <color key="backgroundColor" red="0.88856035470962524" green="0.21514630317687988" blue="0.16182881593704224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </group>
+                                    <connections>
+                                        <action selector="purchaseButtonAction" destination="G4a-QS-gCH" id="UuE-4s-erZ"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="purchaseLabel" destination="fNf-x6-c5k" id="5WL-nv-KAm"/>
+                        <outlet property="safeToSpendLabel" destination="ure-17-Hhh" id="fab-6M-Dxf"/>
+                        <segue destination="3jH-fA-K0o" kind="relationship" relationship="nextPage" id="zSq-hv-n8n"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="235" y="348"/>
+        </scene>
+        <!--UpdatedSavingsController-->
+        <scene sceneID="7bo-Lx-l4o">
+            <objects>
+                <controller identifier="UpdatedSavingsController" hidesWhenLoading="NO" id="MY4-20-N8d" customClass="UpdatedSavingsController" customModule="DINC_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="30" alignment="left" id="eA5-Rc-zot" userLabel="Spacer Group"/>
+                        <group width="1" height="65.5" alignment="left" layout="vertical" id="La4-6b-kNX" userLabel="Savings Group">
+                            <items>
+                                <label alignment="center" text="$-.--" textAlignment="center" id="4Hf-DD-UXC">
+                                    <fontDescription key="font" type="system" pointSize="35"/>
+                                </label>
+                                <label alignment="center" text="Safe-to-Spend" id="BAC-2k-myb">
+                                    <fontDescription key="font" type="system" pointSize="16"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" height="56" alignment="left" id="Onf-Kt-zvg" userLabel="Vertical Line Group">
+                            <items>
+                                <separator height="24" alignment="center" verticalAlignment="center" id="37V-lh-aLB"/>
+                            </items>
+                        </group>
+                        <label width="1" alignment="center" text="Today" textAlignment="center" id="TYU-LW-iUL">
+                            <fontDescription key="font" type="system" pointSize="16"/>
+                        </label>
+                        <table alignment="left" id="sVb-Lj-Gp4">
+                            <items>
+                                <tableRow identifier="TransactionRow" id="onX-Oc-DJc" customClass="TransactionRow" customModule="DINC_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="MUr-XO-dcH">
+                                        <items>
+                                            <label alignment="right" verticalAlignment="center" text="$-.--" textAlignment="center" id="Sxg-Ot-l4C">
+                                                <fontDescription key="font" type="system" pointSize="20"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" red="0.88856035470962524" green="0.21514630317687988" blue="0.16182881593704224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="transactionAmountLabel" destination="Sxg-Ot-l4C" id="mrO-nV-fVf"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <group width="1" alignment="right" id="8iP-ZL-edY">
+                            <items>
+                                <label alignment="right" text="$0.00" textAlignment="right" id="T7k-qY-Y7G">
+                                    <color key="textColor" red="0.88856035470962524" green="0.21514630317687988" blue="0.16182881593704224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                </label>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="6" top="0.0" bottom="2"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="savingsLabel" destination="4Hf-DD-UXC" id="FOV-x6-fRm"/>
+                        <outlet property="todayTotalLabel" destination="T7k-qY-Y7G" id="QiA-KP-Vnr"/>
+                        <outlet property="todaysTransactionsTable" destination="sVb-Lj-Gp4" id="fev-0j-xyp"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="461" y="723.75"/>
+        </scene>
+        <!--SetBudgetController-->
+        <scene sceneID="b6v-YD-Jaz">
+            <objects>
+                <controller identifier="SetBudgetController" id="fvK-lK-fad" customClass="SetBudgetController" customModule="DINC_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="140" alignment="left" layout="vertical" id="YDz-dS-dvC">
+                            <items>
+                                <label width="0.69999999999999996" height="44" alignment="center" text="Set a daily spend goal" textAlignment="center" numberOfLines="0" id="mqb-Tw-uUL">
+                                    <fontDescription key="font" type="system" pointSize="16"/>
+                                </label>
+                                <group width="1" height="46" alignment="left" id="4Yx-bX-a1b" userLabel="Picker Group">
+                                    <items>
+                                        <picker width="1" height="1" alignment="center" focusStyle="stack" id="N6K-uC-Qj1">
+                                            <connections>
+                                                <action selector="selectPickerItem:" destination="fvK-lK-fad" id="nZk-OZ-lga"/>
+                                            </connections>
+                                        </picker>
+                                    </items>
+                                </group>
+                                <button width="1" height="44" alignment="left" title="SET" id="bzq-gf-IUD">
+                                    <color key="backgroundColor" red="0.0" green="0.819717586" blue="0.30362150069999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <connections>
+                                        <action selector="saveButtonAction" destination="fvK-lK-fad" id="cUj-fV-G2s"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="140" alignment="left" layout="vertical" id="9bj-Vj-b1m" userLabel="Success Group">
+                            <items>
+                                <imageView width="1" alignment="center" verticalAlignment="center" image="Checkmark" contentMode="scaleAspectFit" id="0rN-dw-x9j"/>
+                                <label alignment="center" verticalAlignment="center" text="Saved!" id="U4Z-CV-YW3">
+                                    <fontDescription key="font" type="system" pointSize="18"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="confirmationGroup" destination="9bj-Vj-b1m" id="4AJ-gt-qKY"/>
+                        <outlet property="confirmationImage" destination="0rN-dw-x9j" id="RTv-Pb-75Z"/>
+                        <outlet property="confirmationLabel" destination="U4Z-CV-YW3" id="sgH-6m-jKP"/>
+                        <outlet property="dailyBudgetPicker" destination="N6K-uC-Qj1" id="hCI-ka-hss"/>
+                        <outlet property="editBudgetGroup" destination="YDz-dS-dvC" id="Lsb-zb-arz"/>
+                        <outlet property="saveButton" destination="bzq-gf-IUD" id="SBO-zh-k8U"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="685" y="738.5"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="2Vo-n5-lv1">
+            <objects>
+                <glanceController spacing="0.0" id="CB2-6V-CIU" customClass="GlanceController" customModule="DINC_WatchKit_Extension">
+                    <items>
+                        <group alignment="left" spacing="0.0" id="I5M-2S-aOR" userLabel="Header Group">
+                            <items>
+                                <label alignment="right" verticalAlignment="bottom" text="Safe-to-Spend:" textAlignment="right" numberOfLines="0" id="o1x-Ix-I3C">
+                                    <fontDescription key="font" type="system" pointSize="16"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group alignment="left" layout="vertical" spacing="2" id="g3r-u6-fsR">
+                            <items>
+                                <group width="1" alignment="left" layout="vertical" id="GvD-cg-hf0" userLabel="STS Group">
+                                    <items>
+                                        <label alignment="center" text="$-.--" textAlignment="center" numberOfLines="0" id="3Lh-Dc-yg4">
+                                            <accessibilityTraits key="accessibilityTraits" staticText="YES" updatesFrequently="YES"/>
+                                            <color key="textColor" red="0.0" green="0.819717586" blue="0.30362150069999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="35"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group width="1" height="28" alignment="center" verticalAlignment="bottom" id="ogY-pj-TDq" userLabel="DB Group">
+                                    <items>
+                                        <label alignment="center" verticalAlignment="bottom" text="Daily Budget:" id="yAf-2y-j52">
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="font" type="system" pointSize="13"/>
+                                        </label>
+                                        <label alignment="center" verticalAlignment="bottom" text="$--" textAlignment="left" id="wFc-di-r09">
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="font" type="system" pointSize="13"/>
+                                        </label>
+                                    </items>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="3"/>
+                                </group>
+                                <group width="1" height="0.5" alignment="center" verticalAlignment="bottom" id="5vT-uk-x2v" userLabel="Future Group">
+                                    <items>
+                                        <group width="0.33000000000000002" height="1" alignment="center" layout="vertical" spacing="0.0" id="tC4-tN-O7v" userLabel="Plus 1">
+                                            <items>
+                                                <label alignment="center" text="Day" id="Qqi-wZ-FS2">
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="font" type="system" weight="semibold" pointSize="12"/>
+                                                </label>
+                                                <label alignment="center" text="$--" id="bxy-zk-BtS">
+                                                    <accessibilityTraits key="accessibilityTraits" staticText="YES" updatesFrequently="YES"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                        <group width="0.33000000000000002" height="1" alignment="center" layout="vertical" spacing="0.0" id="luj-OJ-xir" userLabel="Plus 2">
+                                            <items>
+                                                <label alignment="center" text="Day" id="HQr-jO-REz">
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="font" type="system" weight="semibold" pointSize="12"/>
+                                                </label>
+                                                <label alignment="center" text="$--" id="lto-oa-9tP">
+                                                    <accessibilityTraits key="accessibilityTraits" staticText="YES" updatesFrequently="YES"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                        <group width="0.33000000000000002" height="1" alignment="center" layout="vertical" spacing="0.0" id="nec-et-CNh" userLabel="Plus 3">
+                                            <items>
+                                                <label alignment="center" text="Day" id="iiP-ta-xpq">
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="font" type="system" weight="semibold" pointSize="12"/>
+                                                </label>
+                                                <label alignment="center" text="$--" id="Nxh-d5-99K">
+                                                    <accessibilityTraits key="accessibilityTraits" staticText="YES" updatesFrequently="YES"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="currentSafeToSpendLabel" destination="3Lh-Dc-yg4" id="zSl-rq-ylB"/>
+                        <outlet property="dailyBudgetLabel" destination="wFc-di-r09" id="0XF-s1-7Q8"/>
+                        <outlet property="dayPlusOneLabel" destination="Qqi-wZ-FS2" id="xlj-2x-fc6"/>
+                        <outlet property="dayPlusThreeLabel" destination="iiP-ta-xpq" id="Mqs-dL-GYx"/>
+                        <outlet property="dayPlusTwoLabel" destination="HQr-jO-REz" id="g6g-D8-QWG"/>
+                        <outlet property="futureGroup" destination="5vT-uk-x2v" id="pmN-mP-uzW"/>
+                        <outlet property="safeToSpendLabel" destination="o1x-Ix-I3C" id="1aZ-uU-SBt"/>
+                        <outlet property="safeToSpendPlusOneLabel" destination="bxy-zk-BtS" id="f21-iM-hQB"/>
+                        <outlet property="safeToSpendPlusThreeLabel" destination="Nxh-d5-99K" id="Ef8-Yc-MAj"/>
+                        <outlet property="safeToSpendPlusTwoLabel" destination="lto-oa-9tP" id="O9g-G4-Z6L"/>
+                    </connections>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="235" y="672"/>
         </scene>
     </scenes>
 </document>

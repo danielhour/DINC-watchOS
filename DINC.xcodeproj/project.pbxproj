@@ -7,6 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E3E9EA195E69C6C40AAA85A /* Pods_DINC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E1D14D517E2534B93C56AD /* Pods_DINC.framework */; };
+		C02E7DEE1CC1EF9100A65ACC /* WTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E7DED1CC1EF9100A65ACC /* WTransaction.swift */; };
+		C02E7DF01CC1FF3900A65ACC /* ProjectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E7DEF1CC1FF3900A65ACC /* ProjectionController.swift */; };
+		C02E7DF61CC202B000A65ACC /* DBAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E7DF51CC202B000A65ACC /* DBAlert.swift */; };
+		C02E7DF91CC202D900A65ACC /* Magic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E7DF81CC202D900A65ACC /* Magic.swift */; };
+		C02E7DFB1CC2037700A65ACC /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E7DFA1CC2037700A65ACC /* StringExtensions.swift */; };
+		C02E7DFD1CC20AFA00A65ACC /* UpdatedSavingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E7DFC1CC20AFA00A65ACC /* UpdatedSavingsController.swift */; };
+		C02E7DFF1CC2123E00A65ACC /* SetBudgetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E7DFE1CC2123E00A65ACC /* SetBudgetController.swift */; };
+		C02E7E011CC2127000A65ACC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E7E001CC2127000A65ACC /* Constants.swift */; };
+		C02E7E041CC214B200A65ACC /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E7E031CC214B200A65ACC /* Utilities.swift */; };
+		C02E7E061CC217FB00A65ACC /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E7E051CC217FB00A65ACC /* Theme.swift */; };
+		C02E7E091CC307FB00A65ACC /* WTransactionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E7E081CC307FB00A65ACC /* WTransactionManager.swift */; };
+		C02E7E0B1CC3132E00A65ACC /* MonthlyBudgetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E7E0A1CC3132E00A65ACC /* MonthlyBudgetManager.swift */; };
+		C02E7E0D1CC3185F00A65ACC /* TransactionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E7E0C1CC3185F00A65ACC /* TransactionRow.swift */; };
+		C02E7E131CC3492200A65ACC /* ComplicationConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E7E121CC3492200A65ACC /* ComplicationConfigurations.swift */; };
+		C074E7BA1CC5550400B4D224 /* EfficiencyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C074E7B91CC5550400B4D224 /* EfficiencyController.swift */; };
+		C0772E751CC0B2A50036CB45 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0772E741CC0B2A50036CB45 /* Enums.swift */; };
+		C0772E771CC0B2D90036CB45 /* PlaidManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0772E761CC0B2D90036CB45 /* PlaidManager.swift */; };
+		C0772E7A1CC0B9100036CB45 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0772E791CC0B9100036CB45 /* Parameters.swift */; };
+		C0772E7C1CC0BB730036CB45 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0772E7B1CC0BB730036CB45 /* KeychainWrapper.swift */; };
+		C0E0C61A1CC362CC0013DDD4 /* ComplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E0C6191CC362CC0013DDD4 /* ComplicationManager.swift */; };
+		C0E0C61C1CC48AF30013DDD4 /* NSDateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E0C61B1CC48AF30013DDD4 /* NSDateExtensions.swift */; };
+		C0E956CB1CC0A3D300897238 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E956CA1CC0A3D300897238 /* StringExtensions.swift */; };
+		C0E956CD1CC0A46200897238 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E956CC1CC0A46200897238 /* Account.swift */; };
 		C0F2C1F31CC04C6A0070AA8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2C1F21CC04C6A0070AA8D /* AppDelegate.swift */; };
 		C0F2C1F51CC04C6A0070AA8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2C1F41CC04C6A0070AA8D /* ViewController.swift */; };
 		C0F2C1F81CC04C6A0070AA8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F2C1F61CC04C6A0070AA8D /* Main.storyboard */; };
@@ -18,12 +42,18 @@
 		C0F2C21E1CC04C6B0070AA8D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F2C21C1CC04C6B0070AA8D /* Interface.storyboard */; };
 		C0F2C2201CC04C6B0070AA8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0F2C21F1CC04C6B0070AA8D /* Assets.xcassets */; };
 		C0F2C2271CC04C6B0070AA8D /* DINC WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C0F2C2261CC04C6B0070AA8D /* DINC WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		C0F2C22E1CC04C6B0070AA8D /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2C22D1CC04C6B0070AA8D /* InterfaceController.swift */; };
+		C0F2C22E1CC04C6B0070AA8D /* PriceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2C22D1CC04C6B0070AA8D /* PriceController.swift */; };
 		C0F2C2301CC04C6B0070AA8D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2C22F1CC04C6B0070AA8D /* ExtensionDelegate.swift */; };
 		C0F2C2321CC04C6B0070AA8D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2C2311CC04C6B0070AA8D /* NotificationController.swift */; };
 		C0F2C2341CC04C6B0070AA8D /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2C2331CC04C6B0070AA8D /* GlanceController.swift */; };
 		C0F2C2361CC04C6B0070AA8D /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2C2351CC04C6B0070AA8D /* ComplicationController.swift */; };
 		C0F2C2381CC04C6B0070AA8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0F2C2371CC04C6B0070AA8D /* Assets.xcassets */; };
+		C0F2C2531CC04D450070AA8D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2C2521CC04D450070AA8D /* Constants.swift */; };
+		C0F2C2551CC04D4A0070AA8D /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2C2541CC04D4A0070AA8D /* Keys.swift */; };
+		C0F2C2571CC04D4E0070AA8D /* Magic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2C2561CC04D4E0070AA8D /* Magic.swift */; };
+		C0F2C2591CC04D530070AA8D /* PlaidService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2C2581CC04D530070AA8D /* PlaidService.swift */; };
+		C0F2C25B1CC04D580070AA8D /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2C25A1CC04D580070AA8D /* Transaction.swift */; };
+		F351406A8CE0549B9A79EDD8 /* Pods_DINC_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E45D695C8EEDF404BBFADF7 /* Pods_DINC_WatchKit_Extension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +113,35 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3735C3C23FA8812C3C935370 /* Pods-DINC WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DINC WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-DINC WatchKit Extension/Pods-DINC WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		3CAAAF42CBADC24ECE5E243C /* Pods-DINC WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DINC WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DINC WatchKit Extension/Pods-DINC WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		59DC5B7C182D2CC63BF29186 /* Pods-DINC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DINC.release.xcconfig"; path = "Pods/Target Support Files/Pods-DINC/Pods-DINC.release.xcconfig"; sourceTree = "<group>"; };
+		62FCFEC18B794B459F247989 /* Pods-DINC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DINC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DINC/Pods-DINC.debug.xcconfig"; sourceTree = "<group>"; };
+		9E45D695C8EEDF404BBFADF7 /* Pods_DINC_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DINC_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4E1D14D517E2534B93C56AD /* Pods_DINC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DINC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C02E7DED1CC1EF9100A65ACC /* WTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTransaction.swift; sourceTree = "<group>"; };
+		C02E7DEF1CC1FF3900A65ACC /* ProjectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectionController.swift; sourceTree = "<group>"; };
+		C02E7DF51CC202B000A65ACC /* DBAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBAlert.swift; sourceTree = "<group>"; };
+		C02E7DF81CC202D900A65ACC /* Magic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Magic.swift; sourceTree = "<group>"; };
+		C02E7DFA1CC2037700A65ACC /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		C02E7DFC1CC20AFA00A65ACC /* UpdatedSavingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdatedSavingsController.swift; sourceTree = "<group>"; };
+		C02E7DFE1CC2123E00A65ACC /* SetBudgetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetBudgetController.swift; sourceTree = "<group>"; };
+		C02E7E001CC2127000A65ACC /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C02E7E031CC214B200A65ACC /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		C02E7E051CC217FB00A65ACC /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		C02E7E081CC307FB00A65ACC /* WTransactionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTransactionManager.swift; sourceTree = "<group>"; };
+		C02E7E0A1CC3132E00A65ACC /* MonthlyBudgetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthlyBudgetManager.swift; sourceTree = "<group>"; };
+		C02E7E0C1CC3185F00A65ACC /* TransactionRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionRow.swift; sourceTree = "<group>"; };
+		C02E7E121CC3492200A65ACC /* ComplicationConfigurations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplicationConfigurations.swift; sourceTree = "<group>"; };
+		C074E7B91CC5550400B4D224 /* EfficiencyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EfficiencyController.swift; sourceTree = "<group>"; };
+		C0772E741CC0B2A50036CB45 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		C0772E761CC0B2D90036CB45 /* PlaidManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaidManager.swift; sourceTree = "<group>"; };
+		C0772E791CC0B9100036CB45 /* Parameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
+		C0772E7B1CC0BB730036CB45 /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		C0E0C6191CC362CC0013DDD4 /* ComplicationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplicationManager.swift; sourceTree = "<group>"; };
+		C0E0C61B1CC48AF30013DDD4 /* NSDateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtensions.swift; sourceTree = "<group>"; };
+		C0E956CA1CC0A3D300897238 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		C0E956CC1CC0A46200897238 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		C0F2C1EF1CC04C6A0070AA8D /* DINC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DINC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0F2C1F21CC04C6A0070AA8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0F2C1F41CC04C6A0070AA8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,13 +161,18 @@
 		C0F2C2211CC04C6B0070AA8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0F2C2261CC04C6B0070AA8D /* DINC WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DINC WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0F2C22C1CC04C6B0070AA8D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		C0F2C22D1CC04C6B0070AA8D /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		C0F2C22D1CC04C6B0070AA8D /* PriceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceController.swift; sourceTree = "<group>"; };
 		C0F2C22F1CC04C6B0070AA8D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		C0F2C2311CC04C6B0070AA8D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		C0F2C2331CC04C6B0070AA8D /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
 		C0F2C2351CC04C6B0070AA8D /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		C0F2C2371CC04C6B0070AA8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0F2C2391CC04C6B0070AA8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0F2C2521CC04D450070AA8D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C0F2C2541CC04D4A0070AA8D /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		C0F2C2561CC04D4E0070AA8D /* Magic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Magic.swift; sourceTree = "<group>"; };
+		C0F2C2581CC04D530070AA8D /* PlaidService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaidService.swift; sourceTree = "<group>"; };
+		C0F2C25A1CC04D580070AA8D /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +180,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E3E9EA195E69C6C40AAA85A /* Pods_DINC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,12 +202,93 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F351406A8CE0549B9A79EDD8 /* Pods_DINC_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD3AA55EFB6223C4A1044534 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4E1D14D517E2534B93C56AD /* Pods_DINC.framework */,
+				9E45D695C8EEDF404BBFADF7 /* Pods_DINC_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C02E7DEB1CC1EF3E00A65ACC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C02E7DED1CC1EF9100A65ACC /* WTransaction.swift */,
+				C02E7E081CC307FB00A65ACC /* WTransactionManager.swift */,
+				C02E7E0A1CC3132E00A65ACC /* MonthlyBudgetManager.swift */,
+				C0E0C6191CC362CC0013DDD4 /* ComplicationManager.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		C02E7DF41CC2013A00A65ACC /* External Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C0F2C2331CC04C6B0070AA8D /* GlanceController.swift */,
+				C0F2C2311CC04C6B0070AA8D /* NotificationController.swift */,
+				C0F2C2351CC04C6B0070AA8D /* ComplicationController.swift */,
+			);
+			name = "External Controllers";
+			sourceTree = "<group>";
+		};
+		C02E7DF71CC202B700A65ACC /* Helper Files */ = {
+			isa = PBXGroup;
+			children = (
+				C02E7DF81CC202D900A65ACC /* Magic.swift */,
+				C02E7DF51CC202B000A65ACC /* DBAlert.swift */,
+				C02E7E001CC2127000A65ACC /* Constants.swift */,
+				C02E7E031CC214B200A65ACC /* Utilities.swift */,
+				C02E7E051CC217FB00A65ACC /* Theme.swift */,
+				C02E7E121CC3492200A65ACC /* ComplicationConfigurations.swift */,
+			);
+			name = "Helper Files";
+			sourceTree = "<group>";
+		};
+		C02E7E0E1CC3187600A65ACC /* Custom Rows */ = {
+			isa = PBXGroup;
+			children = (
+				C02E7E0C1CC3185F00A65ACC /* TransactionRow.swift */,
+			);
+			name = "Custom Rows";
+			sourceTree = "<group>";
+		};
+		C074E7BB1CC5B68300B4D224 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C02E7DFA1CC2037700A65ACC /* StringExtensions.swift */,
+				C0E0C61B1CC48AF30013DDD4 /* NSDateExtensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		C0BB25FF1CC1B518005D740C /* Internal Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C0F2C22D1CC04C6B0070AA8D /* PriceController.swift */,
+				C074E7B91CC5550400B4D224 /* EfficiencyController.swift */,
+				C02E7DEF1CC1FF3900A65ACC /* ProjectionController.swift */,
+				C02E7DFC1CC20AFA00A65ACC /* UpdatedSavingsController.swift */,
+				C02E7DFE1CC2123E00A65ACC /* SetBudgetController.swift */,
+			);
+			name = "Internal Controllers";
+			sourceTree = "<group>";
+		};
+		C0E956C91CC0A3AF00897238 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C0E956CA1CC0A3D300897238 /* StringExtensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		C0F2C1E61CC04C6A0070AA8D = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +298,8 @@
 				C0F2C21B1CC04C6B0070AA8D /* DINC WatchKit App */,
 				C0F2C22A1CC04C6B0070AA8D /* DINC WatchKit Extension */,
 				C0F2C1F01CC04C6A0070AA8D /* Products */,
+				DD0888A0D560D65ED2060128 /* Pods */,
+				BD3AA55EFB6223C4A1044534 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,10 +319,13 @@
 			isa = PBXGroup;
 			children = (
 				C0F2C1F21CC04C6A0070AA8D /* AppDelegate.swift */,
-				C0F2C1F41CC04C6A0070AA8D /* ViewController.swift */,
-				C0F2C1F61CC04C6A0070AA8D /* Main.storyboard */,
+				C0E956C91CC0A3AF00897238 /* Extensions */,
+				C0F2C24D1CC04C940070AA8D /* Helper Files */,
+				C0F2C24E1CC04C9A0070AA8D /* Sevices */,
+				C0F2C24F1CC04CA10070AA8D /* Models */,
+				C0F2C2501CC04CA70070AA8D /* Views */,
+				C0F2C2511CC04CAE0070AA8D /* Controllers */,
 				C0F2C1F91CC04C6A0070AA8D /* Assets.xcassets */,
-				C0F2C1FB1CC04C6A0070AA8D /* LaunchScreen.storyboard */,
 				C0F2C1FE1CC04C6A0070AA8D /* Info.plist */,
 			);
 			path = DINC;
@@ -211,11 +362,13 @@
 		C0F2C22A1CC04C6B0070AA8D /* DINC WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				C0F2C22D1CC04C6B0070AA8D /* InterfaceController.swift */,
 				C0F2C22F1CC04C6B0070AA8D /* ExtensionDelegate.swift */,
-				C0F2C2311CC04C6B0070AA8D /* NotificationController.swift */,
-				C0F2C2331CC04C6B0070AA8D /* GlanceController.swift */,
-				C0F2C2351CC04C6B0070AA8D /* ComplicationController.swift */,
+				C074E7BB1CC5B68300B4D224 /* Extensions */,
+				C02E7DF71CC202B700A65ACC /* Helper Files */,
+				C02E7DEB1CC1EF3E00A65ACC /* Models */,
+				C02E7E0E1CC3187600A65ACC /* Custom Rows */,
+				C0BB25FF1CC1B518005D740C /* Internal Controllers */,
+				C02E7DF41CC2013A00A65ACC /* External Controllers */,
 				C0F2C2371CC04C6B0070AA8D /* Assets.xcassets */,
 				C0F2C2391CC04C6B0070AA8D /* Info.plist */,
 				C0F2C22B1CC04C6B0070AA8D /* Supporting Files */,
@@ -231,6 +384,65 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C0F2C24D1CC04C940070AA8D /* Helper Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0F2C2561CC04D4E0070AA8D /* Magic.swift */,
+				C0F2C2541CC04D4A0070AA8D /* Keys.swift */,
+				C0772E741CC0B2A50036CB45 /* Enums.swift */,
+				C0F2C2521CC04D450070AA8D /* Constants.swift */,
+				C0772E7B1CC0BB730036CB45 /* KeychainWrapper.swift */,
+			);
+			name = "Helper Files";
+			sourceTree = "<group>";
+		};
+		C0F2C24E1CC04C9A0070AA8D /* Sevices */ = {
+			isa = PBXGroup;
+			children = (
+				C0F2C2581CC04D530070AA8D /* PlaidService.swift */,
+				C0772E761CC0B2D90036CB45 /* PlaidManager.swift */,
+			);
+			name = Sevices;
+			sourceTree = "<group>";
+		};
+		C0F2C24F1CC04CA10070AA8D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C0E956CC1CC0A46200897238 /* Account.swift */,
+				C0772E791CC0B9100036CB45 /* Parameters.swift */,
+				C0F2C25A1CC04D580070AA8D /* Transaction.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		C0F2C2501CC04CA70070AA8D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C0F2C1F61CC04C6A0070AA8D /* Main.storyboard */,
+				C0F2C1FB1CC04C6A0070AA8D /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		C0F2C2511CC04CAE0070AA8D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C0F2C1F41CC04C6A0070AA8D /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		DD0888A0D560D65ED2060128 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62FCFEC18B794B459F247989 /* Pods-DINC.debug.xcconfig */,
+				59DC5B7C182D2CC63BF29186 /* Pods-DINC.release.xcconfig */,
+				3CAAAF42CBADC24ECE5E243C /* Pods-DINC WatchKit Extension.debug.xcconfig */,
+				3735C3C23FA8812C3C935370 /* Pods-DINC WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -238,10 +450,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0F2C2441CC04C6B0070AA8D /* Build configuration list for PBXNativeTarget "DINC" */;
 			buildPhases = (
+				02B88F88EB3F58EFCF806D32 /* Check Pods Manifest.lock */,
 				C0F2C1EB1CC04C6A0070AA8D /* Sources */,
 				C0F2C1EC1CC04C6A0070AA8D /* Frameworks */,
 				C0F2C1ED1CC04C6A0070AA8D /* Resources */,
 				C0F2C2431CC04C6B0070AA8D /* Embed Watch Content */,
+				C0F2C25C1CC04D8A0070AA8D /* ShellScript */,
+				5F8BF75E020CF8D4114B5CC8 /* Embed Pods Frameworks */,
+				B4FA61513EB12D7B4AF8581D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -310,9 +526,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0F2C23C1CC04C6B0070AA8D /* Build configuration list for PBXNativeTarget "DINC WatchKit Extension" */;
 			buildPhases = (
+				CEB906507060AA5C305407BD /* Check Pods Manifest.lock */,
 				C0F2C2221CC04C6B0070AA8D /* Sources */,
 				C0F2C2231CC04C6B0070AA8D /* Frameworks */,
 				C0F2C2241CC04C6B0070AA8D /* Resources */,
+				71103FF32693B079F4C1F56A /* Embed Pods Frameworks */,
+				55091D91D23FD3C3CA072A12 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -335,6 +554,7 @@
 				TargetAttributes = {
 					C0F2C1EE1CC04C6A0070AA8D = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = DKHY464262;
 					};
 					C0F2C2021CC04C6B0070AA8D = {
 						CreatedOnToolsVersion = 7.3;
@@ -349,6 +569,7 @@
 					};
 					C0F2C2251CC04C6B0070AA8D = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = DKHY464262;
 					};
 				};
 			};
@@ -418,13 +639,130 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02B88F88EB3F58EFCF806D32 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		55091D91D23FD3C3CA072A12 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DINC WatchKit Extension/Pods-DINC WatchKit Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F8BF75E020CF8D4114B5CC8 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DINC/Pods-DINC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71103FF32693B079F4C1F56A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DINC WatchKit Extension/Pods-DINC WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4FA61513EB12D7B4AF8581D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DINC/Pods-DINC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0F2C25C1CC04D8A0070AA8D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "TAGS=\"TODO:|FIXME:|TESTING:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
+		};
+		CEB906507060AA5C305407BD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C0F2C1EB1CC04C6A0070AA8D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0E956CB1CC0A3D300897238 /* StringExtensions.swift in Sources */,
+				C0F2C25B1CC04D580070AA8D /* Transaction.swift in Sources */,
+				C0772E7A1CC0B9100036CB45 /* Parameters.swift in Sources */,
+				C0772E7C1CC0BB730036CB45 /* KeychainWrapper.swift in Sources */,
 				C0F2C1F51CC04C6A0070AA8D /* ViewController.swift in Sources */,
+				C0F2C2551CC04D4A0070AA8D /* Keys.swift in Sources */,
+				C0F2C2591CC04D530070AA8D /* PlaidService.swift in Sources */,
+				C0E956CD1CC0A46200897238 /* Account.swift in Sources */,
+				C0772E771CC0B2D90036CB45 /* PlaidManager.swift in Sources */,
 				C0F2C1F31CC04C6A0070AA8D /* AppDelegate.swift in Sources */,
+				C0F2C2571CC04D4E0070AA8D /* Magic.swift in Sources */,
+				C0F2C2531CC04D450070AA8D /* Constants.swift in Sources */,
+				C0772E751CC0B2A50036CB45 /* Enums.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,11 +786,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0E0C61C1CC48AF30013DDD4 /* NSDateExtensions.swift in Sources */,
 				C0F2C2321CC04C6B0070AA8D /* NotificationController.swift in Sources */,
 				C0F2C2301CC04C6B0070AA8D /* ExtensionDelegate.swift in Sources */,
+				C02E7E041CC214B200A65ACC /* Utilities.swift in Sources */,
+				C02E7DF91CC202D900A65ACC /* Magic.swift in Sources */,
+				C02E7DEE1CC1EF9100A65ACC /* WTransaction.swift in Sources */,
+				C02E7E0B1CC3132E00A65ACC /* MonthlyBudgetManager.swift in Sources */,
 				C0F2C2361CC04C6B0070AA8D /* ComplicationController.swift in Sources */,
-				C0F2C22E1CC04C6B0070AA8D /* InterfaceController.swift in Sources */,
+				C02E7E0D1CC3185F00A65ACC /* TransactionRow.swift in Sources */,
+				C02E7DFB1CC2037700A65ACC /* StringExtensions.swift in Sources */,
+				C02E7DFD1CC20AFA00A65ACC /* UpdatedSavingsController.swift in Sources */,
+				C0E0C61A1CC362CC0013DDD4 /* ComplicationManager.swift in Sources */,
+				C02E7E061CC217FB00A65ACC /* Theme.swift in Sources */,
+				C02E7DFF1CC2123E00A65ACC /* SetBudgetController.swift in Sources */,
+				C02E7DF61CC202B000A65ACC /* DBAlert.swift in Sources */,
+				C02E7DF01CC1FF3900A65ACC /* ProjectionController.swift in Sources */,
+				C02E7E011CC2127000A65ACC /* Constants.swift in Sources */,
+				C02E7E131CC3492200A65ACC /* ComplicationConfigurations.swift in Sources */,
+				C074E7BA1CC5550400B4D224 /* EfficiencyController.swift in Sources */,
+				C0F2C22E1CC04C6B0070AA8D /* PriceController.swift in Sources */,
 				C0F2C2341CC04C6B0070AA8D /* GlanceController.swift in Sources */,
+				C02E7E091CC307FB00A65ACC /* WTransactionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,12 +949,16 @@
 		};
 		C0F2C23D1CC04C6B0070AA8D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CAAAF42CBADC24ECE5E243C /* Pods-DINC WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "DINC WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DHour.DINC.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -609,12 +968,16 @@
 		};
 		C0F2C23E1CC04C6B0070AA8D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3735C3C23FA8812C3C935370 /* Pods-DINC WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "DINC WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DHour.DINC.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -656,8 +1019,10 @@
 		};
 		C0F2C2451CC04C6B0070AA8D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62FCFEC18B794B459F247989 /* Pods-DINC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DINC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DHour.DINC;
@@ -667,8 +1032,10 @@
 		};
 		C0F2C2461CC04C6B0070AA8D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59DC5B7C182D2CC63BF29186 /* Pods-DINC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DINC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DHour.DINC;
@@ -741,6 +1108,7 @@
 				C0F2C23E1CC04C6B0070AA8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0F2C2401CC04C6B0070AA8D /* Build configuration list for PBXNativeTarget "DINC WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -749,6 +1117,7 @@
 				C0F2C2421CC04C6B0070AA8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0F2C2441CC04C6B0070AA8D /* Build configuration list for PBXNativeTarget "DINC" */ = {
 			isa = XCConfigurationList;
@@ -757,6 +1126,7 @@
 				C0F2C2461CC04C6B0070AA8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0F2C2471CC04C6B0070AA8D /* Build configuration list for PBXNativeTarget "DINCTests" */ = {
 			isa = XCConfigurationList;
@@ -765,6 +1135,7 @@
 				C0F2C2491CC04C6B0070AA8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0F2C24A1CC04C6B0070AA8D /* Build configuration list for PBXNativeTarget "DINCUITests" */ = {
 			isa = XCConfigurationList;
@@ -773,6 +1144,7 @@
 				C0F2C24C1CC04C6B0070AA8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
