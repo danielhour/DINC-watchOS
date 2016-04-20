@@ -6,19 +6,24 @@ DINC is an Apple Watch app that helps you track/control your Disposable Income u
 ## **FEATURES**
 
 *1990's Calculator Layout*
-<br>
 How a user enters in transaction costs
-<img src="https://github.com/danielhour/DINC/raw/dev/Screenshots/PriceController.gif" width="175">
+<br>
+<img src="https://github.com/danielhour/DINC/raw/dev/Screenshots/PriceController.gif" width="200">
 
 *Spending Efficiency Rating*
+See if you're meeting your DINC goals and if you're setting the appropriate Daily Budget for yourself.
 <br>
-See if you're spending like Scrooge or like Johnny Football.
+<img src="https://github.com/danielhour/DINC/raw/dev/Screenshots/ProjectionController.gif" width="200">
+
+*Monthly Over/Under Projection*
+See how much money you can save by acting like Scrooge or see how much you you're out if you decide to TREAT YO'SELF.
+<br>
 <img src="https://github.com/danielhour/DINC/raw/dev/Screenshots/efficiency.png" width="175">
 
 *Complication & Glance Support*
+Out-of-sight leads to out-of-mind - which is why the DINC app is best utilized with a Complication on the watch face or an easy to find Glance.
 <br>
-Out-of-sight, out-of-mind. Which is why DINC is best utilized with a complication on the watch face.
-<img src="https://github.com/danielhour/DINC/raw/dev/Screenshots/complication.png" width="175"><img src="https://github.com/danielhour/DINC/raw/dev/Screenshots/glance.png" width="175">
+<img src="https://github.com/danielhour/DINC/raw/dev/Screenshots/complication.png" width="175">  <img src="https://github.com/danielhour/DINC/raw/dev/Screenshots/glance.png" width="175">
 
 [Full Storyboard Layout](https://github.com/danielhour/DINC/blob/dev/Screenshots/DINC%20storyboard.png)
 <br><br>
