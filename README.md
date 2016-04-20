@@ -7,9 +7,10 @@
 
 DINC is a watch app that helps you track/control your Disposable Income usage.
 
-Here’s a blog post on why I created it: 
+Here’s a blog post on why I created it: [Medium](http://www.templink.com)
 
-Here’s the same blog post on why I am not submitting it to the App Store and am instead just posting it on GitHub: [](http://www.yolo.com)
+Here’s the same blog post on why I am posting it on GitHub and NOT submitting it to the App Store: [Medium](http://www.templink.com)
+<br><br>
 
 
 ## **COCOAPODS**
@@ -23,14 +24,14 @@ This project uses a few well-known & well-documented 3rd-party libraries from Co
 
 ## **FAQ**
 
-Why is the iPhone app just a white screen?
+**Why is the iPhone app just a white screen?**
 - Because everything runs on the Watch. LITERALLY everything. I wanted a true stand-alone watch app. If you want to see your purchases on your iPhone… then well, download your credit card’s app and look it up there. I have no interest in reinventing the wheel.
 
-Why are you doing manual entries for purchases?
+**Why are you doing manual entries for purchases?**
 - My original idea was to use the Plaid API but transactions are not fetched/updated immediately. In fact, they’re updated quite infrequently (in sandbox at least) so it would not give the watch wearer an accurate account of their daily budget
 
-Why does the WatchKit Extension take so long to install?
-- EVERYTHING is on the watch. in fact, this app really doesn’t need the iPhone. However, this means the Cocoapod libraries I’m using are taking awhile to install
+**Why does the WatchKit Extension take so long to install?**
+- EVERYTHING is on the watch. in fact, this app really doesn’t need the iPhone. However, this means the Cocoapod libraries I’m using are taking awhile to install.
 <br><br>
 
 
