@@ -5,8 +5,8 @@ DINC is an Apple Watch app that helps you track/control your Disposable Income u
 
 ## **FEATURES**
 
-Complication Support
-![](https://github.com/danielhour/DINC/raw/dev/Screenshots/complication.png =150x)
+Complication Support<br>
+<img src="https://github.com/danielhour/DINC/raw/dev/Screenshots/complication.png" width="150">
 <br><br>
 
 ## **OVERVIEW**
