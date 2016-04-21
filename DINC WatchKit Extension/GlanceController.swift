@@ -13,7 +13,7 @@ import Foundation
 
 
 /**
- *
+ * Object for watch glances
  */
 struct GlanceObject {
     
@@ -37,7 +37,7 @@ struct GlanceObject {
 
 
 /**
- *
+ * Controller for the watch glance
  */
 class GlanceController: WKInterfaceController {
 

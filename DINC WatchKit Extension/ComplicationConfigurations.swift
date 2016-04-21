@@ -9,6 +9,10 @@
 
 import ClockKit
 
+
+/**
+ * Helper class to setup custom complications
+ */
 class ComplicationConfigurations {
     
     

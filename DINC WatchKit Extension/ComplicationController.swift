@@ -11,8 +11,15 @@ import ClockKit
 import Timepiece
 
 
+/**
+ * Configurations for Watch Complications
+ */
 class ComplicationController: NSObject, CLKComplicationDataSource {
     
+    
+    //---------------------------------------------------------------------------------------------------------
+    
+    // MARK: - Properties
     
     var currentMonthlyTotal: Double!
     var moneySpent: Double!

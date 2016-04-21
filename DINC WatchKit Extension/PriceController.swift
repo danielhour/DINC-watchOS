@@ -16,7 +16,7 @@ import Money
 
 
 /**
- *
+ * Controller that displays the 90s throwback casio calculator watch layout that allows a user to manually input their new transactions.
  */
 class PriceController: WKInterfaceController {
 

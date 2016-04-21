@@ -12,6 +12,9 @@ import Timepiece
 import Foundation
 
 
+/**
+ * Controller that displays the over/under projection of what a user's monthly total in disposable income spent will be.
+ */
 class ProjectionController: WKInterfaceController {
     
     

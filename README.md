@@ -1,9 +1,6 @@
 ## **WHAT IS DINC?**
 DINC is an Apple Watch app that helps you track/control your Disposable Income (D.INC) usage.
-<br><br>
 
-
-## **OVERVIEW**
 Here’s a blog post on why I created this app and why I'm "releasing" it on GitHub instead of submitting it to the App Store: [Medium](https://medium.com/@dhour/a-new-strategy-for-how-i-publish-my-apps-8e9de05c7bf1)
 <br><br>
 
@@ -21,7 +18,7 @@ Here’s a blog post on why I created this app and why I'm "releasing" it on Git
 <img src="https://github.com/danielhour/DINC/raw/dev/Screenshots/ProjectionController.gif" width="350">
 
 *Monthly Over/Under Projection*
-<br>See how much money you can save by acting like Scrooge or see how much you you're out if you decide to TREAT YO'SELF.
+<br>See how much money you can save by acting like Scrooge McDuck or see how much you're out if you decide you want to try and be Johnny Football for a month.
 <br>
 <img src="https://github.com/danielhour/DINC/raw/dev/Screenshots/efficiency.png" width="175">
 
@@ -32,6 +29,11 @@ Here’s a blog post on why I created this app and why I'm "releasing" it on Git
 
 
 [YOU CAN FIND THE FULL STORYBOARD LAYOUT HERE](https://github.com/danielhour/DINC/blob/dev/Screenshots/DINC%20storyboard.png)
+<br><br>
+
+
+## **How I Personally Use the App**
+My goal everyday is to spend *LESS* then the daily budget I set. The "unspent" money then helps me make decisions on how much I should spend at social gatherings, how much extra money I can save, or how much I should absolutely blow and go nuts during true TREAT YO'SELF! moments.
 <br><br>
 
 

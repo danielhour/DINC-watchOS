@@ -13,7 +13,7 @@ import Foundation
 
 
 /**
- *
+ * Controller that displays the updated "Safe-to-spend" amount and a list of today's transactions
  */
 class UpdatedSavingsController: WKInterfaceController {
     

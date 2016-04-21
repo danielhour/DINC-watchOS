@@ -11,6 +11,9 @@ import WatchKit
 import Foundation
 
 
+/**
+ * Controller that allows a user to update their daily budget amount
+ */
 class SetBudgetController: WKInterfaceController {
     
     

@@ -23,7 +23,7 @@ enum EfficiencyRatings: String {
 
 
 /**
- *
+ * Controller that displays a user's spending efficiency rating
  */
 class EfficiencyController: WKInterfaceController {
     
