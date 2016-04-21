@@ -34,7 +34,8 @@ Here’s a blog post on why I created this app and why I'm "releasing" it on Git
 
 ## **How I Personally Use the App**
 My goal everyday is to spend *LESS* then the daily budget I set. The "unspent" money then helps me make more informed decisions on how much I should save or how much I should spend at social gatherings. And of course in those rare moments... how much should be spent to...
-<img src="https://github.com/danielhour/DINC/raw/dev/Screenshots/treatyoself.png" width="350">
+<br>
+<img src="https://github.com/danielhour/DINC/raw/dev/Screenshots/treatyoself.gif" width="350">
 <br><br>
 
 
