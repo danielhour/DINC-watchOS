@@ -5,6 +5,11 @@ Here’s a blog post on why I created this app and why I'm "releasing" it on Git
 <br><br>
 
 
+## **Requirements to Install**
+- Xcode 7, Swift 2.2, Apple Watch (Watch OS2)
+<br><br>
+
+
 ## **FEATURES**
 
 *Quick Transaction Entry*
@@ -61,9 +66,15 @@ This project uses a few well-known & well-documented 3rd-party libraries from Co
 <br><br>
 
 
+## **TODO**
+- [] Unit Tests
+<br><br>
+
+
 ## **DOCUMENTATION**
 Created with [Jazzy](https://github.com/realm/jazzy). For best viewing, download/clone the repo and open the index.html file in the `docs` folder
 <br><br>
+
 
 
 
