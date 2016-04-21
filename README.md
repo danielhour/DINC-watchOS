@@ -25,7 +25,7 @@ Here’s a blog post on why I created this app and why I'm "releasing" it on Git
 *Complication & Glance Support*
 <br>Out-of-sight leads to out-of-mind which is why the DINC app is best utilized with a watch face complication or an easy to access glance.
 <br>
-<img src="https://github.com/danielhour/DINC/raw/dev/Screenshots/complication.png" width="175">    <img src="https://github.com/danielhour/DINC/raw/dev/Screenshots/glance.png" width="175">
+<img src="https://github.com/danielhour/DINC/raw/dev/Screenshots/complication.png" width="175">  <img src="https://github.com/danielhour/DINC/raw/dev/Screenshots/glance.png" width="175">
 
 
 [YOU CAN FIND THE FULL STORYBOARD LAYOUT HERE](https://github.com/danielhour/DINC/blob/dev/Screenshots/DINC%20storyboard.png)
@@ -33,7 +33,8 @@ Here’s a blog post on why I created this app and why I'm "releasing" it on Git
 
 
 ## **How I Personally Use the App**
-My goal everyday is to spend *LESS* then the daily budget I set. The "unspent" money then helps me make decisions on how much I should spend at social gatherings, how much extra money I can save, or how much I should absolutely blow and go nuts during true TREAT YO'SELF! moments.
+My goal everyday is to spend *LESS* then the daily budget I set. The "unspent" money then helps me make more informed decisions on how much I should save or how much I should spend at social gatherings. And of course in those rare moments... how much should be spent to...
+<img src="https://github.com/danielhour/DINC/raw/dev/Screenshots/treatyoself.png" width="350">
 <br><br>
 
 
@@ -43,11 +44,6 @@ This project uses a few well-known & well-documented 3rd-party libraries from Co
 - [RealmSwift](https://github.com/realm/realm-cocoa) - for persisting local data
 - [Timepiece](https://github.com/naoty/Timepiece) - pre-made NSDate extensions
 - [Money](https://github.com/danthorpe/Money) - Swift value types for working with money & currency
-<br><br>
-
-
-## **DOCUMENTATION**
-Created with [Jazzy](https://github.com/realm/jazzy). For best viewing, download/clone the repo and open the index.html file in the `docs` folder
 <br><br>
 
 
@@ -61,6 +57,11 @@ Created with [Jazzy](https://github.com/realm/jazzy). For best viewing, download
 
 **Why does the WatchKit Extension take so long to install?**
 - To get a true stand-alone watch app, EVERYTHING has to be on the watch. Which means installing the Cocoapod libraries directly onto the watch.
+<br><br>
+
+
+## **DOCUMENTATION**
+Created with [Jazzy](https://github.com/realm/jazzy). For best viewing, download/clone the repo and open the index.html file in the `docs` folder
 <br><br>
 
 
