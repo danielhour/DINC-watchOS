@@ -52,28 +52,18 @@ class ProjectionController: WKInterfaceController {
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
-        for index in 0...99 {
-            let item = WKPickerItem()
-            item.title = "\(index)".currencyNoDecimals
-            items.append(item)
-        }
     }
 
     override func willActivate() {
         super.willActivate()
         
-        self.dailyBudgetPicker.focus()
+        self.configureStaticLabelsUI()
+    }
+    
+    override func didAppear() {
+        super.didAppear()
         
-        monthlyGoal = MonthlyBudgetManager.fullMonth()
-        moneySpent = WTransactionManager.moneySpent()
-        daysLeft = NSDate.today().endOfMonth.day - NSDate.today().day
-        
-        moneySpentLabel.setText("\(Money(moneySpent))")
-        daysLeftInMonthLabel.setText("\(daysLeft) Days Left")
-        
-        dailyBudgetPicker.setItems(items)
-        let db = NSUserDefaults.standardUserDefaults().integerForKey(userDefaults.dailyBudget)
-        dailyBudgetPicker.setSelectedItemIndex(db)
+        self.configurePickerUI()
     }
 
     override func didDeactivate() {
@@ -85,6 +75,7 @@ class ProjectionController: WKInterfaceController {
     
     //MARK: - IBActions
     
+    ///
     @IBAction func dailyBudgetPickerAction(value: Int) {
         let projected = Double(daysLeft * value)
         let overUnder = monthlyGoal - moneySpent - projected
@@ -101,6 +92,41 @@ class ProjectionController: WKInterfaceController {
     }
     
     
+    //---------------------------------------------------------------------------------------------------------
+    
+    //MARK: - Helper Methods
+    
+    
+    /**
+     Configures the static labels UI
+     */
+    private func configureStaticLabelsUI() {
+        monthlyGoal = MonthlyBudgetManager.fullMonth()
+        moneySpent = WTransactionManager.moneySpent()
+        daysLeft = NSDate.today().endOfMonth.day - NSDate.today().day
+        
+        moneySpentLabel.setText("\(Money(moneySpent))")
+        daysLeftInMonthLabel.setText("\(daysLeft) Days Left")
+    }
+    
+    
+    /**
+     Configures the number picker & sets the default number as the currently set daily budget
+     */
+    private func configurePickerUI() {
+        self.dailyBudgetPicker.focus()
+        
+        guard items.isEmpty else { return }
+        for index in 0...99 {
+            let item = WKPickerItem()
+            item.title = "\(index)".currencyNoDecimals
+            items.append(item)
+        }
+        
+        dailyBudgetPicker.setItems(items)
+        let db = NSUserDefaults.standardUserDefaults().integerForKey(userDefaults.dailyBudget)
+        dailyBudgetPicker.setSelectedItemIndex(db)
+    }
     
     
 }
