@@ -47,7 +47,7 @@ This project uses a few well-known & well-documented 3rd-party libraries from Co
 
 
 ## **DOCUMENTATION**
-Created with [Jazzy](https://github.com/realm/jazzy). For best viewing, download/clone the repo and open the index.html file in the `Docs` folder
+Created with [Jazzy](https://github.com/realm/jazzy). For best viewing, download/clone the repo and open the index.html file in the `docs` folder
 <br><br>
 
 
