@@ -13,7 +13,7 @@
     <a title="  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (57% documented)</p>
+        <p><a href="index.html"> Docs</a> (58% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -99,7 +99,7 @@
             
             <a href='#strong_what_is_dinc_strong' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='strong_what_is_dinc_strong'><strong>WHAT IS DINC?</strong></h2>
 
-<p>DINC is an Apple Watch app that helps you track/control your Disposable Income (D.INC) usage.</p>
+<p>DINC is a stand-alone Apple Watch app that helps you track/control your Disposable Income (D.INC) usage.</p>
 
 <p>Here’s a blog post on why I created this app and why I&rsquo;m <q>releasing</q> it on GitHub instead of submitting it to the App Store: <a href="https://medium.com/@dhour/a-new-strategy-for-how-i-publish-my-apps-8e9de05c7bf1">Medium</a>
 <br><br></p>
@@ -121,16 +121,18 @@
 <img src="https://github.com/danielhour/DINC/raw/dev/Screenshots/efficiency.png" width="175"></p>
 
 <p><em>Complication &amp; Glance Support</em>
-<br>Out-of-sight leads to out-of-mind which is why the DINC app is best utilized with a watch face complication or an easy to access glance.
+<br>Out-of-sight leads to out-of-mind which is why the DINC app is best utilized with a watch face complication or an easy to access glance. This way you have a constant reminder of what your safe-to-spend DINC number is.
 <br>
-<img src="https://github.com/danielhour/DINC/raw/dev/Screenshots/complication.png" width="175">    <img src="https://github.com/danielhour/DINC/raw/dev/Screenshots/glance.png" width="175"></p>
+<img src="https://github.com/danielhour/DINC/raw/dev/Screenshots/complication.png" width="175">  <img src="https://github.com/danielhour/DINC/raw/dev/Screenshots/glance.png" width="175"></p>
 
 <p><a href="https://github.com/danielhour/DINC/blob/dev/Screenshots/DINC%20storyboard.png">YOU CAN FIND THE FULL STORYBOARD LAYOUT HERE</a>
 <br><br></p>
-<a href='#strong_how_i_personally_use_the_app_strong' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='strong_how_i_personally_use_the_app_strong'><strong>How I Personally Use the App</strong></h2>
+<a href='#strong_requirements_for_installation_strong' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='strong_requirements_for_installation_strong'><strong>REQUIREMENTS FOR INSTALLATION</strong></h2>
 
-<p>My goal everyday is to spend <em>LESS</em> then the daily budget I set. The <q>unspent</q> money then helps me make decisions on how much I should spend at social gatherings, how much extra money I can save, or how much I should absolutely blow and go nuts during true TREAT YO&#39;SELF! moments.
-<br><br></p>
+<ul>
+<li>Xcode 7, Swift 2.2, Apple Watch (Watch OS2)
+<br><br></li>
+</ul>
 <a href='#strong_cocoapods_strong' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='strong_cocoapods_strong'><strong>COCOAPODS</strong></h2>
 
 <p>This project uses a few well-known &amp; well-documented 3rd-party libraries from Cocoapods.</p>
@@ -141,10 +143,6 @@
 <li><a href="https://github.com/danthorpe/Money">Money</a> - Swift value types for working with money &amp; currency
 <br><br></li>
 </ul>
-<a href='#strong_documentation_strong' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='strong_documentation_strong'><strong>DOCUMENTATION</strong></h2>
-
-<p>Created with <a href="https://github.com/realm/jazzy">Jazzy</a>. For best viewing, download/clone the repo and open the index.html file in the <code>Docs Folder</code>
-<br><br></p>
 <a href='#strong_faq_strong' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='strong_faq_strong'><strong>FAQ</strong></h2>
 
 <p><strong>Why is the iPhone app just a white screen?</strong>
@@ -154,7 +152,22 @@
 - My original idea was to use the Plaid API but transactions are not fetched/updated immediately. In fact, they’re updated quite infrequently (in sandbox at least) so it would not give the watch wearer an accurate account of their daily budget. When there is an API that fetches transactions in true real-time, I&rsquo;ll definitely integrate it!</p>
 
 <p><strong>Why does the WatchKit Extension take so long to install?</strong>
-- To get a true stand-alone watch app, EVERYTHING has to be on the watch. Which means installing the Cocoapod libraries directly onto the watch.
+- To get a true stand-alone watch app, EVERYTHING has to be on the watch. Which means installing the Cocoapod libraries directly onto the watch.</p>
+
+<p><strong>How do you use the app in your everyday life?</strong>
+So my goal everyday is to spend <em>LESS</em> then the daily budget I set. The <q>unspent</q> money then helps me make more informed decisions on how much I should save or how much I should spend at social gatherings. And of course in those rare moments&hellip; how much should be spent to&hellip;
+<br>
+<img src="https://github.com/danielhour/DINC/raw/dev/Screenshots/treatyoself.gif" width="350">
+<br><br></p>
+<a href='#strong_todo_strong' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='strong_todo_strong'><strong>TODO</strong></h2>
+
+<ul>
+<li>[ ] Unit Tests
+<br><br></li>
+</ul>
+<a href='#strong_documentation_strong' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='strong_documentation_strong'><strong>DOCUMENTATION</strong></h2>
+
+<p>Created with <a href="https://github.com/realm/jazzy">Jazzy</a>. For best viewing, download/clone the repo and open the index.html file in the <code>docs</code> folder
 <br><br></p>
 
           </section>

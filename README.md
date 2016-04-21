@@ -1,12 +1,7 @@
 ## **WHAT IS DINC?**
-DINC is an Apple Watch app that helps you track/control your Disposable Income (D.INC) usage.
+DINC is a stand-alone Apple Watch app that helps you track/control your Disposable Income (D.INC) usage.
 
 Here’s a blog post on why I created this app and why I'm "releasing" it on GitHub instead of submitting it to the App Store: [Medium](https://medium.com/@dhour/a-new-strategy-for-how-i-publish-my-apps-8e9de05c7bf1)
-<br><br>
-
-
-## **Requirements to Install**
-- Xcode 7, Swift 2.2, Apple Watch (Watch OS2)
 <br><br>
 
 
@@ -28,7 +23,7 @@ Here’s a blog post on why I created this app and why I'm "releasing" it on Git
 <img src="https://github.com/danielhour/DINC/raw/dev/Screenshots/efficiency.png" width="175">
 
 *Complication & Glance Support*
-<br>Out-of-sight leads to out-of-mind which is why the DINC app is best utilized with a watch face complication or an easy to access glance.
+<br>Out-of-sight leads to out-of-mind which is why the DINC app is best utilized with a watch face complication or an easy to access glance. This way you have a constant reminder of what your safe-to-spend DINC number is.
 <br>
 <img src="https://github.com/danielhour/DINC/raw/dev/Screenshots/complication.png" width="175">  <img src="https://github.com/danielhour/DINC/raw/dev/Screenshots/glance.png" width="175">
 
@@ -37,10 +32,8 @@ Here’s a blog post on why I created this app and why I'm "releasing" it on Git
 <br><br>
 
 
-## **How I Personally Use the App**
-My goal everyday is to spend *LESS* then the daily budget I set. The "unspent" money then helps me make more informed decisions on how much I should save or how much I should spend at social gatherings. And of course in those rare moments... how much should be spent to...
-<br>
-<img src="https://github.com/danielhour/DINC/raw/dev/Screenshots/treatyoself.gif" width="350">
+## **REQUIREMENTS FOR INSTALLATION**
+- Xcode 7, Swift 2.2, Apple Watch (Watch OS2)
 <br><br>
 
 
@@ -63,11 +56,16 @@ This project uses a few well-known & well-documented 3rd-party libraries from Co
 
 **Why does the WatchKit Extension take so long to install?**
 - To get a true stand-alone watch app, EVERYTHING has to be on the watch. Which means installing the Cocoapod libraries directly onto the watch.
+
+**How do you use the app in your everyday life?**
+So my goal everyday is to spend *LESS* then the daily budget I set. The "unspent" money then helps me make more informed decisions on how much I should save or how much I should spend at social gatherings. And of course in those rare moments... how much should be spent to...
+<br>
+<img src="https://github.com/danielhour/DINC/raw/dev/Screenshots/treatyoself.gif" width="350">
 <br><br>
 
 
 ## **TODO**
-- [] Unit Tests
+- [ ] Unit Tests
 <br><br>
 
 

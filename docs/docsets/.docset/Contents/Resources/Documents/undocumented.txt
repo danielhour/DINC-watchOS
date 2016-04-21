@@ -48,8 +48,8 @@ DBAlert.swift
 ProjectionController.swift
 	override func awakeWithContext(context: AnyObject?)
 	override func willActivate()
+	override func didAppear()
 	override func didDeactivate()
-	@IBAction func dailyBudgetPickerAction(value: Int)
 Constants.swift
 	struct Constants
 EfficiencyController.swift
