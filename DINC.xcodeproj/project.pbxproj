@@ -49,7 +49,6 @@
 		C0F2C2361CC04C6B0070AA8D /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2C2351CC04C6B0070AA8D /* ComplicationController.swift */; };
 		C0F2C2381CC04C6B0070AA8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0F2C2371CC04C6B0070AA8D /* Assets.xcassets */; };
 		C0F2C2531CC04D450070AA8D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2C2521CC04D450070AA8D /* Constants.swift */; };
-		C0F2C2551CC04D4A0070AA8D /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2C2541CC04D4A0070AA8D /* Keys.swift */; };
 		C0F2C2571CC04D4E0070AA8D /* Magic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2C2561CC04D4E0070AA8D /* Magic.swift */; };
 		C0F2C2591CC04D530070AA8D /* PlaidService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2C2581CC04D530070AA8D /* PlaidService.swift */; };
 		C0F2C25B1CC04D580070AA8D /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2C25A1CC04D580070AA8D /* Transaction.swift */; };
@@ -169,7 +168,6 @@
 		C0F2C2371CC04C6B0070AA8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0F2C2391CC04C6B0070AA8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0F2C2521CC04D450070AA8D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		C0F2C2541CC04D4A0070AA8D /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		C0F2C2561CC04D4E0070AA8D /* Magic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Magic.swift; sourceTree = "<group>"; };
 		C0F2C2581CC04D530070AA8D /* PlaidService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaidService.swift; sourceTree = "<group>"; };
 		C0F2C25A1CC04D580070AA8D /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
@@ -388,7 +386,6 @@
 			isa = PBXGroup;
 			children = (
 				C0F2C2561CC04D4E0070AA8D /* Magic.swift */,
-				C0F2C2541CC04D4A0070AA8D /* Keys.swift */,
 				C0772E741CC0B2A50036CB45 /* Enums.swift */,
 				C0F2C2521CC04D450070AA8D /* Constants.swift */,
 				C0772E7B1CC0BB730036CB45 /* KeychainWrapper.swift */,
@@ -755,7 +752,6 @@
 				C0772E7A1CC0B9100036CB45 /* Parameters.swift in Sources */,
 				C0772E7C1CC0BB730036CB45 /* KeychainWrapper.swift in Sources */,
 				C0F2C1F51CC04C6A0070AA8D /* ViewController.swift in Sources */,
-				C0F2C2551CC04D4A0070AA8D /* Keys.swift in Sources */,
 				C0F2C2591CC04D530070AA8D /* PlaidService.swift in Sources */,
 				C0E956CD1CC0A46200897238 /* Account.swift in Sources */,
 				C0772E771CC0B2D90036CB45 /* PlaidManager.swift in Sources */,

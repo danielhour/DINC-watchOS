@@ -84,7 +84,7 @@ class EfficiencyController: WKInterfaceController {
     private func configureMultiplierAndEfficiencyUI() {
         let db = NSUserDefaults.standardUserDefaults().integerForKey(userDefaults.dailyBudget)
         let multiplierRaw = averageDailySpend / Double(db)
-        let multiplier = Double(round(10*multiplierRaw)/10)
+        let multiplier = Double(round(100*multiplierRaw)/100)
         multiplierLabel.setText("\(multiplier)X")
         
         switch multiplier {
