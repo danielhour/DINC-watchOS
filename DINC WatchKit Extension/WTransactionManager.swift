@@ -16,9 +16,7 @@ import Timepiece
  */
 class WTransactionManager: NSObject {
     
-    
     //---------------------------------------------------------------------------------------------------------
-    
     //MARK: - Fetch Methods
 
     /**
@@ -30,7 +28,6 @@ class WTransactionManager: NSObject {
         let realm = try! Realm()
         return realm.objects(WTransaction)
     }
-    
     
     /**
      Fetches all of today's `WTransaction`s
@@ -46,7 +43,6 @@ class WTransactionManager: NSObject {
         return transactions.map{WTransaction(transaction: $0)}
     }
     
-    
     /**
      Fetches the most recent transaction
      */
@@ -58,7 +54,6 @@ class WTransactionManager: NSObject {
         
         return WTransaction(transaction: last)
     }
-    
     
     /**
      Fetches all transactions and adds their total amount
@@ -72,9 +67,7 @@ class WTransactionManager: NSObject {
         return all.map{WTransaction(transaction: $0).amount}.reduce(0, combine: +)
     }
 
-    
     //---------------------------------------------------------------------------------------------------------
-    
     //MARK: - Add / Delete Methods
     
     /**
@@ -94,7 +87,6 @@ class WTransactionManager: NSObject {
         }
     }
     
-    
     /**
      Delete the selected purchase
      
@@ -111,7 +103,6 @@ class WTransactionManager: NSObject {
             realm.delete(todaysTransactions[row])
         }
     }
-    
     
     /**
      Deletes all `WTransaction` objects from Realm database
