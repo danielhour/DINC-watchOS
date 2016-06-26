@@ -14,7 +14,7 @@ import Foundation
 
 enum EfficiencyRatings: String {
     case Max = "SCROOGE MCDUCK" //0.0...0.4
-    case High = "HIGH" //0.4...0.8
+    case High = "GOOD" //0.4...0.8
     case Normal = "NORMAL" //0.8...1.0
     case Bad = "NOT GREAT" //1.0...1.3
     case Poor = "POOR" //1.3...1.6
@@ -27,9 +27,7 @@ enum EfficiencyRatings: String {
  */
 class EfficiencyController: WKInterfaceController {
     
-    
     //---------------------------------------------------------------------------------------------------------
-    
     //MARK: - Properties
     
     var averageDailySpend: Double!
@@ -40,9 +38,7 @@ class EfficiencyController: WKInterfaceController {
     
     
     //---------------------------------------------------------------------------------------------------------
-    
     //MARK: - View Life Cycle
-    
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -63,9 +59,7 @@ class EfficiencyController: WKInterfaceController {
     
     
     //---------------------------------------------------------------------------------------------------------
-    
     //MARK: - Helper Methods
-    
     
     /**
      Configure the `averageDailySpendLabel` UI
