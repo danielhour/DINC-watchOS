@@ -40,10 +40,8 @@ struct GlanceObject {
  * Controller for the watch glance
  */
 class GlanceController: WKInterfaceController {
-
     
     //---------------------------------------------------------------------------------------------------------
-    
     //MARK: - Properties
     
     ///
@@ -77,7 +75,6 @@ class GlanceController: WKInterfaceController {
     
     
     //---------------------------------------------------------------------------------------------------------
-    
     //MARK: - View Life Cycle
     
     override func awakeWithContext(context: AnyObject?) {
@@ -98,7 +95,6 @@ class GlanceController: WKInterfaceController {
     
     
     //---------------------------------------------------------------------------------------------------------
-    
     //MARK: - Helper Methods
     
 

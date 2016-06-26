@@ -17,9 +17,7 @@ import Foundation
  */
 class ProjectionController: WKInterfaceController {
     
-    
     //---------------------------------------------------------------------------------------------------------
-    
     //MARK: - Properties
 
     ///
@@ -44,9 +42,7 @@ class ProjectionController: WKInterfaceController {
     ///
     @IBOutlet var overUnderAmountLabel: WKInterfaceLabel!
     
-    
     //---------------------------------------------------------------------------------------------------------
-    
     //MARK: - View Life Cycle
     
     override func awakeWithContext(context: AnyObject?) {
@@ -70,9 +66,7 @@ class ProjectionController: WKInterfaceController {
         super.didDeactivate()
     }
     
-    
     //---------------------------------------------------------------------------------------------------------
-    
     //MARK: - IBActions
     
     ///
@@ -91,11 +85,8 @@ class ProjectionController: WKInterfaceController {
         }
     }
     
-    
     //---------------------------------------------------------------------------------------------------------
-    
     //MARK: - Helper Methods
-    
     
     /**
      Configures the static labels UI
@@ -108,7 +99,6 @@ class ProjectionController: WKInterfaceController {
         moneySpentLabel.setText("\(Money(moneySpent))")
         daysLeftInMonthLabel.setText("\(daysLeft) Days Left")
     }
-    
     
     /**
      Configures the number picker & sets the default number as the currently set daily budget

@@ -19,10 +19,8 @@ import Money
  * Controller that displays the 90s throwback casio calculator watch layout that allows a user to manually input their new transactions.
  */
 class PriceController: WKInterfaceController {
-
     
     //---------------------------------------------------------------------------------------------------------
-    
     //MARK: - Properties
     
     ///
@@ -37,10 +35,8 @@ class PriceController: WKInterfaceController {
     @IBOutlet var safeToSpendLabel: WKInterfaceLabel!
     ///
     @IBOutlet var purchaseLabel: WKInterfaceLabel!
-
     
     //---------------------------------------------------------------------------------------------------------
-    
     //MARK: - View Life Cycle
     
     override func awakeWithContext(context: AnyObject?) {
@@ -65,10 +61,8 @@ class PriceController: WKInterfaceController {
         super.didDeactivate()
         
     }
-
     
     //---------------------------------------------------------------------------------------------------------
-    
     //MARK: - IBActions
     
     @IBAction func purchaseButtonAction() {
@@ -133,9 +127,7 @@ class PriceController: WKInterfaceController {
         }
     }
     
-    
     //---------------------------------------------------------------------------------------------------------
-    
     //MARK: - Force Touch Methods
 
     
@@ -167,9 +159,7 @@ class PriceController: WKInterfaceController {
 
     
     //---------------------------------------------------------------------------------------------------------
-    
     //MARK: - Helper Methods
-
     
     /**
      Checks to see if a user has created a daily budget. If not, presents the `SetBudgetController`

@@ -17,9 +17,7 @@ import Foundation
  */
 class UpdatedSavingsController: WKInterfaceController {
     
-    
     //---------------------------------------------------------------------------------------------------------
-    
     //MARK: - Properties
     
     ///
@@ -41,7 +39,6 @@ class UpdatedSavingsController: WKInterfaceController {
     
     
     //---------------------------------------------------------------------------------------------------------
-    
     //MARK: - View Life Cycle
     
     override func awakeWithContext(context: AnyObject?) {
@@ -62,7 +59,6 @@ class UpdatedSavingsController: WKInterfaceController {
     
     
     //---------------------------------------------------------------------------------------------------------
-    
     //MARK: - WKInterfaceTable Methods
     
     override func table(table: WKInterfaceTable, didSelectRowAtIndex rowIndex: Int) {
@@ -81,9 +77,7 @@ class UpdatedSavingsController: WKInterfaceController {
     
     
     //---------------------------------------------------------------------------------------------------------
-    
     //MARK: - Helper Methods
-    
     
     /**
      Configures the Savings Label UI

@@ -16,9 +16,7 @@ import Foundation
  */
 class SetBudgetController: WKInterfaceController {
     
-    
     //---------------------------------------------------------------------------------------------------------
-    
     //MARK: - Properties
     
     ///the current device's screen height
@@ -39,7 +37,6 @@ class SetBudgetController: WKInterfaceController {
     
     
     //---------------------------------------------------------------------------------------------------------
-    
     //MARK: - View Life Cycle
     
     override func awakeWithContext(context: AnyObject?) {
@@ -58,7 +55,6 @@ class SetBudgetController: WKInterfaceController {
     
     
     //---------------------------------------------------------------------------------------------------------
-    
     //MARK: - IBActions
     
     @IBAction func selectPickerItem(value: Int) {
@@ -73,7 +69,6 @@ class SetBudgetController: WKInterfaceController {
     
     
     //---------------------------------------------------------------------------------------------------------
-    
     //MARK: - Helper Methods
     
     

@@ -18,7 +18,6 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     
     //---------------------------------------------------------------------------------------------------------
-    
     // MARK: - Properties
     
     var currentMonthlyTotal: Double!
@@ -26,7 +25,6 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     
     //---------------------------------------------------------------------------------------------------------
-
     // MARK: - Timeline Configuration
     
     func getSupportedTimeTravelDirectionsForComplication(complication: CLKComplication, withHandler handler: (CLKComplicationTimeTravelDirections) -> Void) {
@@ -47,7 +45,6 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     
     //---------------------------------------------------------------------------------------------------------
-    
     // MARK: - Timeline Population
     
     func getCurrentTimelineEntryForComplication(complication: CLKComplication, withHandler handler: ((CLKComplicationTimelineEntry?) -> Void)) {
@@ -90,7 +87,6 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     
     //---------------------------------------------------------------------------------------------------------
-
     // MARK: - Update Scheduling
     
     func getNextRequestedUpdateDateWithHandler(handler: (NSDate?) -> Void) {
@@ -111,7 +107,6 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     
     //---------------------------------------------------------------------------------------------------------
-
     // MARK: - Placeholder Templates
     
     func getPlaceholderTemplateForComplication(complication: CLKComplication, withHandler handler: (CLKComplicationTemplate?) -> Void) {
@@ -139,7 +134,6 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     
     //---------------------------------------------------------------------------------------------------------
-    
     // MARK: - Helper Methods
 
     /**
