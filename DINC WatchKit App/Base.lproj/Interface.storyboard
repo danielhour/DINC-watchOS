@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="G4a-QS-gCH">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="G4a-QS-gCH">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
@@ -64,10 +64,11 @@
                         <outlet property="overUnderAmountLabel" destination="1Ps-Ae-SHE" id="mZD-PZ-gbT"/>
                         <outlet property="overUnderTitleLabel" destination="J2S-fR-5GA" id="aN3-Af-YmX"/>
                         <outlet property="projectedMoneySpentLabel" destination="hJb-vZ-8dK" id="T5n-9h-izq"/>
+                        <segue destination="DEn-ux-ULi" kind="relationship" relationship="nextPage" id="ZOo-wZ-aph"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="685" y="348"/>
+            <point key="canvasLocation" x="719" y="348.25"/>
         </scene>
         <!--Stats-->
         <scene sceneID="GUf-0Y-XcO">
@@ -123,7 +124,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="461" y="348"/>
+            <point key="canvasLocation" x="476" y="348"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -323,7 +324,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="461" y="723.75"/>
+            <point key="canvasLocation" x="476" y="723.75"/>
         </scene>
         <!--SetBudgetController-->
         <scene sceneID="b6v-YD-Jaz">
@@ -372,79 +373,79 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="685" y="738.5"/>
+            <point key="canvasLocation" x="719" y="738.5"/>
         </scene>
-        <!--Glance Interface Controller-->
-        <scene sceneID="2Vo-n5-lv1">
+        <!--Projections-->
+        <scene sceneID="f8X-HD-ibc">
             <objects>
-                <glanceController spacing="0.0" id="CB2-6V-CIU" customClass="GlanceController" customModule="DINC_WatchKit_Extension">
+                <controller title="Projections" id="DEn-ux-ULi" customClass="GlanceController" customModule="DINC_WatchKit_Extension">
                     <items>
-                        <group alignment="left" spacing="0.0" id="I5M-2S-aOR" userLabel="Header Group">
+                        <group height="0.20000000000000001" alignment="center" spacing="0.0" id="bwV-Sg-iHM" userLabel="Header Group">
                             <items>
-                                <label alignment="right" verticalAlignment="bottom" text="Safe-to-Spend:" textAlignment="right" numberOfLines="0" id="o1x-Ix-I3C">
+                                <label alignment="right" verticalAlignment="bottom" text="Safe-to-Spend:" textAlignment="center" numberOfLines="0" id="jTQ-2t-00B">
                                     <fontDescription key="font" type="system" pointSize="16"/>
                                 </label>
                             </items>
                         </group>
-                        <group alignment="left" layout="vertical" spacing="2" id="g3r-u6-fsR">
+                        <group height="0.80000000000000004" alignment="left" layout="vertical" spacing="2" id="SeV-t8-Obe">
                             <items>
-                                <group width="1" alignment="left" layout="vertical" id="GvD-cg-hf0" userLabel="STS Group">
+                                <group width="1" alignment="left" layout="vertical" id="0hU-T5-zZL" userLabel="STS Group">
                                     <items>
-                                        <label alignment="center" text="$-.--" textAlignment="center" numberOfLines="0" id="3Lh-Dc-yg4">
+                                        <label alignment="center" text="$-.--" textAlignment="center" numberOfLines="0" id="4jM-tv-fhj">
                                             <accessibilityTraits key="accessibilityTraits" staticText="YES" updatesFrequently="YES"/>
                                             <color key="textColor" red="0.0" green="0.819717586" blue="0.30362150069999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <fontDescription key="font" type="system" pointSize="35"/>
                                         </label>
                                     </items>
                                 </group>
-                                <group width="1" height="28" alignment="center" verticalAlignment="bottom" id="ogY-pj-TDq" userLabel="DB Group">
+                                <group width="1" height="28" alignment="center" verticalAlignment="bottom" id="Ghp-VF-dhi" userLabel="DB Group">
                                     <items>
-                                        <label alignment="center" verticalAlignment="bottom" text="Daily Budget:" id="yAf-2y-j52">
+                                        <label alignment="center" verticalAlignment="bottom" text="Daily Budget:" id="ZDP-v6-esq">
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <fontDescription key="font" type="system" pointSize="13"/>
                                         </label>
-                                        <label alignment="center" verticalAlignment="bottom" text="$--" textAlignment="left" id="wFc-di-r09">
+                                        <label alignment="center" verticalAlignment="bottom" text="$--" textAlignment="left" id="L2d-9q-9LU">
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <fontDescription key="font" type="system" pointSize="13"/>
                                         </label>
                                     </items>
                                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="3"/>
                                 </group>
-                                <group width="1" height="0.5" alignment="center" verticalAlignment="bottom" id="5vT-uk-x2v" userLabel="Future Group">
+                                <group width="1" height="0.5" alignment="center" verticalAlignment="bottom" id="i4T-lo-ZH2" userLabel="Future Group">
                                     <items>
-                                        <group width="0.33000000000000002" height="1" alignment="center" layout="vertical" spacing="0.0" id="tC4-tN-O7v" userLabel="Plus 1">
+                                        <group width="0.33000000000000002" alignment="center" layout="vertical" spacing="0.0" id="Dwr-9f-ff8" userLabel="Plus 1">
                                             <items>
-                                                <label alignment="center" text="Day" id="Qqi-wZ-FS2">
+                                                <label alignment="center" text="Day" id="xru-cK-67S">
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="font" type="system" weight="semibold" pointSize="12"/>
                                                 </label>
-                                                <label alignment="center" text="$--" id="bxy-zk-BtS">
+                                                <label alignment="center" text="$--" id="wsc-K0-jWd">
                                                     <accessibilityTraits key="accessibilityTraits" staticText="YES" updatesFrequently="YES"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="font" type="system" pointSize="12"/>
                                                 </label>
                                             </items>
                                         </group>
-                                        <group width="0.33000000000000002" height="1" alignment="center" layout="vertical" spacing="0.0" id="luj-OJ-xir" userLabel="Plus 2">
+                                        <group width="0.33000000000000002" alignment="center" layout="vertical" spacing="0.0" id="aex-2i-ePH" userLabel="Plus 2">
                                             <items>
-                                                <label alignment="center" text="Day" id="HQr-jO-REz">
+                                                <label alignment="center" text="Day" id="hbL-NE-EjX">
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="font" type="system" weight="semibold" pointSize="12"/>
                                                 </label>
-                                                <label alignment="center" text="$--" id="lto-oa-9tP">
+                                                <label alignment="center" text="$--" id="JFJ-YN-2rO">
                                                     <accessibilityTraits key="accessibilityTraits" staticText="YES" updatesFrequently="YES"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="font" type="system" pointSize="12"/>
                                                 </label>
                                             </items>
                                         </group>
-                                        <group width="0.33000000000000002" height="1" alignment="center" layout="vertical" spacing="0.0" id="nec-et-CNh" userLabel="Plus 3">
+                                        <group width="0.33000000000000002" alignment="center" layout="vertical" spacing="0.0" id="f7M-0J-6NM" userLabel="Plus 3">
                                             <items>
-                                                <label alignment="center" text="Day" id="iiP-ta-xpq">
+                                                <label alignment="center" text="Day" id="L66-TA-jcG">
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="font" type="system" weight="semibold" pointSize="12"/>
                                                 </label>
-                                                <label alignment="center" text="$--" id="Nxh-d5-99K">
+                                                <label alignment="center" text="$--" id="cvS-bf-QHa">
                                                     <accessibilityTraits key="accessibilityTraits" staticText="YES" updatesFrequently="YES"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="font" type="system" pointSize="12"/>
@@ -456,22 +457,21 @@
                             </items>
                         </group>
                     </items>
-                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
                     <connections>
-                        <outlet property="currentSafeToSpendLabel" destination="3Lh-Dc-yg4" id="zSl-rq-ylB"/>
-                        <outlet property="dailyBudgetLabel" destination="wFc-di-r09" id="0XF-s1-7Q8"/>
-                        <outlet property="dayPlusOneLabel" destination="Qqi-wZ-FS2" id="xlj-2x-fc6"/>
-                        <outlet property="dayPlusThreeLabel" destination="iiP-ta-xpq" id="Mqs-dL-GYx"/>
-                        <outlet property="dayPlusTwoLabel" destination="HQr-jO-REz" id="g6g-D8-QWG"/>
-                        <outlet property="futureGroup" destination="5vT-uk-x2v" id="pmN-mP-uzW"/>
-                        <outlet property="safeToSpendLabel" destination="o1x-Ix-I3C" id="1aZ-uU-SBt"/>
-                        <outlet property="safeToSpendPlusOneLabel" destination="bxy-zk-BtS" id="f21-iM-hQB"/>
-                        <outlet property="safeToSpendPlusThreeLabel" destination="Nxh-d5-99K" id="Ef8-Yc-MAj"/>
-                        <outlet property="safeToSpendPlusTwoLabel" destination="lto-oa-9tP" id="O9g-G4-Z6L"/>
+                        <outlet property="currentSafeToSpendLabel" destination="4jM-tv-fhj" id="B9C-ee-Hc0"/>
+                        <outlet property="dailyBudgetLabel" destination="L2d-9q-9LU" id="weE-Zi-G0j"/>
+                        <outlet property="dayPlusOneLabel" destination="xru-cK-67S" id="Afn-3e-UI6"/>
+                        <outlet property="dayPlusThreeLabel" destination="L66-TA-jcG" id="H4d-SX-coK"/>
+                        <outlet property="dayPlusTwoLabel" destination="hbL-NE-EjX" id="OUm-3H-Cr9"/>
+                        <outlet property="futureGroup" destination="i4T-lo-ZH2" id="g8g-nx-oyv"/>
+                        <outlet property="safeToSpendLabel" destination="jTQ-2t-00B" id="jV4-9I-8L3"/>
+                        <outlet property="safeToSpendPlusOneLabel" destination="wsc-K0-jWd" id="D6V-GH-i41"/>
+                        <outlet property="safeToSpendPlusThreeLabel" destination="cvS-bf-QHa" id="9G3-9L-Gzt"/>
+                        <outlet property="safeToSpendPlusTwoLabel" destination="JFJ-YN-2rO" id="r3I-N9-zpg"/>
                     </connections>
-                </glanceController>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="235" y="672"/>
+            <point key="canvasLocation" x="965" y="348"/>
         </scene>
     </scenes>
 </document>
