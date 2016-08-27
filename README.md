@@ -29,7 +29,7 @@ Here’s a blog post on why I created this app and why I'm "releasing" it on Git
 <img src="https://raw.githubusercontent.com/danielhour/DINC/master/Screenshots/complication.png" width="175">  <img src="https://raw.githubusercontent.com/danielhour/DINC/master/Screenshots/glance.png" width="175">
 
 
-[YOU CAN FIND THE FULL STORYBOARD LAYOUT HERE](https://github.com/danielhour/DINC/blob/dev/Screenshots/DINC%20storyboard.png)
+[YOU CAN FIND THE FULL STORYBOARD LAYOUT HERE](https://raw.githubusercontent.com/danielhour/DINC/master/Screenshots/DINC%20storyboard.png)
 <br><br>
 
 
