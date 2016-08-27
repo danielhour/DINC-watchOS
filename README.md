@@ -21,12 +21,12 @@ Here’s a blog post on why I created this app and why I'm "releasing" it on Git
 *Monthly Over/Under Projection*
 <br>See how much money you can save by acting like Scrooge McDuck or see how much you're out if you decide you want to try and be Johnny Football for a month.
 <br>
-<img src="https://github.com/danielhour/DINC/blob/master/Screenshots/efficiency.png?raw=true" width="175">
+<img src="https://raw.githubusercontent.com/danielhour/DINC/master/Screenshots/efficiency.png" width="175">
 
 *Complication & Glance Support*
 <br>Out-of-sight leads to out-of-mind which is why the DINC app is best utilized with a watch face complication or an easy to access glance. This way you have a constant reminder of what your safe-to-spend DINC number is.
 <br>
-<img src="https://github.com/danielhour/DINC/Screenshots/complication.png" width="175">  <img src="https://github.com/danielhour/DINC/Screenshots/glance.png" width="175">
+<img src="https://raw.githubusercontent.com/danielhour/DINC/master/Screenshots/complication.png" width="175">  <img src="https://raw.githubusercontent.com/danielhour/DINC/master/Screenshots/glance.png" width="175">
 
 
 [YOU CAN FIND THE FULL STORYBOARD LAYOUT HERE](https://github.com/danielhour/DINC/blob/dev/Screenshots/DINC%20storyboard.png)
@@ -61,7 +61,7 @@ This project uses a few well-known & well-documented 3rd-party libraries from Co
 **How do you use the app in your everyday life?**
 So my goal everyday is to spend *LESS* then the daily budget I set. The "unspent" money then helps me make more informed decisions on how much I should save or how much I should spend at social gatherings. And of course in those rare moments... how much should be spent to...
 <br>
-<img src="https://github.com/danielhour/DINC/Screenshots/treatyoself.gif" width="350">
+<img src="https://raw.githubusercontent.com/danielhour/DINC/master/Screenshots/treatyoself.gif" width="350">
 <br><br>
 
 
