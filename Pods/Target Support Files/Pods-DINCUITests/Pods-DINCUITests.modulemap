@@ -1,0 +1,6 @@
+framework module Pods_DINCUITests {
+  umbrella header "Pods-DINCUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

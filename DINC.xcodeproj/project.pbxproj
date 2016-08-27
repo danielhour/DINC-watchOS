@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9E3E9EA195E69C6C40AAA85A /* Pods_DINC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E1D14D517E2534B93C56AD /* Pods_DINC.framework */; };
+		032F4A1E0C7CB638B88BBC82 /* Pods_DINC_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 460A3B60558EE99038D79A43 /* Pods_DINC_WatchKit_Extension.framework */; };
+		270A0672CEBED976ED745924 /* Pods_DINCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00F8918E621CC6F3955D1B6 /* Pods_DINCTests.framework */; };
 		C02E7DEE1CC1EF9100A65ACC /* WTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E7DED1CC1EF9100A65ACC /* WTransaction.swift */; };
 		C02E7DF01CC1FF3900A65ACC /* ProjectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E7DEF1CC1FF3900A65ACC /* ProjectionController.swift */; };
 		C02E7DF61CC202B000A65ACC /* DBAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E7DF51CC202B000A65ACC /* DBAlert.swift */; };
@@ -52,7 +53,9 @@
 		C0F2C2571CC04D4E0070AA8D /* Magic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2C2561CC04D4E0070AA8D /* Magic.swift */; };
 		C0F2C2591CC04D530070AA8D /* PlaidService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2C2581CC04D530070AA8D /* PlaidService.swift */; };
 		C0F2C25B1CC04D580070AA8D /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2C25A1CC04D580070AA8D /* Transaction.swift */; };
-		F351406A8CE0549B9A79EDD8 /* Pods_DINC_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E45D695C8EEDF404BBFADF7 /* Pods_DINC_WatchKit_Extension.framework */; };
+		C3519F1DC0DD745A1AACA905 /* Pods_DINC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31E852945CDAE47211A6907F /* Pods_DINC.framework */; };
+		C42363D93CD6FA22978F46AF /* Pods_DINCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687F3C1E32388AA8AC6AB631 /* Pods_DINCUITests.framework */; };
+		F20C7AB9B3F187449C988355 /* Pods_DINC_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13DF9CDAF609091BB143CE3D /* Pods_DINC_WatchKit_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,12 +115,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3735C3C23FA8812C3C935370 /* Pods-DINC WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DINC WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-DINC WatchKit Extension/Pods-DINC WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
-		3CAAAF42CBADC24ECE5E243C /* Pods-DINC WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DINC WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DINC WatchKit Extension/Pods-DINC WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
-		59DC5B7C182D2CC63BF29186 /* Pods-DINC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DINC.release.xcconfig"; path = "Pods/Target Support Files/Pods-DINC/Pods-DINC.release.xcconfig"; sourceTree = "<group>"; };
-		62FCFEC18B794B459F247989 /* Pods-DINC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DINC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DINC/Pods-DINC.debug.xcconfig"; sourceTree = "<group>"; };
-		9E45D695C8EEDF404BBFADF7 /* Pods_DINC_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DINC_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4E1D14D517E2534B93C56AD /* Pods_DINC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DINC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0313704686056E2C002B4F97 /* Pods-DINC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DINC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DINC/Pods-DINC.debug.xcconfig"; sourceTree = "<group>"; };
+		12881C65E35AF82442242B06 /* Pods-DINC WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DINC WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-DINC WatchKit App/Pods-DINC WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		13DF9CDAF609091BB143CE3D /* Pods_DINC_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DINC_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28F3297B764F10A86C5FF85A /* Pods-DINCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DINCTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DINCTests/Pods-DINCTests.release.xcconfig"; sourceTree = "<group>"; };
+		31E852945CDAE47211A6907F /* Pods_DINC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DINC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A8DE359A77166E28898371D /* Pods-DINC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DINC.release.xcconfig"; path = "Pods/Target Support Files/Pods-DINC/Pods-DINC.release.xcconfig"; sourceTree = "<group>"; };
+		460A3B60558EE99038D79A43 /* Pods_DINC_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DINC_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		687F3C1E32388AA8AC6AB631 /* Pods_DINCUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DINCUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		773E8E2E3FDEFCA313C13285 /* Pods-DINC WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DINC WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DINC WatchKit App/Pods-DINC WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		8A5EACA0DFFD542AEACD2535 /* Pods-DINC WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DINC WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-DINC WatchKit Extension/Pods-DINC WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		9F56A926DD3942AE2E4178D0 /* Pods-DINCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DINCUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DINCUITests/Pods-DINCUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C02E7DED1CC1EF9100A65ACC /* WTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTransaction.swift; sourceTree = "<group>"; };
 		C02E7DEF1CC1FF3900A65ACC /* ProjectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectionController.swift; sourceTree = "<group>"; };
 		C02E7DF51CC202B000A65ACC /* DBAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBAlert.swift; sourceTree = "<group>"; };
@@ -171,14 +179,26 @@
 		C0F2C2561CC04D4E0070AA8D /* Magic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Magic.swift; sourceTree = "<group>"; };
 		C0F2C2581CC04D530070AA8D /* PlaidService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaidService.swift; sourceTree = "<group>"; };
 		C0F2C25A1CC04D580070AA8D /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		D19F1A7C4781CD32CC7A8AE4 /* Pods-DINCUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DINCUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DINCUITests/Pods-DINCUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E00F8918E621CC6F3955D1B6 /* Pods_DINCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DINCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E49A249DD30C2E101DA21AA7 /* Pods-DINC WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DINC WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DINC WatchKit Extension/Pods-DINC WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		EE667E6C23AEE2D680DE1BA2 /* Pods-DINCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DINCTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DINCTests/Pods-DINCTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		27FAF7323BFA9DC6AC67DEA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F20C7AB9B3F187449C988355 /* Pods_DINC_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C0F2C1EC1CC04C6A0070AA8D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E3E9EA195E69C6C40AAA85A /* Pods_DINC.framework in Frameworks */,
+				C3519F1DC0DD745A1AACA905 /* Pods_DINC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +206,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				270A0672CEBED976ED745924 /* Pods_DINCTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +214,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C42363D93CD6FA22978F46AF /* Pods_DINCUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,18 +222,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F351406A8CE0549B9A79EDD8 /* Pods_DINC_WatchKit_Extension.framework in Frameworks */,
+				032F4A1E0C7CB638B88BBC82 /* Pods_DINC_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BD3AA55EFB6223C4A1044534 /* Frameworks */ = {
+		4CB9EC2E1BFF83F589C2F49C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A4E1D14D517E2534B93C56AD /* Pods_DINC.framework */,
-				9E45D695C8EEDF404BBFADF7 /* Pods_DINC_WatchKit_Extension.framework */,
+				0313704686056E2C002B4F97 /* Pods-DINC.debug.xcconfig */,
+				3A8DE359A77166E28898371D /* Pods-DINC.release.xcconfig */,
+				773E8E2E3FDEFCA313C13285 /* Pods-DINC WatchKit App.debug.xcconfig */,
+				12881C65E35AF82442242B06 /* Pods-DINC WatchKit App.release.xcconfig */,
+				E49A249DD30C2E101DA21AA7 /* Pods-DINC WatchKit Extension.debug.xcconfig */,
+				8A5EACA0DFFD542AEACD2535 /* Pods-DINC WatchKit Extension.release.xcconfig */,
+				EE667E6C23AEE2D680DE1BA2 /* Pods-DINCTests.debug.xcconfig */,
+				28F3297B764F10A86C5FF85A /* Pods-DINCTests.release.xcconfig */,
+				9F56A926DD3942AE2E4178D0 /* Pods-DINCUITests.debug.xcconfig */,
+				D19F1A7C4781CD32CC7A8AE4 /* Pods-DINCUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		941272159858114AB263DE2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31E852945CDAE47211A6907F /* Pods_DINC.framework */,
+				13DF9CDAF609091BB143CE3D /* Pods_DINC_WatchKit_App.framework */,
+				460A3B60558EE99038D79A43 /* Pods_DINC_WatchKit_Extension.framework */,
+				E00F8918E621CC6F3955D1B6 /* Pods_DINCTests.framework */,
+				687F3C1E32388AA8AC6AB631 /* Pods_DINCUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -296,8 +338,8 @@
 				C0F2C21B1CC04C6B0070AA8D /* DINC WatchKit App */,
 				C0F2C22A1CC04C6B0070AA8D /* DINC WatchKit Extension */,
 				C0F2C1F01CC04C6A0070AA8D /* Products */,
-				DD0888A0D560D65ED2060128 /* Pods */,
-				BD3AA55EFB6223C4A1044534 /* Frameworks */,
+				4CB9EC2E1BFF83F589C2F49C /* Pods */,
+				941272159858114AB263DE2C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -429,17 +471,6 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
-		DD0888A0D560D65ED2060128 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				62FCFEC18B794B459F247989 /* Pods-DINC.debug.xcconfig */,
-				59DC5B7C182D2CC63BF29186 /* Pods-DINC.release.xcconfig */,
-				3CAAAF42CBADC24ECE5E243C /* Pods-DINC WatchKit Extension.debug.xcconfig */,
-				3735C3C23FA8812C3C935370 /* Pods-DINC WatchKit Extension.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -447,14 +478,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0F2C2441CC04C6B0070AA8D /* Build configuration list for PBXNativeTarget "DINC" */;
 			buildPhases = (
-				02B88F88EB3F58EFCF806D32 /* Check Pods Manifest.lock */,
+				08B7FD8CFDC4CE8B066C11F5 /* [CP] Check Pods Manifest.lock */,
 				C0F2C1EB1CC04C6A0070AA8D /* Sources */,
 				C0F2C1EC1CC04C6A0070AA8D /* Frameworks */,
 				C0F2C1ED1CC04C6A0070AA8D /* Resources */,
 				C0F2C2431CC04C6B0070AA8D /* Embed Watch Content */,
 				C0F2C25C1CC04D8A0070AA8D /* ShellScript */,
-				5F8BF75E020CF8D4114B5CC8 /* Embed Pods Frameworks */,
-				B4FA61513EB12D7B4AF8581D /* Copy Pods Resources */,
+				EDCDE57CE655D4F75365102C /* [CP] Embed Pods Frameworks */,
+				A9482161F568AEEEAAE91B13 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -470,9 +501,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0F2C2471CC04C6B0070AA8D /* Build configuration list for PBXNativeTarget "DINCTests" */;
 			buildPhases = (
+				3125D0C9544B5C62349FC400 /* [CP] Check Pods Manifest.lock */,
 				C0F2C1FF1CC04C6B0070AA8D /* Sources */,
 				C0F2C2001CC04C6B0070AA8D /* Frameworks */,
 				C0F2C2011CC04C6B0070AA8D /* Resources */,
+				B54B24EF5D6BD9E3B19F4CC6 /* [CP] Embed Pods Frameworks */,
+				312C2C0367D68356FE4B98A0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -488,9 +522,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0F2C24A1CC04C6B0070AA8D /* Build configuration list for PBXNativeTarget "DINCUITests" */;
 			buildPhases = (
+				D518B555558772BD167612A9 /* [CP] Check Pods Manifest.lock */,
 				C0F2C20A1CC04C6B0070AA8D /* Sources */,
 				C0F2C20B1CC04C6B0070AA8D /* Frameworks */,
 				C0F2C20C1CC04C6B0070AA8D /* Resources */,
+				6569050A484D6190F61BED70 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -506,8 +542,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0F2C2401CC04C6B0070AA8D /* Build configuration list for PBXNativeTarget "DINC WatchKit App" */;
 			buildPhases = (
+				77C67C73BAB9529235FB1641 /* [CP] Check Pods Manifest.lock */,
 				C0F2C2151CC04C6B0070AA8D /* Resources */,
 				C0F2C23F1CC04C6B0070AA8D /* Embed App Extensions */,
+				27FAF7323BFA9DC6AC67DEA5 /* Frameworks */,
+				00CF4B71F3060F4F08892B7D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -523,12 +562,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0F2C23C1CC04C6B0070AA8D /* Build configuration list for PBXNativeTarget "DINC WatchKit Extension" */;
 			buildPhases = (
-				CEB906507060AA5C305407BD /* Check Pods Manifest.lock */,
+				29D9AAA4C8B279D5B1D98996 /* [CP] Check Pods Manifest.lock */,
 				C0F2C2221CC04C6B0070AA8D /* Sources */,
 				C0F2C2231CC04C6B0070AA8D /* Frameworks */,
 				C0F2C2241CC04C6B0070AA8D /* Resources */,
-				71103FF32693B079F4C1F56A /* Embed Pods Frameworks */,
-				55091D91D23FD3C3CA072A12 /* Copy Pods Resources */,
+				7C156D56C94B2FBAD4D9199E /* [CP] Embed Pods Frameworks */,
+				DE6115054B447D127FED0E58 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -637,14 +676,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		02B88F88EB3F58EFCF806D32 /* Check Pods Manifest.lock */ = {
+		00CF4B71F3060F4F08892B7D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DINC WatchKit App/Pods-DINC WatchKit App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		08B7FD8CFDC4CE8B066C11F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -652,44 +706,89 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		55091D91D23FD3C3CA072A12 /* Copy Pods Resources */ = {
+		29D9AAA4C8B279D5B1D98996 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DINC WatchKit Extension/Pods-DINC WatchKit Extension-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		5F8BF75E020CF8D4114B5CC8 /* Embed Pods Frameworks */ = {
+		3125D0C9544B5C62349FC400 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DINC/Pods-DINC-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		71103FF32693B079F4C1F56A /* Embed Pods Frameworks */ = {
+		312C2C0367D68356FE4B98A0 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DINCTests/Pods-DINCTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6569050A484D6190F61BED70 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DINCUITests/Pods-DINCUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77C67C73BAB9529235FB1641 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7C156D56C94B2FBAD4D9199E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -697,19 +796,34 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DINC WatchKit Extension/Pods-DINC WatchKit Extension-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B4FA61513EB12D7B4AF8581D /* Copy Pods Resources */ = {
+		A9482161F568AEEEAAE91B13 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DINC/Pods-DINC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B54B24EF5D6BD9E3B19F4CC6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DINCTests/Pods-DINCTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C0F2C25C1CC04D8A0070AA8D /* ShellScript */ = {
@@ -725,19 +839,49 @@
 			shellPath = /bin/sh;
 			shellScript = "TAGS=\"TODO:|FIXME:|TESTING:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
 		};
-		CEB906507060AA5C305407BD /* Check Pods Manifest.lock */ = {
+		D518B555558772BD167612A9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DE6115054B447D127FED0E58 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DINC WatchKit Extension/Pods-DINC WatchKit Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDCDE57CE655D4F75365102C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DINC/Pods-DINC-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -945,7 +1089,7 @@
 		};
 		C0F2C23D1CC04C6B0070AA8D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3CAAAF42CBADC24ECE5E243C /* Pods-DINC WatchKit Extension.debug.xcconfig */;
+			baseConfigurationReference = E49A249DD30C2E101DA21AA7 /* Pods-DINC WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -964,7 +1108,7 @@
 		};
 		C0F2C23E1CC04C6B0070AA8D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3735C3C23FA8812C3C935370 /* Pods-DINC WatchKit Extension.release.xcconfig */;
+			baseConfigurationReference = 8A5EACA0DFFD542AEACD2535 /* Pods-DINC WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -983,6 +1127,7 @@
 		};
 		C0F2C2411CC04C6B0070AA8D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 773E8E2E3FDEFCA313C13285 /* Pods-DINC WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
@@ -999,6 +1144,7 @@
 		};
 		C0F2C2421CC04C6B0070AA8D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12881C65E35AF82442242B06 /* Pods-DINC WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
@@ -1015,7 +1161,7 @@
 		};
 		C0F2C2451CC04C6B0070AA8D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62FCFEC18B794B459F247989 /* Pods-DINC.debug.xcconfig */;
+			baseConfigurationReference = 0313704686056E2C002B4F97 /* Pods-DINC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1028,7 +1174,7 @@
 		};
 		C0F2C2461CC04C6B0070AA8D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59DC5B7C182D2CC63BF29186 /* Pods-DINC.release.xcconfig */;
+			baseConfigurationReference = 3A8DE359A77166E28898371D /* Pods-DINC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1041,6 +1187,7 @@
 		};
 		C0F2C2481CC04C6B0070AA8D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE667E6C23AEE2D680DE1BA2 /* Pods-DINCTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = DINCTests/Info.plist;
@@ -1053,6 +1200,7 @@
 		};
 		C0F2C2491CC04C6B0070AA8D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28F3297B764F10A86C5FF85A /* Pods-DINCTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = DINCTests/Info.plist;
@@ -1065,6 +1213,7 @@
 		};
 		C0F2C24B1CC04C6B0070AA8D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F56A926DD3942AE2E4178D0 /* Pods-DINCUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = DINCUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1076,6 +1225,7 @@
 		};
 		C0F2C24C1CC04C6B0070AA8D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D19F1A7C4781CD32CC7A8AE4 /* Pods-DINCUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = DINCUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

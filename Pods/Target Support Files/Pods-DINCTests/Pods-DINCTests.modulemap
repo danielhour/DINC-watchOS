@@ -1,0 +1,6 @@
+framework module Pods_DINCTests {
+  umbrella header "Pods-DINCTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

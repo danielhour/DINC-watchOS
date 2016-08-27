@@ -4,32 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Alamofire.xcscheme</key>
+		<key>Money.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-DINC WatchKit Extension-Money.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-DINC WatchKit Extension-Realm.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-DINC WatchKit Extension-RealmSwift.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-DINC WatchKit Extension-Timepiece.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-DINC WatchKit Extension-ValueCoding.xcscheme</key>
+		<key>Pods-DINC WatchKit App.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -39,37 +19,37 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-DINC-Money.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-DINC-Realm.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-DINC-RealmSwift.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-DINC-Timepiece.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-DINC-ValueCoding.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-DINC.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SwiftyJSON.xcscheme</key>
+		<key>Pods-DINCTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-DINCUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Realm.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RealmSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Timepiece.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ValueCoding.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -77,72 +57,52 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>15072D6CEF798FF8FDADE702</key>
+		<key>145A9F3DB68CB80ACFF30D6C4E013D46</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1EC94CDBB21D235E591E62EE</key>
+		<key>1A443E0EA766A51E2D16A2DD35B1EDD4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3923547250881219A27AC397</key>
+		<key>256CBD37FC96D6599E39606257A616BE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4066542AC3C8E067C9D65FAD</key>
+		<key>5987C803818DB2CBEAB2317CF1754330</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>40B36714784BDDFEDB0A4BB6</key>
+		<key>8571507E15C73C204C39D65976DDF558</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>593B6A1481BE74A29A1EF9DB</key>
+		<key>8AE787E783F17D668E2CEA022177D796</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>59B8C2341BB3B092B6B854C2</key>
+		<key>9A4BDA4F3EE5E5DA071B0EE216917F99</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7A6CD8C688DFB23F44480F02</key>
+		<key>A17DC8C7EE325848A57E539958B8A604</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>90652748821DAD8808AF60D6</key>
+		<key>BA6FE39558A003860AE296940DEB0768</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>96704021484A87A6CC2C8EF9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9FFCC2BDA6938A2B1B52CC18</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E53E16ED53D90A2EC0160907</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E8AE47152DC23CC6859EF69F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F526211A31558B62BE9B6CB4</key>
+		<key>D0089E2D55BC1F1AE072852AE4930607</key>
 		<dict>
 			<key>primary</key>
 			<true/>

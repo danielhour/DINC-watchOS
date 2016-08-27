@@ -1,6 +1,0 @@
-framework module ValueCoding {
-  umbrella header "Pods-DINC-ValueCoding-umbrella.h"
-
-  export *
-  module * { export * }
-}
