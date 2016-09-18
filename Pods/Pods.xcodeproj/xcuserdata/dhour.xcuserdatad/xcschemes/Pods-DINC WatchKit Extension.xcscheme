@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0800"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9A4BDA4F3EE5E5DA071B0EE216917F99"
+               BlueprintIdentifier = "BF04BB398BF835A07595074F92D24C5F"
                BuildableName = "Pods_DINC_WatchKit_Extension.framework"
                BlueprintName = "Pods-DINC WatchKit Extension"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9A4BDA4F3EE5E5DA071B0EE216917F99"
+            BlueprintIdentifier = "BF04BB398BF835A07595074F92D24C5F"
             BuildableName = "Pods_DINC_WatchKit_Extension.framework"
             BlueprintName = "Pods-DINC WatchKit Extension"
             ReferencedContainer = "container:Pods.xcodeproj">
