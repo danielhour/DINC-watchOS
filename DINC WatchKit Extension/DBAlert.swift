@@ -12,7 +12,6 @@ import WatchConnectivity
 
 class DBAlert {
 
-    
     /**
     Presents an error alert controller
     
@@ -21,16 +20,15 @@ class DBAlert {
     
     - returns: Void
     */
-    class func error(controller: WKInterfaceController, errorMessage: NSError) {
-        let action = WKAlertAction(title: "OK", style: WKAlertActionStyle.Default) { () -> Void in
-            controller.dismissController()
+    class func error(_ controller: WKInterfaceController, errorMessage: NSError) {
+        let action = WKAlertAction(title: "OK", style: WKAlertActionStyle.default) { () -> Void in
+            controller.dismiss()
         }
         
-        controller.presentAlertControllerWithTitle("Error", message: "Apologies but we are having difficulty connecting to your iOS device. Please restart the app and try again.", preferredStyle: .ActionSheet, actions: [action])
+        controller.presentAlert(withTitle: "Error", message: "Apologies but we are having difficulty connecting to your iOS device. Please restart the app and try again.", preferredStyle: .actionSheet, actions: [action])
         
         //"\(errorMessage.debugDescription)"
     }
-    
     
     /**
      Presents a denied alert controller
@@ -40,15 +38,14 @@ class DBAlert {
      
      - returns: Void
      */
-    class func denied(controller: WKInterfaceController, message: String) {
-        let action = WKAlertAction(title: "OK", style: WKAlertActionStyle.Default) { () -> Void in
-            controller.dismissController()
+    class func denied(_ controller: WKInterfaceController, message: String) {
+        let action = WKAlertAction(title: "OK", style: WKAlertActionStyle.default) { () -> Void in
+            controller.dismiss()
         }
         
-        controller.presentAlertControllerWithTitle("Sorry", message: message, preferredStyle: .ActionSheet, actions: [action])
+        controller.presentAlert(withTitle: "Sorry", message: message, preferredStyle: .actionSheet, actions: [action])
     }
-
-
+    
     /**
      Presents a Yes, Change, or Cancel Controller
      
@@ -58,48 +55,30 @@ class DBAlert {
      
      - returns: Void
      */
-    class func yesOrCancel(controller: WKInterfaceController, category: String, handler: ()->()) {
+    class func yesOrCancel(_ controller: WKInterfaceController, category: String, handler: @escaping ()->()) {
         
-        let yes = WKAlertAction(title: "Yes", style: WKAlertActionStyle.Default) { () -> Void in
+        let yes = WKAlertAction(title: "Yes", style: WKAlertActionStyle.default) { () -> Void in
             handler()
         }
         
-        let cancel = WKAlertAction(title: "Cancel", style: WKAlertActionStyle.Default) { () }
+        let cancel = WKAlertAction(title: "Cancel", style: WKAlertActionStyle.default) { () }
 
-        controller.presentAlertControllerWithTitle("Add \(category)?", message: nil, preferredStyle: .Alert, actions: [yes, cancel])
+        controller.presentAlert(withTitle: "Add \(category)?", message: nil, preferredStyle: .alert, actions: [yes, cancel])
     }
 
-    
     /**
      Deletes object from Database
      
      - parameter controller:WKInterfaceController
      - parameter handler: WKAlertActionHandler
      */
-    class func deletePurchase(controller: WKInterfaceController, deleteHandler: WKAlertActionHandler) {
+    class func deletePurchase(_ controller: WKInterfaceController, deleteHandler: @escaping WKAlertActionHandler) {
         
-        let cancel = WKAlertAction(title: "Cancel", style: WKAlertActionStyle.Cancel, handler: { })
-        let delete = WKAlertAction(title: "DELETE", style: WKAlertActionStyle.Destructive) { () -> Void in
+        let cancel = WKAlertAction(title: "Cancel", style: WKAlertActionStyle.cancel, handler: { })
+        let delete = WKAlertAction(title: "DELETE", style: WKAlertActionStyle.destructive) { () -> Void in
             deleteHandler()
         }
         
-        controller.presentAlertControllerWithTitle("Delete this purchase?", message: nil, preferredStyle: .ActionSheet, actions: [delete, cancel])
+        controller.presentAlert(withTitle: "Delete this purchase?", message: nil, preferredStyle: .actionSheet, actions: [delete, cancel])
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }

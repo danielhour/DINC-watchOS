@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension NSDate {
+extension Date {
 
     /**
      Gets the short weekday symbol for given date
@@ -17,14 +17,14 @@ extension NSDate {
      */
     func dayOfWeek() -> String {
         
-        let formatter  = NSDateFormatter()
+        let formatter  = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
         let symbols = formatter.shortWeekdaySymbols
-        let myCalendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
-        let myComponents = myCalendar.components(.Weekday, fromDate: self)
-        let weekDayIndex = myComponents.weekday-1
+        let myCalendar = Calendar(identifier: Calendar.Identifier.gregorian)
+        let myComponents = (myCalendar as NSCalendar).components(.weekday, from: self)
+        let weekDayIndex = myComponents.weekday!-1
         
-        return symbols[weekDayIndex]
+        return symbols![weekDayIndex]
     }
 
 }

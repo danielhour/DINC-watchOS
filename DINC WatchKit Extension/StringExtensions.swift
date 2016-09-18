@@ -11,59 +11,85 @@ import Foundation
 
 extension String {
     
-    
     /**
      Currency w/o decimals
      */
     var currencyNoDecimals: String {
-        let converter = NSNumberFormatter()
+        let converter = NumberFormatter()
         converter.decimalSeparator = "."
         
-        let styler = NSNumberFormatter()
+        let styler = NumberFormatter()
         styler.minimumFractionDigits = 0
         styler.maximumFractionDigits = 0
         styler.currencySymbol = "$"
-        styler.numberStyle = .CurrencyStyle
+        styler.numberStyle = .currency
         
-        if let result = converter.numberFromString(self) {
-            return styler.stringFromNumber(result)!
+        if let result = converter.number(from: self) {
+            return styler.string(from: result)!
             
         } else {
             converter.decimalSeparator = ","
-            if let result = converter.numberFromString(self) {
-                return styler.stringFromNumber(result)!
+            if let result = converter.number(from: self) {
+                return styler.string(from: result)!
             }
         }
         
         return ""
     }
-    
     
     /**
      Converts a raw string to a string currency w/ 2 decimals
      */
     var currencyFromString: String {
-        let converter = NSNumberFormatter()
+        let converter = NumberFormatter()
         converter.decimalSeparator = "."
         
-        let styler = NSNumberFormatter()
+        let styler = NumberFormatter()
         styler.minimumFractionDigits = 2
         styler.maximumFractionDigits = 2
         styler.currencySymbol = "$"
-        styler.numberStyle = .CurrencyStyle
+        styler.numberStyle = .currency
         
-        if let result = converter.numberFromString(self) {
-            let realNumber = Double(result)/100
-            return styler.stringFromNumber(realNumber)!
+        if let result = converter.number(from: self) {
+            let realNumber = Double(result)
+            return styler.string(from: NSNumber(value: realNumber))!
             
         } else {
             converter.decimalSeparator = ","
-            if let result = converter.numberFromString(self) {
-                return styler.stringFromNumber(result)!
+            if let result = converter.number(from: self) {
+                return styler.string(from: result)!
+            }
+        }
+        
+        return self
+    }
+    
+    /**
+     Converts a raw string to a string currency w/ 2 decimals
+     */
+    var currencyAppend: String {
+        let converter = NumberFormatter()
+        converter.decimalSeparator = "."
+        
+        let styler = NumberFormatter()
+        styler.minimumFractionDigits = 2
+        styler.maximumFractionDigits = 2
+        styler.currencySymbol = "$"
+        styler.numberStyle = .currency
+        
+        if let result = converter.number(from: self) {
+            let realNumber = Double(result)/100
+            return styler.string(from: NSNumber(value: realNumber))!
+            
+        } else {
+            converter.decimalSeparator = ","
+            if let result = converter.number(from: self) {
+                return styler.string(from: result)!
             }
         }
         
         return ""
     }
+
 
 }

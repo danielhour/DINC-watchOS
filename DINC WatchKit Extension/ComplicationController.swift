@@ -6,9 +6,7 @@
 //  Copyright © 2016 DHour. All rights reserved.
 //
 
-import Money
 import ClockKit
-import Timepiece
 
 
 /**
@@ -16,64 +14,61 @@ import Timepiece
  */
 class ComplicationController: NSObject, CLKComplicationDataSource {
     
-    
     //---------------------------------------------------------------------------------------------------------
     // MARK: - Properties
     
     var currentMonthlyTotal: Double!
     var moneySpent: Double!
     
-    
     //---------------------------------------------------------------------------------------------------------
     // MARK: - Timeline Configuration
     
-    func getSupportedTimeTravelDirectionsForComplication(complication: CLKComplication, withHandler handler: (CLKComplicationTimeTravelDirections) -> Void) {
-        handler([.Forward])
+    func getSupportedTimeTravelDirections(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimeTravelDirections) -> Void) {
+        handler([.forward])
     }
     
-    func getTimelineStartDateForComplication(complication: CLKComplication, withHandler handler: (NSDate?) -> Void) {
-        handler(NSDate.today())
+    func getTimelineStartDate(for complication: CLKComplication, withHandler handler: @escaping (Date?) -> Void) {
+        handler(Date.today())
     }
     
-    func getTimelineEndDateForComplication(complication: CLKComplication, withHandler handler: (NSDate?) -> Void) {
+    func getTimelineEndDate(for complication: CLKComplication, withHandler handler: @escaping (Date?) -> Void) {
         handler(nil)
     }
     
-    func getPrivacyBehaviorForComplication(complication: CLKComplication, withHandler handler: (CLKComplicationPrivacyBehavior) -> Void) {
-        handler(.ShowOnLockScreen)
+    func getPrivacyBehavior(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationPrivacyBehavior) -> Void) {
+        handler(.showOnLockScreen)
     }
-    
     
     //---------------------------------------------------------------------------------------------------------
     // MARK: - Timeline Population
     
-    func getCurrentTimelineEntryForComplication(complication: CLKComplication, withHandler handler: ((CLKComplicationTimelineEntry?) -> Void)) {
+    func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: (@escaping (CLKComplicationTimelineEntry?) -> Void)) {
         magic("getCurrentTimeline")
         
-        let currentMonth = NSUserDefaults.standardUserDefaults().integerForKey(userDefaults.currentMonth)
-        if currentMonth != NSDate.today().month {
+        let currentMonth = UserDefaults.standard.integer(forKey: userDefaults.currentMonth)
+        if currentMonth != Date.today().month {
             WTransactionManager.resetDataForNewMonth()
-            NSUserDefaults.standardUserDefaults().setInteger(NSDate.today().month, forKey: userDefaults.currentMonth)
+            UserDefaults.standard.set(Date.today().month, forKey: userDefaults.currentMonth)
         }
         
         currentMonthlyTotal = MonthlyBudgetManager.currentTotal()
         moneySpent = WTransactionManager.moneySpent()
         
         let template = configureTemplates(complication, safeToSpend: currentMonthlyTotal-moneySpent)
-        let timelineEntry = CLKComplicationTimelineEntry(date: NSDate.today(), complicationTemplate: template)
+        let timelineEntry = CLKComplicationTimelineEntry(date: Date.today(), complicationTemplate: template)
         handler(timelineEntry)
         
         handler(nil)
     }
     
-    func getTimelineEntriesForComplication(complication: CLKComplication, beforeDate date: NSDate, limit: Int, withHandler handler: (([CLKComplicationTimelineEntry]?) -> Void)) {
+    func getTimelineEntries(for complication: CLKComplication, before date: Date, limit: Int, withHandler handler: (@escaping ([CLKComplicationTimelineEntry]?) -> Void)) {
         handler(nil)
     }
     
-    func getTimelineEntriesForComplication(complication: CLKComplication, afterDate date: NSDate, limit: Int, withHandler handler: (([CLKComplicationTimelineEntry]?) -> Void)) {
+    func getTimelineEntries(for complication: CLKComplication, after date: Date, limit: Int, withHandler handler: (@escaping ([CLKComplicationTimelineEntry]?) -> Void)) {
         
-        let tomorrow = NSDate.tomorrow().beginningOfDay
-        let db = NSUserDefaults.standardUserDefaults().integerForKey(userDefaults.dailyBudget)
+        let tomorrow = Date.tomorrow().beginningOfDay
+        let db = UserDefaults.standard.integer(forKey: userDefaults.dailyBudget)
         var tomorrowTemplate = configureTemplates(complication, safeToSpend: currentMonthlyTotal-moneySpent + Double(db))
         
         //new month
@@ -85,12 +80,11 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         handler([timelineEntry])
     }
     
-    
     //---------------------------------------------------------------------------------------------------------
     // MARK: - Update Scheduling
     
-    func getNextRequestedUpdateDateWithHandler(handler: (NSDate?) -> Void) {
-        let endOfDay = NSDate().endOfDay
+    func getNextRequestedUpdateDate(handler: @escaping (Date?) -> Void) {
+        let endOfDay = Date().endOfDay
         magic("nextRequestedUpdateDate\(endOfDay)")
         
         handler(endOfDay)
@@ -101,37 +95,39 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         
         let server = CLKComplicationServer.sharedInstance()
         for complication in server.activeComplications! {
-            server.reloadTimelineForComplication(complication)
+            server.reloadTimeline(for: complication)
         }
     }
-    
     
     //---------------------------------------------------------------------------------------------------------
     // MARK: - Placeholder Templates
     
-    func getPlaceholderTemplateForComplication(complication: CLKComplication, withHandler handler: (CLKComplicationTemplate?) -> Void) {
+    func getPlaceholderTemplate(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTemplate?) -> Void) {
         var template: CLKComplicationTemplate!
         switch complication.family {
             
-        case .ModularSmall:
+        case .modularSmall:
             template = ComplicationConfigurations.modularSmallSimpleText("$--", textShort: nil, textColor: Theme.Colors.green)
             
-        case .ModularLarge:
+        case .modularLarge:
             template = ComplicationConfigurations.modularLargeTallBody("Safe-to-Spend", body: "$-.--", bodyShort: nil)
             
-        case .UtilitarianSmall:
+        case .utilitarianSmall:
             template = ComplicationConfigurations.utilitarianSmallFlat("nil", text: "$-.--", textShort: nil)
             
-        case .UtilitarianLarge:
+        case .utilitarianLarge:
             template = ComplicationConfigurations.utilitarianLargeFlat("nil", text: "Safe-to-Spend: $-.--", textShort: nil)
             
-        case .CircularSmall:
+        case .circularSmall:
+            template = ComplicationConfigurations.circularSmallSimpleText("$--", textShort: nil)
+            
+        //TODO: exhaustive?
+        default:
             template = ComplicationConfigurations.circularSmallSimpleText("$--", textShort: nil)
         }
         
         handler(template)
     }
-    
     
     //---------------------------------------------------------------------------------------------------------
     // MARK: - Helper Methods
@@ -144,7 +140,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
      
      - returns: CLKComplicationTemplate
      */
-    private func configureTemplates(complication: CLKComplication, safeToSpend: Double) -> CLKComplicationTemplate {
+    fileprivate func configureTemplates(_ complication: CLKComplication, safeToSpend: Double) -> CLKComplicationTemplate {
         
         var savingsColor: UIColor!
         if safeToSpend < 0 {
@@ -156,20 +152,24 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         var template: CLKComplicationTemplate!
         switch complication.family {
             
-        case .ModularSmall:
-            template = ComplicationConfigurations.modularSmallSimpleText("\(Money(safeToSpend))", textShort: "\(safeToSpend)".currencyNoDecimals, textColor: savingsColor)
+        case .modularSmall:
+            template = ComplicationConfigurations.modularSmallSimpleText("\(safeToSpend)".currencyFromString, textShort: "\(safeToSpend)".currencyNoDecimals, textColor: savingsColor)
             
-        case .ModularLarge:
-            template = ComplicationConfigurations.modularLargeTallBody("Safe-to-Spend", body: "\(Money(safeToSpend))", bodyShort: "\(safeToSpend)".currencyNoDecimals)
+        case .modularLarge:
+            template = ComplicationConfigurations.modularLargeTallBody("Safe-to-Spend", body: "\(safeToSpend)".currencyFromString, bodyShort: "\(safeToSpend)".currencyNoDecimals)
             
-        case .UtilitarianSmall:
-            template = ComplicationConfigurations.utilitarianSmallFlat("nil", text: "\(Money(safeToSpend))", textShort: "\(Money(safeToSpend))")
+        case .utilitarianSmall:
+            template = ComplicationConfigurations.utilitarianSmallFlat("nil", text: "\(safeToSpend)".currencyFromString, textShort: "\(safeToSpend)".currencyFromString)
             
-        case .UtilitarianLarge:
-            template = ComplicationConfigurations.utilitarianLargeFlat("nil", text: "Safe-to-Spend: " + "\(Money(safeToSpend))", textShort: "Safe-to-Spend: " + "\(safeToSpend)".currencyNoDecimals)
+        case .utilitarianLarge:
+            template = ComplicationConfigurations.utilitarianLargeFlat("nil", text: "Safe-to-Spend: " + "\(safeToSpend)".currencyFromString, textShort: "Safe-to-Spend: " + "\(safeToSpend)".currencyNoDecimals)
             
-        case .CircularSmall:
-            template = ComplicationConfigurations.circularSmallSimpleText("\(Money(safeToSpend))", textShort: "\(safeToSpend)".currencyNoDecimals)
+        case .circularSmall:
+            template = ComplicationConfigurations.circularSmallSimpleText("\(safeToSpend)".currencyFromString, textShort: "\(safeToSpend)".currencyNoDecimals)
+            
+        //TODO: exhaustive?
+        default:
+            template = ComplicationConfigurations.circularSmallSimpleText("\(safeToSpend)".currencyFromString, textShort: "\(safeToSpend)".currencyNoDecimals)
         }
         
         return template

@@ -6,9 +6,7 @@
 //  Copyright © 2016 DHour. All rights reserved.
 //
 
-import Money
 import WatchKit
-import Timepiece
 import Foundation
 
 
@@ -36,12 +34,11 @@ class EfficiencyController: WKInterfaceController {
     @IBOutlet var multiplierLabel: WKInterfaceLabel!
     @IBOutlet var efficiencyLabel: WKInterfaceLabel!
     
-    
     //---------------------------------------------------------------------------------------------------------
     //MARK: - View Life Cycle
 
-    override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
+    override func awake(withContext context: Any?) {
+        super.awake(withContext: context)
         
     }
     
@@ -57,26 +54,25 @@ class EfficiencyController: WKInterfaceController {
         
     }
     
-    
     //---------------------------------------------------------------------------------------------------------
     //MARK: - Helper Methods
     
     /**
      Configure the `averageDailySpendLabel` UI
      */
-    private func configureDailySpendLabelUI() {
+    fileprivate func configureDailySpendLabelUI() {
         let moneySpent = WTransactionManager.moneySpent()
-        let numberOfDaysSoFar = NSDate.today().day
+        let numberOfDaysSoFar = Date.today().day
         averageDailySpend = moneySpent / Double(numberOfDaysSoFar)
-        averageDailySpendLabel.setText("\(Money(averageDailySpend))")
+        averageDailySpendLabel.setText("\(averageDailySpend!)".currencyFromString)
     }
     
     
     /**
      Configure the `multiplierLabel` & `efficiencyLabel` UI
      */
-    private func configureMultiplierAndEfficiencyUI() {
-        let db = NSUserDefaults.standardUserDefaults().integerForKey(userDefaults.dailyBudget)
+    fileprivate func configureMultiplierAndEfficiencyUI() {
+        let db = UserDefaults.standard.integer(forKey: userDefaults.dailyBudget)
         let multiplierRaw = averageDailySpend / Double(db)
         let multiplier = Double(round(100*multiplierRaw)/100)
         multiplierLabel.setText("\(multiplier)X")
@@ -106,14 +102,9 @@ class EfficiencyController: WKInterfaceController {
      - parameter rating: `EfficiencyRatings`
      - parameter color:  `UIColor`
      */
-    private func configureEfficiencyRatingLabel(rating: EfficiencyRatings, color: UIColor) {
+    fileprivate func configureEfficiencyRatingLabel(_ rating: EfficiencyRatings, color: UIColor) {
         efficiencyLabel.setText(rating.rawValue)
         efficiencyLabel.setTextColor(color)
         multiplierLabel.setTextColor(color)
     }
 }
-
-
-
-
-

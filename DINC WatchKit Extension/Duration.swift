@@ -12,43 +12,43 @@ prefix func - (duration: Duration) -> (Duration) {
     return Duration(value: -duration.value, unit: duration.unit)
 }
 
-public class Duration {
-    public let value: Int
-    public let unit: NSCalendarUnit
-    private let calendar = NSCalendar.currentCalendar()
+open class Duration {
+    open let value: Int
+    open let unit: NSCalendar.Unit
+    fileprivate let calendar = Calendar.current
     
-    /**
-        Initialize a date before a duration.
-    */
-    public var ago: NSDate {
-        return ago(from: NSDate())
-    }
-    
-    public func ago(from date: NSDate) -> NSDate {
-        return calendar.dateByAddingDuration(-self, toDate: date, options: .SearchBackwards)!
-    }
-    
-    /**
-        Initialize a date after a duration.
-    */
-    public var later: NSDate {
-        return later(from: NSDate())
-    }
-    
-    public func later(from date: NSDate) -> NSDate {
-        return calendar.dateByAddingDuration(self, toDate: date, options: .SearchBackwards)!
-    }
+//    /**
+//        Initialize a date before a duration.
+//    */
+//    open var ago: Date {
+//        return ago(from: Date())
+//    }
+//    
+//    open func ago(from date: Date) -> Date {
+//        return calendar.dateByAddingDuration(-self, toDate: date, options: .searchBackwards)!
+//    }
+//    
+//    /**
+//        Initialize a date after a duration.
+//    */
+//    open var later: Date {
+//        return later(from: Date())
+//    }
+//    
+//    open func later(from date: Date) -> Date {
+//        return calendar.dateByAddingDuration(self, toDate: date, options: .searchBackwards)!
+//    }
     
     /**
         This conversion is deprecated in 0.4.1 and will be obsoleted in 0.5.0.
     
         This operation is performed under incorrect assumption that 1 month is always equal to 30 days.
     */
-    public lazy var interval: NSTimeInterval = { [unowned self] in
-        return self.unit.interval * NSTimeInterval(self.value)
+    open lazy var interval: TimeInterval = { [unowned self] in
+        return self.unit.interval * TimeInterval(self.value)
     }()
     
-    public init(value: Int, unit: NSCalendarUnit) {
+    public init(value: Int, unit: NSCalendar.Unit) {
         self.value = value
         self.unit = unit
     }

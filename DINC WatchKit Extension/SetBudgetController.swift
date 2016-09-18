@@ -20,7 +20,7 @@ class SetBudgetController: WKInterfaceController {
     //MARK: - Properties
     
     ///the current device's screen height
-    let screenHeight = WKInterfaceDevice.currentDevice().screenBounds.height
+    let screenHeight = WKInterfaceDevice.current().screenBounds.height
     
     var items = [WKPickerItem]()
     
@@ -39,8 +39,8 @@ class SetBudgetController: WKInterfaceController {
     //---------------------------------------------------------------------------------------------------------
     //MARK: - View Life Cycle
     
-    override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
+    override func awake(withContext context: Any?) {
+        super.awake(withContext: context)
         
         self.configureUI()
     }
@@ -57,9 +57,9 @@ class SetBudgetController: WKInterfaceController {
     //---------------------------------------------------------------------------------------------------------
     //MARK: - IBActions
     
-    @IBAction func selectPickerItem(value: Int) {
+    @IBAction func selectPickerItem(_ value: Int) {
         var dailyBudgetString = items[value].title!
-        dailyBudgetString.removeAtIndex(dailyBudgetString.startIndex)
+        dailyBudgetString.remove(at: dailyBudgetString.startIndex)
         dailyBudget = Int(dailyBudgetString)
     }
     
@@ -78,7 +78,7 @@ class SetBudgetController: WKInterfaceController {
      - returns: Void
      */
     func configureUI() {
-        let db = NSUserDefaults.standardUserDefaults().integerForKey(userDefaults.dailyBudget)
+        let db = UserDefaults.standard.integer(forKey: userDefaults.dailyBudget)
         if db > 0 {
             self.setTitle("Cancel")
         } else {
@@ -108,7 +108,7 @@ class SetBudgetController: WKInterfaceController {
      
      - returns: Void
      */
-    func setGroupHeight(editBudget: CGFloat, confirmation: CGFloat) {
+    func setGroupHeight(_ editBudget: CGFloat, confirmation: CGFloat) {
         editBudgetGroup.setHeight(editBudget)
         confirmationGroup.setHeight(confirmation)
     }
@@ -118,15 +118,15 @@ class SetBudgetController: WKInterfaceController {
      Saves dailyBudget as `Int` in watch's nsuserdefault, shows confirmation screen, and then dismisses controller
      */
     func saveToUserDefaultsAndPresentCategoryTable() {
-        NSUserDefaults.standardUserDefaults().setInteger(dailyBudget, forKey: Constants.UserDefaults.dailyBudget)
-        NSUserDefaults.standardUserDefaults().synchronize()
+        UserDefaults.standard.set(dailyBudget, forKey: Constants.UserDefaults.dailyBudget)
+        UserDefaults.standard.synchronize()
         
-        self.animateWithDuration(0.4) { () -> Void in
+        self.animate(withDuration: 0.4) { () -> Void in
             self.setGroupHeight(0, confirmation: self.screenHeight)
         }
         
         Utilities.delay(1) { () in
-            self.dismissController()
+            self.dismiss()
         }
     }
 

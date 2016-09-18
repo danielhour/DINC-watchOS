@@ -14,7 +14,6 @@ import Foundation
  */
 struct Utilities {
     
-    
     /**
      Adds a manual time delay
      
@@ -23,11 +22,10 @@ struct Utilities {
      
      returns: Void
      */
-    static func delay(delay: Double, closure: Void -> Void) {
-        dispatch_after(
-            dispatch_time(DISPATCH_TIME_NOW, Int64(delay * Double(NSEC_PER_SEC))),
-            dispatch_get_main_queue(),
-            closure
+    static func delay(_ delay: Double, closure: @escaping (Void) -> Void) {
+        DispatchQueue.main.asyncAfter(
+            deadline: DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC),
+            execute: closure
         )
     }
 }

@@ -6,9 +6,7 @@
 //  Copyright © 2016 DHour. All rights reserved.
 //
 
-import Money
 import WatchKit
-import Timepiece
 import Foundation
 
 
@@ -18,7 +16,7 @@ import Foundation
 struct GlanceObject {
     
     ///
-    var date: NSDate
+    var date: Date
     ///
     var dateLabel: WKInterfaceLabel?
     ///
@@ -26,7 +24,7 @@ struct GlanceObject {
     ///
     var safeToSpendLabel: WKInterfaceLabel
     
-    init(date: NSDate, dateLabel: WKInterfaceLabel?, safeToSpend: Double, safeToSpendLabel: WKInterfaceLabel) {
+    init(date: Date, dateLabel: WKInterfaceLabel?, safeToSpend: Double, safeToSpendLabel: WKInterfaceLabel) {
         
         self.date = date
         self.dateLabel = dateLabel
@@ -44,41 +42,27 @@ class GlanceController: WKInterfaceController {
     //---------------------------------------------------------------------------------------------------------
     //MARK: - Properties
     
-    ///
     var db: Int!
     
-    ///
     @IBOutlet var dailyBudgetLabel: WKInterfaceLabel!
-    
-    ///
     @IBOutlet var futureGroup: WKInterfaceGroup!
-    
-    ///
     @IBOutlet var safeToSpendLabel: WKInterfaceLabel!
-    ///
     @IBOutlet var currentSafeToSpendLabel: WKInterfaceLabel!
     
-    ///
     @IBOutlet var dayPlusOneLabel: WKInterfaceLabel!
-    ///
     @IBOutlet var safeToSpendPlusOneLabel: WKInterfaceLabel!
     
-    ///
     @IBOutlet var dayPlusTwoLabel: WKInterfaceLabel!
-    ///
     @IBOutlet var safeToSpendPlusTwoLabel: WKInterfaceLabel!
     
-    ///
     @IBOutlet var dayPlusThreeLabel: WKInterfaceLabel!
-    ///
     @IBOutlet var safeToSpendPlusThreeLabel: WKInterfaceLabel!
-    
     
     //---------------------------------------------------------------------------------------------------------
     //MARK: - View Life Cycle
     
-    override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
+    override func awake(withContext context: Any?) {
+        super.awake(withContext: context)
         
     }
 
@@ -93,18 +77,16 @@ class GlanceController: WKInterfaceController {
         
     }
     
-    
     //---------------------------------------------------------------------------------------------------------
     //MARK: - Helper Methods
     
-
     /**
      Configure the UI and if first time running the app, show "tap to get started". Otherwise, configure UI for today + next 3 day's `safeToSpend` data
      */
-    private func configureUI() {
-        db = NSUserDefaults.standardUserDefaults().integerForKey(userDefaults.dailyBudget)
+    fileprivate func configureUI() {
+        db = UserDefaults.standard.integer(forKey: userDefaults.dailyBudget)
         guard db > 0 else {
-            let attributes = [NSFontAttributeName:UIFont.systemFontOfSize(25)]
+            let attributes = [NSFontAttributeName:UIFont.systemFont(ofSize: 25)]
             let attributedString = NSAttributedString(string: "Tap here to get started", attributes: attributes)
             currentSafeToSpendLabel.setAttributedText(attributedString)
             currentSafeToSpendLabel.setRelativeWidth(0.85, withAdjustment: 0)
@@ -124,14 +106,14 @@ class GlanceController: WKInterfaceController {
     /**
      Configures the `GlanceObject` UI
      */
-    private func configureGlanceObjects() {
+    fileprivate func configureGlanceObjects() {
         let all = glanceObjects()
         
         for object in all {
             object.dateLabel?.setText(object.date.dayOfWeek())
             
             if object.safeToSpendLabel == currentSafeToSpendLabel {
-                object.safeToSpendLabel.setText("\(Money(object.safeToSpend))")
+                object.safeToSpendLabel.setText("\(object.safeToSpend)".currencyFromString)
                 if object.safeToSpend < 0 {
                     object.safeToSpendLabel.setTextColor(Theme.Colors.red)
                 } else {
@@ -150,12 +132,12 @@ class GlanceController: WKInterfaceController {
      
      - returns: [GlanceObject]
      */
-    private func glanceObjects() -> [GlanceObject] {
+    fileprivate func glanceObjects() -> [GlanceObject] {
         let currentMonthlyTotal = MonthlyBudgetManager.currentTotal()
         let moneySpent = WTransactionManager.moneySpent()
         let safeToSpend = currentMonthlyTotal-moneySpent
         
-        let today = NSDate.today()
+        let today = Date.today()
         let dplusOne = today + 1.day
         let dplusTwo = today + 2.day
         let dplusThree = today + 3.day

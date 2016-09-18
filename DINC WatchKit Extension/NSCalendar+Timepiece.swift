@@ -8,16 +8,21 @@
 
 import Foundation
 
-private let supportsDateByAddingUnit = NSCalendar.currentCalendar().respondsToSelector("dateByAddingUnit:value:toDate:options:")
+//private let supportsDateByAddingUnit = Calendar.current.responds(to: "dateByAddingUnit:value:toDate:options:")
 
-extension NSCalendar {
-    func dateByAddingDuration(duration: Duration, toDate date: NSDate, options opts: NSCalendarOptions) -> NSDate? {
-        if supportsDateByAddingUnit {
-            return dateByAddingUnit(duration.unit, value: duration.value, toDate: date, options: .SearchBackwards)!
-        }
-        else {
-            // otherwise fallback to NSDateComponents
-            return dateByAddingComponents(NSDateComponents(duration), toDate: date, options: .SearchBackwards)!
-        }
+extension Calendar {
+    func dateByAddingDuration(_ duration: Duration, toDate date: Date, options opts: NSCalendar.Options) -> Date? {
+        
+        return self.date(byAdding: DateComponents(duration), to: date)
+        
+//        if supportsDateByAddingUnit {
+//            return self.date(byAdding: duration.unit, value: duration.value, to: date, options: .searchBackwards)!
+//            
+//            
+//        }
+//        else {
+//            // otherwise fallback to NSDateComponents
+//            return self.date(byAdding: DateComponents(duration), to: date, options: .searchBackwards)!
+//        }
     }
 }

@@ -8,8 +8,6 @@
 
 import Foundation
 import RealmSwift
-import Timepiece
-
 
 /**
  * Transaction object that's stored specifically on the Watch
@@ -17,7 +15,7 @@ import Timepiece
 class WTransaction: Object {
     
     ///
-    var date: NSDate = NSDate()
+    var date: Date = Date()
     ///
     var amount: Double = 0.00
     
@@ -25,7 +23,7 @@ class WTransaction: Object {
     convenience init(transaction: WTransaction) {
         self.init()
         
-        date = transaction["date"] as? NSDate ?? NSDate()
+        date = transaction["date"] as? Date ?? Date()
         amount = transaction["amount"] as? Double ?? 0.00
     }
 }

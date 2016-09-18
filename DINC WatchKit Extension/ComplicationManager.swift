@@ -18,7 +18,7 @@ struct ComplicationManager {
     static func reloadComplications() {
         let server = CLKComplicationServer.sharedInstance()
         for complication in server.activeComplications! {
-            server.reloadTimelineForComplication(complication)
+            server.reloadTimeline(for: complication)
         }
     }
 }
