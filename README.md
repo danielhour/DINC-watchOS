@@ -1,3 +1,6 @@
+##NOTE:## branch /swift3 is a working prototype. There are still some things to clean up in it but at least it's working with Xcode 8 and Swift 3!
+<br><br>
+
 ## **WHAT IS DINC?**
 DINC is a stand-alone Apple Watch app that helps you track/control your Disposable Income (D.INC) usage.
 
