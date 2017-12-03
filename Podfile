@@ -5,7 +5,7 @@ use_frameworks!
 #COCOAPODS_DISABLE_DETERMINISTIC_UUIDS=YES pod install
 
 def shared_pods
-    pod 'RealmSwift', '~> 1.1'
+    pod 'RealmSwift'
     #pod 'Timepiece'
     #pod 'Money'
 end

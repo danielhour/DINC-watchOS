@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BF04BB398BF835A07595074F92D24C5F"
+               BlueprintIdentifier = "84AE81D060AD45697F69E12635406419"
                BuildableName = "Pods_DINC_WatchKit_Extension.framework"
                BlueprintName = "Pods-DINC WatchKit Extension"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,6 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -36,6 +37,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -45,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BF04BB398BF835A07595074F92D24C5F"
+            BlueprintIdentifier = "84AE81D060AD45697F69E12635406419"
             BuildableName = "Pods_DINC_WatchKit_Extension.framework"
             BlueprintName = "Pods-DINC WatchKit Extension"
             ReferencedContainer = "container:Pods.xcodeproj">
