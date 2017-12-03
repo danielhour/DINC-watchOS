@@ -98,8 +98,7 @@ class WTransactionManager: NSObject {
         let predicate = NSPredicate(format: "date >= %@ AND date <= %@", argumentArray: [today.beginningOfDay, today.endOfDay])
         //let predicate = NSPredicate(format: "date >= %@ AND date <= %@", today.beginningOfDay, today.endOfDay)
         
-        let todaysTransactions = realm.objects(WTransaction).filter(predicate).sorted(byKeyPath: "date", ascending: true)
-
+        let todaysTransactions = realm.objects(WTransaction.self).filter(predicate).sorted(byKeyPath: "date", ascending: true)
         
         try! realm.write {
             realm.delete(todaysTransactions[row])
