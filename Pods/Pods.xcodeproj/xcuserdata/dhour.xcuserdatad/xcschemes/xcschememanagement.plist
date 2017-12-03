@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Money.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-DINC WatchKit App.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -44,69 +39,8 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Timepiece.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>ValueCoding.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>1A443E0EA766A51E2D16A2DD35B1EDD4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>1F5C30CCD30B75F480A17145FD450B5D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>256CBD37FC96D6599E39606257A616BE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8571507E15C73C204C39D65976DDF558</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8AE787E783F17D668E2CEA022177D796</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9A4BDA4F3EE5E5DA071B0EE216917F99</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9C932CCAB9C54C5D5B8FAB807F8A1ACB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A17DC8C7EE325848A57E539958B8A604</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BA6FE39558A003860AE296940DEB0768</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D0089E2D55BC1F1AE072852AE4930607</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>

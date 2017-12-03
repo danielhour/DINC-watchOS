@@ -6,8 +6,8 @@ use_frameworks!
 
 def shared_pods
     pod 'RealmSwift'
-    pod 'Timepiece'
-    pod 'Money'
+    #pod 'Timepiece'
+    #pod 'Money'
 end
 
 

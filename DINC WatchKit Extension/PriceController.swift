@@ -11,8 +11,6 @@ import WatchKit
 import ClockKit
 import Foundation
 import RealmSwift
-import Timepiece
-import Money
 
 
 /**
@@ -23,24 +21,19 @@ class PriceController: WKInterfaceController {
     //---------------------------------------------------------------------------------------------------------
     //MARK: - Properties
     
-    ///
     var currentMonthlyTotal: Double!
-    ///
     var moneySpent: Double!
     
-    ///
     var rawNumberEntry = String()
     
-    ///
     @IBOutlet var safeToSpendLabel: WKInterfaceLabel!
-    ///
     @IBOutlet var purchaseLabel: WKInterfaceLabel!
     
     //---------------------------------------------------------------------------------------------------------
     //MARK: - View Life Cycle
     
-    override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
+    override func awake(withContext context: Any?) {
+        super.awake(withContext: context)
         
         self.configureForceTouchMenu()
     }
@@ -72,9 +65,9 @@ class PriceController: WKInterfaceController {
         }
         
         let amount = Double(rawNumberEntry)!/100
-        WTransactionManager.addNewPurchase(NSDate(), amount: amount)
+        WTransactionManager.addNewPurchase(Date(), amount: amount)
         ComplicationManager.reloadComplications()
-        self.presentControllerWithName("UpdatedSavingsController", context: self)
+        self.presentController(withName: "UpdatedSavingsController", context: self)
         self.resetPurchaseLabel()
     }
     
@@ -120,7 +113,7 @@ class PriceController: WKInterfaceController {
     
     @IBAction func backSpaceTapped() {
         rawNumberEntry = String(rawNumberEntry.characters.dropLast())
-        purchaseLabel.setText(rawNumberEntry.currencyFromString)
+        purchaseLabel.setText(rawNumberEntry.currencyAppend)
         
         if rawNumberEntry.isEmpty {
             purchaseLabel.setText("$0.00")
@@ -129,7 +122,6 @@ class PriceController: WKInterfaceController {
     
     //---------------------------------------------------------------------------------------------------------
     //MARK: - Force Touch Methods
-
     
     /**
      Configures the Force Touch Menu
@@ -137,26 +129,23 @@ class PriceController: WKInterfaceController {
      - returns: Void
      */
     func configureForceTouchMenu() {
-        self.addMenuItemWithImageNamed("Calendar", title: "Today Summary", action: #selector(PriceController.presentUpdatedSavingsController))
-        self.addMenuItemWithImageNamed("Dollar_Sign", title: "Edit Daily $", action: #selector(PriceController.presentSetBugetController))
+        self.addMenuItem(withImageNamed: "Calendar", title: "Today Summary", action: #selector(PriceController.presentUpdatedSavingsController))
+        self.addMenuItem(withImageNamed: "Dollar_Sign", title: "Edit Daily $", action: #selector(PriceController.presentSetBugetController))
     }
-    
     
     /**
      Presents the `UpdatedSavingsController`
      */
     func presentUpdatedSavingsController() {
-        self.presentControllerWithName("UpdatedSavingsController", context: self)
+        self.presentController(withName: "UpdatedSavingsController", context: self)
     }
-    
     
     /**
      Presents the `SetBudgetController`
      */
     func presentSetBugetController() {
-        self.presentControllerWithName("SetBudgetController", context: self)
+        self.presentController(withName: "SetBudgetController", context: self)
     }
-
     
     //---------------------------------------------------------------------------------------------------------
     //MARK: - Helper Methods
@@ -164,10 +153,10 @@ class PriceController: WKInterfaceController {
     /**
      Checks to see if a user has created a daily budget. If not, presents the `SetBudgetController`
      */
-    private func checkForUserCreatedDailyBudget() {
-        let db = NSUserDefaults.standardUserDefaults().integerForKey(userDefaults.dailyBudget)
+    fileprivate func checkForUserCreatedDailyBudget() {
+        let db = UserDefaults.standard.integer(forKey: userDefaults.dailyBudget)
         guard db > 0 else {
-            NSUserDefaults.standardUserDefaults().setInteger(NSDate.today().month, forKey: userDefaults.currentMonth)
+            UserDefaults.standard.set(Date.today().month, forKey: userDefaults.currentMonth)
             Utilities.delay(0.5, closure: { () in
                 self.presentSetBugetController()
             })
@@ -175,12 +164,11 @@ class PriceController: WKInterfaceController {
         }
     }
     
-    
     /**
      Configures the UI
      */
-    private func configureUI() {
-        let db = NSUserDefaults.standardUserDefaults().integerForKey(userDefaults.dailyBudget)
+    fileprivate func configureUI() {
+        let db = UserDefaults.standard.integer(forKey: userDefaults.dailyBudget)
         guard db > 0 else { return }
         
         currentMonthlyTotal = MonthlyBudgetManager.currentTotal()
@@ -192,9 +180,8 @@ class PriceController: WKInterfaceController {
             safeToSpendLabel.setTextColor(Theme.Colors.green)
         }
         
-        safeToSpendLabel.setText("\(Money(safeToSpend))")        
+        safeToSpendLabel.setText("\(safeToSpend)".currencyFromString)        
     }
-    
     
     /**
      Converts user number entry into currency & updates the label display
@@ -203,24 +190,19 @@ class PriceController: WKInterfaceController {
      
      - returns: Void
      */
-    private func appendNumber(number: Int) {
+    fileprivate func appendNumber(_ number: Int) {
         let numberAsString = String(number)
-        rawNumberEntry = rawNumberEntry.stringByAppendingString(numberAsString)
-        purchaseLabel.setText(rawNumberEntry.currencyFromString)
+        rawNumberEntry = rawNumberEntry + numberAsString
+        purchaseLabel.setText(rawNumberEntry.currencyAppend)
     }
-
     
     /**
      Clears purchase label
      
      - returns: Void
      */
-    private func resetPurchaseLabel() {
+    fileprivate func resetPurchaseLabel() {
         rawNumberEntry.removeAll()
         purchaseLabel.setText("$0.00")
     }
 }
-
-
-
-

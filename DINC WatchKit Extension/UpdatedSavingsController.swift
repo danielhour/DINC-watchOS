@@ -6,8 +6,6 @@
 //  Copyright © 2016 DHour. All rights reserved.
 //
 
-
-import Money
 import WatchKit
 import Foundation
 
@@ -20,29 +18,22 @@ class UpdatedSavingsController: WKInterfaceController {
     //---------------------------------------------------------------------------------------------------------
     //MARK: - Properties
     
-    ///
     var todaysTransactions = [WTransaction]()
     
-    ///
     var currentMonthlyTotal: Double!
-    ///
     var moneySpent: Double!
-    ///
     var safeToSpend: Double!
     
-    ///
     @IBOutlet var savingsLabel: WKInterfaceLabel!
-    ///
     @IBOutlet var todayTotalLabel: WKInterfaceLabel!
-    ///
     @IBOutlet var todaysTransactionsTable: WKInterfaceTable!
     
     
     //---------------------------------------------------------------------------------------------------------
     //MARK: - View Life Cycle
     
-    override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
+    override func awake(withContext context: Any?) {
+        super.awake(withContext: context)
         
         self.setTitle("Close")
         self.configureSavingsUI()
@@ -61,11 +52,11 @@ class UpdatedSavingsController: WKInterfaceController {
     //---------------------------------------------------------------------------------------------------------
     //MARK: - WKInterfaceTable Methods
     
-    override func table(table: WKInterfaceTable, didSelectRowAtIndex rowIndex: Int) {
+    override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
         DBAlert.deletePurchase(self) {
             WTransactionManager.deletePurchase(rowIndex)
-            let indexSet = NSIndexSet(index: rowIndex)
-            self.todaysTransactionsTable.removeRowsAtIndexes(indexSet)
+            let indexSet = IndexSet(integer: rowIndex)
+            self.todaysTransactionsTable.removeRows(at: indexSet)
             ComplicationManager.reloadComplications()
             self.configureSavingsUI()
             
@@ -82,7 +73,7 @@ class UpdatedSavingsController: WKInterfaceController {
     /**
      Configures the Savings Label UI
      */
-    private func configureSavingsUI() {
+    fileprivate func configureSavingsUI() {
         currentMonthlyTotal = MonthlyBudgetManager.currentTotal()
         moneySpent = WTransactionManager.moneySpent()
         safeToSpend = currentMonthlyTotal-moneySpent
@@ -93,7 +84,7 @@ class UpdatedSavingsController: WKInterfaceController {
             savingsLabel.setTextColor(Theme.Colors.green)
         }
         
-        savingsLabel.setText("\(Money(safeToSpend))")
+        savingsLabel.setText("\(safeToSpend!)".currencyFromString)
         savingsLabel.sizeToFitWidth()
     }
     
@@ -107,7 +98,7 @@ class UpdatedSavingsController: WKInterfaceController {
      
      - returns: Void
      */
-    private func configureTodaysTransactionsTable() {
+    fileprivate func configureTodaysTransactionsTable() {
         todayTotalLabel.setHidden(true)
        
         todaysTransactions = WTransactionManager.todaysTransactions()
@@ -119,19 +110,19 @@ class UpdatedSavingsController: WKInterfaceController {
         todayTotalLabel.setHidden(false)
         
         //determine number of rows
-        let indexes = NSIndexSet(indexesInRange: NSRange(0...todaysTransactions.count-1))
-        todaysTransactionsTable.insertRowsAtIndexes(indexes, withRowType: "TransactionRow")
+        let indexes = IndexSet(integersIn: 0...todaysTransactions.count-1)
+        todaysTransactionsTable.insertRows(at: indexes, withRowType: "TransactionRow")
         
         //populate rows
-        for (index, transaction) in todaysTransactions.enumerate() {
-            let row = todaysTransactionsTable.rowControllerAtIndex(index) as! TransactionRow
-            row.transactionAmountLabel.setText("\(Money(transaction.amount))")
+        for (index, transaction) in todaysTransactions.enumerated() {
+            let row = todaysTransactionsTable.rowController(at: index) as! TransactionRow
+            row.transactionAmountLabel.setText("\(transaction.amount)".currencyFromString)
         }
         
         //calculate today's total
         if !todaysTransactions.isEmpty {
-            let sum = todaysTransactions.map{$0.amount}.reduce(0, combine: +)
-            todayTotalLabel.setText("\(Money(sum))")
+            let sum = todaysTransactions.map{$0.amount}.reduce(0, +)
+            todayTotalLabel.setText("\(sum)".currencyFromString)
         }
     }
     

@@ -6,7 +6,6 @@
 //  Copyright © 2016 DHour. All rights reserved.
 //
 
-
 import ClockKit
 
 
@@ -15,9 +14,7 @@ import ClockKit
  */
 class ComplicationConfigurations {
     
-    
     //---------------------------------------------------------------------------------------------------------
-    
     // MARK: - Modular Small Family
     
     
@@ -29,14 +26,13 @@ class ComplicationConfigurations {
     
     - returns: CLKComplicationTemplateModularSmallSimpleText
     */
-    class func modularSmallSimpleText(text: String, textShort: String?, textColor: UIColor) -> CLKComplicationTemplateModularSmallSimpleText {
+    class func modularSmallSimpleText(_ text: String, textShort: String?, textColor: UIColor) -> CLKComplicationTemplateModularSmallSimpleText {
         
         let template = CLKComplicationTemplateModularSmallSimpleText()
         template.textProvider = CLKSimpleTextProvider(text: text, shortText: textShort)
         template.textProvider.tintColor = Theme.Colors.green
         return template
     }
-    
     
     /**
      Complication template for Modular Small Stack Text
@@ -46,7 +42,7 @@ class ComplicationConfigurations {
      
      - returns: CLKComplicationTemplateModularSmallStackText
      */
-    class func modularSmallStackText(line1: String, line2: String, line2Short: String?) -> CLKComplicationTemplateModularSmallStackText {
+    class func modularSmallStackText(_ line1: String, line2: String, line2Short: String?) -> CLKComplicationTemplateModularSmallStackText {
         
         let template = CLKComplicationTemplateModularSmallStackText()
         template.line1TextProvider = CLKSimpleTextProvider(text: line1)
@@ -54,7 +50,6 @@ class ComplicationConfigurations {
         template.highlightLine2 = true
         return template
     }
-    
     
     /**
      Complication template for Modular Small Stack Image (one piece image)
@@ -65,7 +60,7 @@ class ComplicationConfigurations {
      
      - returns: CLKComplicationTemplateModularSmallStackImage
      */
-    class func modularSmallStackImage(image: UIImage, line2: String, line2Short: String?) -> CLKComplicationTemplateModularSmallStackImage {
+    class func modularSmallStackImage(_ image: UIImage, line2: String, line2Short: String?) -> CLKComplicationTemplateModularSmallStackImage {
         
         let template = CLKComplicationTemplateModularSmallStackImage()
         template.line1ImageProvider = CLKImageProvider(onePieceImage: image)
@@ -82,7 +77,6 @@ class ComplicationConfigurations {
     
     
     //---------------------------------------------------------------------------------------------------------
-    
     // MARK: - Modular Large Family
     
     /**
@@ -93,7 +87,7 @@ class ComplicationConfigurations {
     
     - returns: CLKComplicationTemplateModularLargeTallBody
     */
-    class func modularLargeTallBody(header: String, body: String, bodyShort: String?) -> CLKComplicationTemplateModularLargeTallBody {
+    class func modularLargeTallBody(_ header: String, body: String, bodyShort: String?) -> CLKComplicationTemplateModularLargeTallBody {
         
         let template = CLKComplicationTemplateModularLargeTallBody()
         template.headerTextProvider = CLKSimpleTextProvider(text: header)
@@ -106,9 +100,7 @@ class ComplicationConfigurations {
     //-- largecolumns
     //-- largetable
     
-    
     //---------------------------------------------------------------------------------------------------------
-    
     // MARK: - Utilitarian Small Family
     
     /**
@@ -119,7 +111,7 @@ class ComplicationConfigurations {
     
     - returns: CLKComplicationTemplateUtilitarianSmallFlat
     */
-    class func utilitarianSmallFlat(imageName: String, text: String, textShort: String?) -> CLKComplicationTemplateUtilitarianSmallFlat {
+    class func utilitarianSmallFlat(_ imageName: String, text: String, textShort: String?) -> CLKComplicationTemplateUtilitarianSmallFlat {
         
         let template = CLKComplicationTemplateUtilitarianSmallFlat()
         template.imageProvider = nil
@@ -132,9 +124,7 @@ class ComplicationConfigurations {
     //-- smallringtext
     //-- smallringimage
     
-    
     //---------------------------------------------------------------------------------------------------------
-    
     // MARK: - Utilitarian Large Family
     
     /**
@@ -145,7 +135,7 @@ class ComplicationConfigurations {
     
     - returns: CLKComplicationTemplateUtilitarianLargeFlat
     */
-    class func utilitarianLargeFlat(imageName: String, text: String, textShort: String?) -> CLKComplicationTemplateUtilitarianLargeFlat {
+    class func utilitarianLargeFlat(_ imageName: String, text: String, textShort: String?) -> CLKComplicationTemplateUtilitarianLargeFlat {
         
         let template = CLKComplicationTemplateUtilitarianLargeFlat()
         template.imageProvider = nil
@@ -153,9 +143,7 @@ class ComplicationConfigurations {
         return template
     }
     
-    
     //---------------------------------------------------------------------------------------------------------
-    
     // MARK: - Circular Small Family
     
     /**
@@ -165,7 +153,7 @@ class ComplicationConfigurations {
     
     - returns: CLKComplicationTemplateCircularSmallSimpleText
     */
-    class func circularSmallSimpleText(text: String, textShort: String?) -> CLKComplicationTemplateCircularSmallSimpleText {
+    class func circularSmallSimpleText(_ text: String, textShort: String?) -> CLKComplicationTemplateCircularSmallSimpleText {
         
         let template = CLKComplicationTemplateCircularSmallSimpleText()
         template.textProvider = CLKSimpleTextProvider(text: text, shortText: textShort)
@@ -181,7 +169,7 @@ class ComplicationConfigurations {
      
      - returns: CLKComplicationTemplateCircularSmallStackText
      */
-    class func circularSmallStackText(line1: String, line2: String, line2Short: String?) -> CLKComplicationTemplateCircularSmallStackText {
+    class func circularSmallStackText(_ line1: String, line2: String, line2Short: String?) -> CLKComplicationTemplateCircularSmallStackText {
         
         let template = CLKComplicationTemplateCircularSmallStackText()
         template.line1TextProvider = CLKSimpleTextProvider(text: line1)
@@ -193,6 +181,5 @@ class ComplicationConfigurations {
     //-- small simple image
     //-- small ring text
     //-- small ring image
-
     
 }

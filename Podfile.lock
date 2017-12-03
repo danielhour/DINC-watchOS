@@ -1,26 +1,17 @@
 PODS:
-  - Money (1.7.0):
-    - ValueCoding
-  - Realm (0.98.8):
-    - Realm/Headers (= 0.98.8)
-  - Realm/Headers (0.98.8)
-  - RealmSwift (0.98.8):
-    - Realm (= 0.98.8)
-  - Timepiece (0.4.2)
-  - ValueCoding (1.3.0)
+  - Realm (3.0.2):
+    - Realm/Headers (= 3.0.2)
+  - Realm/Headers (3.0.2)
+  - RealmSwift (3.0.2):
+    - Realm (= 3.0.2)
 
 DEPENDENCIES:
-  - Money
   - RealmSwift
-  - Timepiece
 
 SPEC CHECKSUMS:
-  Money: f46c3c8fcaf7afa35f2ee3edaeba58335fd5b669
-  Realm: 0e293bb62999730599efc3048896bbd4f2e43bcd
-  RealmSwift: 064262d38113f23ff3508fb20a0a922e696bec01
-  Timepiece: cf53bb908bf542acc0e3d5f69cabfed869df4ebd
-  ValueCoding: 9c9ed6ecdb9cc37f1a8d3fd9f5756953caf5a869
+  Realm: 6f23fd1f178a09342eac21bfa7c2bf4312a7a180
+  RealmSwift: 695393add1b8f9d5fa75dd16e6355cf3935f71e2
 
-PODFILE CHECKSUM: ffff4fadbf32e245901527873b4b3089e4b1e02d
+PODFILE CHECKSUM: 55f9d997a268f433212738700ebe43eab506942f
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.2.1

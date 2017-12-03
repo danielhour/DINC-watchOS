@@ -8,7 +8,6 @@
 
 import Foundation
 import RealmSwift
-import Timepiece
 
 
 /**
@@ -26,7 +25,7 @@ class WTransactionManager: NSObject {
      */
     static func allTransactions() -> Results<WTransaction> {
         let realm = try! Realm()
-        return realm.objects(WTransaction)
+        return realm.objects(WTransaction.self)
     }
     
     /**
@@ -36,9 +35,10 @@ class WTransactionManager: NSObject {
      */
     static func todaysTransactions() -> [WTransaction] {
         let realm = try! Realm()
-        let today = NSDate()
-        let predicate = NSPredicate(format: "date >= %@ AND date <= %@", today.beginningOfDay, today.endOfDay)
-        let transactions = realm.objects(WTransaction).filter(predicate).sorted("date", ascending: true)
+        let today = Date()
+        let predicate = NSPredicate(format: "date >= %@ AND date <= %@", argumentArray: [today.beginningOfDay, today.endOfDay])
+        //let predicate = NSPredicate(format: "date >= %@ AND date <= %@", today.beginningOfDay, today.endOfDay)
+        let transactions = realm.objects(WTransaction.self).filter(predicate).sorted(byKeyPath: "date", ascending: true)
 
         return transactions.map{WTransaction(transaction: $0)}
     }
@@ -48,7 +48,7 @@ class WTransactionManager: NSObject {
      */
     static func mostRecentTransaction() -> WTransaction? {
         let realm = try! Realm()
-        guard let last = realm.objects(WTransaction).last else {
+        guard let last = realm.objects(WTransaction.self).last else {
             return nil
         }
         
@@ -62,9 +62,9 @@ class WTransactionManager: NSObject {
      */
     static func moneySpent() -> Double {
         let realm = try! Realm()
-        let all = realm.objects(WTransaction)
+        let all = realm.objects(WTransaction.self)
         
-        return all.map{WTransaction(transaction: $0).amount}.reduce(0, combine: +)
+        return all.map{WTransaction(transaction: $0).amount}.reduce(0, +)
     }
 
     //---------------------------------------------------------------------------------------------------------
@@ -76,7 +76,7 @@ class WTransactionManager: NSObject {
      - parameter date: NSDate
      - parameter amount: Double
      */
-    static func addNewPurchase(date: NSDate, amount: Double) {
+    static func addNewPurchase(_ date: Date, amount: Double) {
         let realm = try! Realm()
         
         try! realm.write { () -> Void in
@@ -92,11 +92,13 @@ class WTransactionManager: NSObject {
      
      - parameter row: `Int`
      */
-    static func deletePurchase(row: Int) {
+    static func deletePurchase(_ row: Int) {
         let realm = try! Realm()
-        let today = NSDate()
-        let predicate = NSPredicate(format: "date >= %@ AND date <= %@", today.beginningOfDay, today.endOfDay)
-        let todaysTransactions = realm.objects(WTransaction).filter(predicate).sorted("date", ascending: true)
+        let today = Date()
+        let predicate = NSPredicate(format: "date >= %@ AND date <= %@", argumentArray: [today.beginningOfDay, today.endOfDay])
+        //let predicate = NSPredicate(format: "date >= %@ AND date <= %@", today.beginningOfDay, today.endOfDay)
+        
+        let todaysTransactions = realm.objects(WTransaction).filter(predicate).sorted(byKeyPath: "date", ascending: true)
 
         
         try! realm.write {
@@ -109,13 +111,10 @@ class WTransactionManager: NSObject {
      */
     static func resetDataForNewMonth() {
         let realm = try! Realm()
-        let lastMonth = realm.objects(WTransaction)
+        let lastMonth = realm.objects(WTransaction.self)
         
         try! realm.write {
             realm.delete(lastMonth)
         }
     }
-    
-    
-    
 }

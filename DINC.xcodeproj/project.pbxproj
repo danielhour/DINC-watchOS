@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		032F4A1E0C7CB638B88BBC82 /* Pods_DINC_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 460A3B60558EE99038D79A43 /* Pods_DINC_WatchKit_Extension.framework */; };
 		270A0672CEBED976ED745924 /* Pods_DINCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00F8918E621CC6F3955D1B6 /* Pods_DINCTests.framework */; };
+		C0184AC01D8F1D6300AF2871 /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0184ABF1D8F1D6300AF2871 /* Duration.swift */; };
+		C0184AC21D8F1D6C00AF2871 /* Int+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0184AC11D8F1D6C00AF2871 /* Int+Timepiece.swift */; };
+		C0184AC71D8F1D7C00AF2871 /* NSCalendar+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0184AC31D8F1D7C00AF2871 /* NSCalendar+Timepiece.swift */; };
+		C0184AC81D8F1D7C00AF2871 /* NSCalendarUnit+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0184AC41D8F1D7C00AF2871 /* NSCalendarUnit+Timepiece.swift */; };
+		C0184AC91D8F1D7C00AF2871 /* NSDate+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0184AC51D8F1D7C00AF2871 /* NSDate+Timepiece.swift */; };
+		C0184ACA1D8F1D7C00AF2871 /* NSDateComponents+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0184AC61D8F1D7C00AF2871 /* NSDateComponents+Timepiece.swift */; };
+		C0184ACC1D8F1D8700AF2871 /* NSTimeInterval+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0184ACB1D8F1D8700AF2871 /* NSTimeInterval+Timepiece.swift */; };
+		C0184ACE1D8F1D8D00AF2871 /* String+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0184ACD1D8F1D8D00AF2871 /* String+Timepiece.swift */; };
 		C02E7DEE1CC1EF9100A65ACC /* WTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E7DED1CC1EF9100A65ACC /* WTransaction.swift */; };
 		C02E7DF01CC1FF3900A65ACC /* ProjectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E7DEF1CC1FF3900A65ACC /* ProjectionController.swift */; };
 		C02E7DF61CC202B000A65ACC /* DBAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E7DF51CC202B000A65ACC /* DBAlert.swift */; };
@@ -126,6 +134,14 @@
 		773E8E2E3FDEFCA313C13285 /* Pods-DINC WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DINC WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DINC WatchKit App/Pods-DINC WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
 		8A5EACA0DFFD542AEACD2535 /* Pods-DINC WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DINC WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-DINC WatchKit Extension/Pods-DINC WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 		9F56A926DD3942AE2E4178D0 /* Pods-DINCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DINCUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DINCUITests/Pods-DINCUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C0184ABF1D8F1D6300AF2871 /* Duration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Duration.swift; sourceTree = "<group>"; };
+		C0184AC11D8F1D6C00AF2871 /* Int+Timepiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Timepiece.swift"; sourceTree = "<group>"; };
+		C0184AC31D8F1D7C00AF2871 /* NSCalendar+Timepiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSCalendar+Timepiece.swift"; sourceTree = "<group>"; };
+		C0184AC41D8F1D7C00AF2871 /* NSCalendarUnit+Timepiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSCalendarUnit+Timepiece.swift"; sourceTree = "<group>"; };
+		C0184AC51D8F1D7C00AF2871 /* NSDate+Timepiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Timepiece.swift"; sourceTree = "<group>"; };
+		C0184AC61D8F1D7C00AF2871 /* NSDateComponents+Timepiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDateComponents+Timepiece.swift"; sourceTree = "<group>"; };
+		C0184ACB1D8F1D8700AF2871 /* NSTimeInterval+Timepiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTimeInterval+Timepiece.swift"; sourceTree = "<group>"; };
+		C0184ACD1D8F1D8D00AF2871 /* String+Timepiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Timepiece.swift"; sourceTree = "<group>"; };
 		C02E7DED1CC1EF9100A65ACC /* WTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTransaction.swift; sourceTree = "<group>"; };
 		C02E7DEF1CC1FF3900A65ACC /* ProjectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectionController.swift; sourceTree = "<group>"; };
 		C02E7DF51CC202B000A65ACC /* DBAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBAlert.swift; sourceTree = "<group>"; };
@@ -256,6 +272,21 @@
 				687F3C1E32388AA8AC6AB631 /* Pods_DINCUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C02E697F1D8F5ED3001EAC02 /* Timepiece */ = {
+			isa = PBXGroup;
+			children = (
+				C0184ABF1D8F1D6300AF2871 /* Duration.swift */,
+				C0184AC11D8F1D6C00AF2871 /* Int+Timepiece.swift */,
+				C0184AC31D8F1D7C00AF2871 /* NSCalendar+Timepiece.swift */,
+				C0184AC41D8F1D7C00AF2871 /* NSCalendarUnit+Timepiece.swift */,
+				C0184AC51D8F1D7C00AF2871 /* NSDate+Timepiece.swift */,
+				C0184AC61D8F1D7C00AF2871 /* NSDateComponents+Timepiece.swift */,
+				C0184ACB1D8F1D8700AF2871 /* NSTimeInterval+Timepiece.swift */,
+				C0184ACD1D8F1D8D00AF2871 /* String+Timepiece.swift */,
+			);
+			name = Timepiece;
 			sourceTree = "<group>";
 		};
 		C02E7DEB1CC1EF3E00A65ACC /* Models */ = {
@@ -411,6 +442,7 @@
 				C02E7DF41CC2013A00A65ACC /* External Controllers */,
 				C0F2C2371CC04C6B0070AA8D /* Assets.xcassets */,
 				C0F2C2391CC04C6B0070AA8D /* Info.plist */,
+				C02E697F1D8F5ED3001EAC02 /* Timepiece */,
 				C0F2C22B1CC04C6B0070AA8D /* Supporting Files */,
 			);
 			path = "DINC WatchKit Extension";
@@ -527,6 +559,7 @@
 				C0F2C20B1CC04C6B0070AA8D /* Frameworks */,
 				C0F2C20C1CC04C6B0070AA8D /* Resources */,
 				6569050A484D6190F61BED70 /* [CP] Copy Pods Resources */,
+				973119B08E428E46039C8614 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -591,21 +624,27 @@
 					C0F2C1EE1CC04C6A0070AA8D = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = DKHY464262;
+						LastSwiftMigration = 0800;
 					};
 					C0F2C2021CC04C6B0070AA8D = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 						TestTargetID = C0F2C1EE1CC04C6A0070AA8D;
 					};
 					C0F2C20D1CC04C6B0070AA8D = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 						TestTargetID = C0F2C1EE1CC04C6A0070AA8D;
 					};
 					C0F2C2161CC04C6B0070AA8D = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = DKHY464262;
+						LastSwiftMigration = 0800;
 					};
 					C0F2C2251CC04C6B0070AA8D = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = DKHY464262;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -703,7 +742,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		29D9AAA4C8B279D5B1D98996 /* [CP] Check Pods Manifest.lock */ = {
@@ -718,7 +757,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		3125D0C9544B5C62349FC400 /* [CP] Check Pods Manifest.lock */ = {
@@ -733,7 +772,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		312C2C0367D68356FE4B98A0 /* [CP] Copy Pods Resources */ = {
@@ -778,7 +817,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		7C156D56C94B2FBAD4D9199E /* [CP] Embed Pods Frameworks */ = {
@@ -794,6 +833,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DINC WatchKit Extension/Pods-DINC WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		973119B08E428E46039C8614 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DINCUITests/Pods-DINCUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A9482161F568AEEEAAE91B13 /* [CP] Copy Pods Resources */ = {
@@ -837,7 +891,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "TAGS=\"TODO:|FIXME:|TESTING:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
+			shellScript = "TAGS=\"TODO:|TESTING:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
 		};
 		D518B555558772BD167612A9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -851,7 +905,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		DE6115054B447D127FED0E58 /* [CP] Copy Pods Resources */ = {
@@ -926,23 +980,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0184ACE1D8F1D8D00AF2871 /* String+Timepiece.swift in Sources */,
+				C0184ACA1D8F1D7C00AF2871 /* NSDateComponents+Timepiece.swift in Sources */,
 				C0E0C61C1CC48AF30013DDD4 /* NSDateExtensions.swift in Sources */,
 				C0F2C2321CC04C6B0070AA8D /* NotificationController.swift in Sources */,
 				C0F2C2301CC04C6B0070AA8D /* ExtensionDelegate.swift in Sources */,
 				C02E7E041CC214B200A65ACC /* Utilities.swift in Sources */,
 				C02E7DF91CC202D900A65ACC /* Magic.swift in Sources */,
 				C02E7DEE1CC1EF9100A65ACC /* WTransaction.swift in Sources */,
+				C0184AC81D8F1D7C00AF2871 /* NSCalendarUnit+Timepiece.swift in Sources */,
 				C02E7E0B1CC3132E00A65ACC /* MonthlyBudgetManager.swift in Sources */,
 				C0F2C2361CC04C6B0070AA8D /* ComplicationController.swift in Sources */,
 				C02E7E0D1CC3185F00A65ACC /* TransactionRow.swift in Sources */,
 				C02E7DFB1CC2037700A65ACC /* StringExtensions.swift in Sources */,
+				C0184AC01D8F1D6300AF2871 /* Duration.swift in Sources */,
 				C02E7DFD1CC20AFA00A65ACC /* UpdatedSavingsController.swift in Sources */,
 				C0E0C61A1CC362CC0013DDD4 /* ComplicationManager.swift in Sources */,
 				C02E7E061CC217FB00A65ACC /* Theme.swift in Sources */,
 				C02E7DFF1CC2123E00A65ACC /* SetBudgetController.swift in Sources */,
 				C02E7DF61CC202B000A65ACC /* DBAlert.swift in Sources */,
 				C02E7DF01CC1FF3900A65ACC /* ProjectionController.swift in Sources */,
+				C0184AC21D8F1D6C00AF2871 /* Int+Timepiece.swift in Sources */,
 				C02E7E011CC2127000A65ACC /* Constants.swift in Sources */,
+				C0184AC91D8F1D7C00AF2871 /* NSDate+Timepiece.swift in Sources */,
+				C0184AC71D8F1D7C00AF2871 /* NSCalendar+Timepiece.swift in Sources */,
+				C0184ACC1D8F1D8700AF2871 /* NSTimeInterval+Timepiece.swift in Sources */,
 				C02E7E131CC3492200A65ACC /* ComplicationConfigurations.swift in Sources */,
 				C074E7BA1CC5550400B4D224 /* EfficiencyController.swift in Sources */,
 				C0F2C22E1CC04C6B0070AA8D /* PriceController.swift in Sources */,
@@ -1108,6 +1170,7 @@
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
@@ -1129,6 +1192,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
@@ -1140,12 +1204,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DKHY464262;
 				IBSC_MODULE = DINC_WatchKit_Extension;
 				INFOPLIST_FILE = "DINC WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DHour.DINC.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
@@ -1157,12 +1223,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DKHY464262;
 				IBSC_MODULE = DINC_WatchKit_Extension;
 				INFOPLIST_FILE = "DINC WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DHour.DINC.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
@@ -1174,11 +1242,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = DKHY464262;
 				INFOPLIST_FILE = DINC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DHour.DINC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -1188,12 +1258,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = DKHY464262;
 				INFOPLIST_FILE = DINC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DHour.DINC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -1206,6 +1278,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DHour.DINCTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DINC.app/DINC";
 			};
 			name = Debug;
@@ -1220,6 +1293,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.DHour.DINCTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DINC.app/DINC";
 			};
 			name = Release;
@@ -1232,6 +1306,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DHour.DINCUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = DINC;
 			};
 			name = Debug;
@@ -1245,6 +1320,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.DHour.DINCUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = DINC;
 			};
 			name = Release;

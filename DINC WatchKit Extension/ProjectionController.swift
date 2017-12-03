@@ -6,9 +6,7 @@
 //  Copyright © 2016 DHour. All rights reserved.
 //
 
-import Money
 import WatchKit
-import Timepiece
 import Foundation
 
 
@@ -20,33 +18,23 @@ class ProjectionController: WKInterfaceController {
     //---------------------------------------------------------------------------------------------------------
     //MARK: - Properties
 
-    ///
     var monthlyGoal: Double!
-    ///
     var moneySpent: Double!
-    ///
     var daysLeft: Int!
-    ///
     var items = [WKPickerItem]()
     
-    ///
     @IBOutlet var moneySpentLabel: WKInterfaceLabel!
-    ///
     @IBOutlet var daysLeftInMonthLabel: WKInterfaceLabel!
-    ///
     @IBOutlet var dailyBudgetPicker: WKInterfacePicker!
-    ///
     @IBOutlet var projectedMoneySpentLabel: WKInterfaceLabel!
-    ///
     @IBOutlet var overUnderTitleLabel: WKInterfaceLabel!
-    ///
     @IBOutlet var overUnderAmountLabel: WKInterfaceLabel!
     
     //---------------------------------------------------------------------------------------------------------
     //MARK: - View Life Cycle
     
-    override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
+    override func awake(withContext context: Any?) {
+        super.awake(withContext: context)
         
     }
 
@@ -70,11 +58,11 @@ class ProjectionController: WKInterfaceController {
     //MARK: - IBActions
     
     ///
-    @IBAction func dailyBudgetPickerAction(value: Int) {
+    @IBAction func dailyBudgetPickerAction(_ value: Int) {
         let projected = Double(daysLeft * value)
         let overUnder = monthlyGoal - moneySpent - projected
         projectedMoneySpentLabel.setText("\(projected)".currencyNoDecimals)
-        overUnderAmountLabel.setText("\(Money(overUnder))")
+        overUnderAmountLabel.setText("\(overUnder)".currencyFromString)
         
         if overUnder < 0 {
             overUnderAmountLabel.setTextColor(Theme.Colors.red)
@@ -91,19 +79,19 @@ class ProjectionController: WKInterfaceController {
     /**
      Configures the static labels UI
      */
-    private func configureStaticLabelsUI() {
+    fileprivate func configureStaticLabelsUI() {
         monthlyGoal = MonthlyBudgetManager.fullMonth()
         moneySpent = WTransactionManager.moneySpent()
-        daysLeft = NSDate.today().endOfMonth.day - NSDate.today().day
+        daysLeft = Date.today().endOfMonth.day - Date.today().day
         
-        moneySpentLabel.setText("\(Money(moneySpent))")
-        daysLeftInMonthLabel.setText("\(daysLeft) Days Left")
+        moneySpentLabel.setText("\(moneySpent!)".currencyFromString)
+        daysLeftInMonthLabel.setText("\(daysLeft!) Days Left")
     }
     
     /**
      Configures the number picker & sets the default number as the currently set daily budget
      */
-    private func configurePickerUI() {
+    fileprivate func configurePickerUI() {
         self.dailyBudgetPicker.focus()
         
         guard items.isEmpty else { return }
@@ -114,7 +102,7 @@ class ProjectionController: WKInterfaceController {
         }
         
         dailyBudgetPicker.setItems(items)
-        let db = NSUserDefaults.standardUserDefaults().integerForKey(userDefaults.dailyBudget)
+        let db = UserDefaults.standard.integer(forKey: userDefaults.dailyBudget)
         dailyBudgetPicker.setSelectedItemIndex(db)
     }
     
